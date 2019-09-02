@@ -1,0 +1,4530 @@
+[
+  {
+  "id": 1832015,
+  "coord": {
+    "lon": 129.352219,
+    "lat": 36.112499
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "흥해읍",
+      "do": "경상북도"
+    }
+  ],
+  "name": "Heung-hai",
+  "stat": {
+    "level": 1.0,
+    "population": 36080
+  },
+  "stations": [
+    {
+      "id": 7693,
+      "dist": 66,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1832157,
+  "coord": {
+    "lon": 127.737778,
+    "lat": 34.744171
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845788
+  },
+  "langs": [
+    {
+      "ko": "여수",
+      "do": "전라남도"
+    }
+  ],
+  "name": "Reisui",
+  "stat": {
+    "level": 1.0,
+    "population": 341994
+  },
+  "stations": [
+    {
+      "id": 8518,
+      "dist": 95,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1832257,
+  "coord": {
+    "lon": 128.468216,
+    "lat": 37.184471
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "영월",
+      "do": "강원도"
+    }
+  ],
+  "name": "Neietsu",
+  "stat": {
+    "level": 1.0,
+    "population": 25413
+  },
+  "stations": [
+    {
+      "id": 8512,
+      "dist": 24,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1832384,
+  "coord": {
+    "lon": 128.630829,
+    "lat": 36.821671
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "예산",
+      "do": "충청남도"
+    }
+  ],
+  "name": "Eisen",
+  "stat": {
+    "level": 1.0,
+    "population": 84625
+  },
+  "stations": [
+    {
+      "id": 8510,
+      "dist": 98,
+      "kf": 1
+    },
+    {
+      "id": 8512,
+      "dist": 66,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 93,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1832501,
+  "coord": {
+    "lon": 126.509438,
+    "lat": 35.275002
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845788
+  },
+  "langs": [
+    {
+      "ko": "영광",
+      "do": "전라남도"
+    }
+  ],
+  "name": "Reiko",
+  "stat": {
+    "level": 1.0,
+    "population": 19909
+  },
+  "stations": [
+    {
+      "id": 7640,
+      "dist": 80,
+      "kf": 1
+    },
+    {
+      "id": 7642,
+      "dist": 69,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1832566,
+  "coord": {
+    "lon": 127.77639,
+    "lat": 36.174999
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845106
+  },
+  "langs": [
+    {
+      "ko": "용동",
+      "do": "전라북도"
+    }
+  ],
+  "name": "Yong-dong",
+  "stat": {
+    "level": 1.0,
+    "population": 24154
+  },
+  "stations": [
+    {
+      "id": 8516,
+      "dist": 29,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 38,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1832697,
+  "coord": {
+    "lon": 127.075768,
+    "lat": 38.09404
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1835841
+  },
+  "langs": [
+    {
+      "ko": "연천군",
+      "do": "경기도"
+    }
+  ],
+  "name": "yeoncheongun",
+  "stat": {
+    "level": 1.0,
+    "population": 50655
+  },
+  "stations": [
+    {
+      "id": 8511,
+      "dist": 43,
+      "kf": 1
+    },
+    {
+      "id": 8521,
+      "dist": 20,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1832743,
+  "coord": {
+    "lon": 127.633888,
+    "lat": 37.29583
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "여주",
+      "do": "경기도"
+    }
+  ],
+  "name": "Yeoju",
+  "stat": {
+    "level": 1.0,
+    "population": 37490
+  },
+  "stations": [
+    {
+      "id": 8510,
+      "dist": 47,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 35,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 38,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 14,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1832771,
+  "coord": {
+    "lon": 126.84272,
+    "lat": 36.677559
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko": "아산",
+      "do": "충청남도"
+    }
+  ],
+  "name": "Yesan",
+  "stat": {
+    "level": 1.0,
+    "population": 39409
+  },
+  "stations": [
+    {
+      "id": 7673,
+      "dist": 48,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1832828,
+  "coord": {
+    "lon": 129.038605,
+    "lat": 35.338612
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko": "양산",
+      "do": "경상남도"
+    }
+  ],
+  "name": "Yangsan",
+  "stat": {
+    "level": 1.0,
+    "population": 71936
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 19,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1832830,
+  "coord": {
+    "lon": 127.490562,
+    "lat": 37.489719
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "양평",
+      "do": "경기도"
+    }
+  ],
+  "name": "Yangpyong",
+  "stat": {
+    "level": 1.0,
+    "population": 83367
+  },
+  "stations": [
+    {
+      "id": 7671,
+      "dist": 45,
+      "kf": 1
+    },
+    {
+      "id": 8510,
+      "dist": 49,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 14,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 28,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 10,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1832847,
+  "coord": {
+    "lon": 127.061691,
+    "lat": 37.833111
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "양주",
+      "do": "경기도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Yangju"
+    }
+  ],
+  "name": "Yangju",
+  "stat": {
+    "level": 1.0,
+    "population": 179923
+  },
+  "stations": [
+    {
+      "id": 8514,
+      "dist": 43,
+      "kf": 1
+    },
+    {
+      "id": 8521,
+      "dist": 30,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1832909,
+  "coord": {
+    "lon": 127.989441,
+    "lat": 38.105831
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "양구",
+      "do": "강원도"
+    }
+  ],
+  "name": "Yanggu",
+  "stat": {
+    "level": 1.0,
+    "population": 24027
+  },
+  "stations": [
+    {
+      "id": 8511,
+      "dist": 36,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1833105,
+  "coord": {
+    "lon": 127.945282,
+    "lat": 37.351391
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "원주",
+      "do": "강원도"
+    }
+  ],
+  "name": "Wonju",
+  "stat": {
+    "level": 1.0,
+    "population": 243387
+  },
+  "stations": [
+    {
+      "id": 8510,
+      "dist": 25,
+      "kf": 1
+    },
+    {
+      "id": 8512,
+      "dist": 44,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 37,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1833466,
+  "coord": {
+    "lon": 127.147522,
+    "lat": 35.845089
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845789
+  },
+  "langs": [
+    {
+      "ko": "완주",
+      "do": "전라북도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Wanju"
+    }
+  ],
+  "name": "Wanju",
+  "stat": {
+    "level": 1.0,
+    "population": 84009
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 47,
+      "kf": 1
+    }
+  ],
+  "zoom": 13
+  },
+  {
+  "id": 1833514,
+  "coord": {
+    "lon": 128.397324,
+    "lat": 35.991749
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko" : "칠곡(왜관)",
+      "do" : "경상북도",
+      "link": "http://en.wikipedia.org/wiki/Waegwan"
+    }
+  ],
+  "name": "Waegwan",
+  "stat": {
+    "level": 1.0,
+    "population": 29691
+  },
+  "stations": [
+    {
+      "id": 7693,
+      "dist": 26,
+      "kf": 1
+    },
+    {
+      "id": 8516,
+      "dist": 39,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 20,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1833747,
+  "coord": {
+    "lon": 129.316666,
+    "lat": 35.53722
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1833742
+  },
+  "langs": [
+    {
+      "ko": "울산광역시",
+      "do": "특별/광역시"
+    }
+  ],
+  "name": "Ulsan",
+  "stat": {
+    "level": 1.0,
+    "population": 962865
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 52,
+      "kf": 1
+    },
+    {
+      "id": 7693,
+      "dist": 71,
+      "kf": 1
+    },
+    {
+      "id": 8518,
+      "dist": 82,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1833788,
+  "coord": {
+    "lon": 127.047401,
+    "lat": 37.741501
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko" : "의정부",
+      "do" : "경기도",
+      "link": "http://en.wikipedia.org/wiki/Uijeongbu"
+    }
+  ],
+  "name": "Vijongbu",
+  "stat": {
+    "level": 1.0,
+    "population": 479141
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 48,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 35,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 44,
+      "kf": 1
+    },
+    {
+      "id": 8521,
+      "dist": 39,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1834885,
+  "coord": {
+    "lon": 126.629723,
+    "lat": 36.89444
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko": "당진",
+      "do": "충청남도"
+    }
+  ],
+  "name": "Tangjin",
+  "stat": {
+    "level": 1.0,
+    "population": 32778
+  },
+  "stations": [
+    {
+      "id": 7673,
+      "dist": 41,
+      "kf": 1
+    },
+    {
+      "id": 7676,
+      "dist": 49,
+      "kf": 1
+    },
+    {
+      "id": 8515,
+      "dist": 47,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1835096,
+  "coord": {
+    "lon": 126.454201,
+    "lat": 36.971401
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko": "태살리",
+      "do": "충청남도"
+    }
+  ],
+  "name": "Taesal-li",
+  "stat": {
+    "level": 1.0,
+    "population": 23149
+  },
+  "stations": [
+    {
+      "id": 7676,
+      "dist": 38,
+      "kf": 1
+    },
+    {
+      "id": 8515,
+      "dist": 46,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1835235,
+  "coord": {
+    "lon": 127.419724,
+    "lat": 36.321388
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1835224
+  },
+  "langs": [
+    {
+      "ko": "대전광역시",
+      "do": "특별/광역시"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Daejeon_Station"
+    },
+    {
+      "nl": "Daejeon"
+    },
+    {
+      "no": "Daejeon"
+    },
+    {
+      "pl": "Taejŏn"
+    },
+    {
+      "pt": "Daejeon"
+    },
+    {
+      "ru": "Тэджон"
+    },
+    {
+      "sv": "Daejeon"
+    },
+    {
+      "zh": "大田广域市"
+    }
+  ],
+  "name": "Daejeon",
+  "stat": {
+    "level": 1.0,
+    "population": 1475221
+  },
+  "stations": [
+    {
+      "id": 7696,
+      "dist": 44,
+      "kf": 1
+    }
+  ],
+  "zoom": 7
+  },
+  {
+  "id": 1835329,
+  "coord": {
+    "lon": 128.59111,
+    "lat": 35.870281
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1835327
+  },
+  "langs": [
+    {
+      "ko": "대구광역시",
+      "do": "특별/광역시"
+    }
+  ],
+  "name": "Daegu",
+  "stat": {
+    "level": 1.0,
+    "population": 2566540
+  },
+  "stations": [
+    {
+      "id": 7693,
+      "dist": 6,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 42,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1835515,
+  "coord": {
+    "lon": 128.988907,
+    "lat": 37.1759
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "태백",
+      "do": "강원도"
+    }
+  ],
+  "name": "Taebaek",
+  "stat": {
+    "level": 1.0,
+    "population": 48962
+  },
+  "stations": [
+    {
+      "id": 8510,
+      "dist": 94,
+      "kf": 1
+    },
+    {
+      "id": 8512,
+      "dist": 53,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1835553,
+  "coord": {
+    "lon": 127.008888,
+    "lat": 37.291111
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "수원시",
+      "do": "경기도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Suwon"
+    },
+    {
+      "nl": "Suwon"
+    },
+    {
+      "pl": "Suwŏn"
+    },
+    {
+      "pt": "Suwon"
+    },
+    {
+      "ru": "Сувон"
+    },
+    {
+      "sv": "Suwon"
+    },
+    {
+      "zh": "水原市"
+    }
+  ],
+  "name": "Suigen",
+  "stat": {
+    "level": 1.0,
+    "population": 1242724
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 40,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 7,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 22,
+      "kf": 1
+    },
+    {
+      "id": 7676,
+      "dist": 47,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 37,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 19,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 43,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 47,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1835648,
+  "coord": {
+    "lon": 127.489471,
+    "lat": 34.948078
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845788
+  },
+  "langs": [
+    {
+      "ko": "순천",
+      "do": "전라남도"
+    }
+  ],
+  "name": "Sunchun",
+  "stat": {
+    "level": 1.0,
+    "population": 230796
+  },
+  "stations": [
+    {
+      "id": 8518,
+      "dist": 98,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1835848,
+  "coord": {
+    "lon": 126.977829,
+    "lat": 37.56826
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLC",
+    "parent": 1835847
+  },
+  "langs": [
+    {
+      "ko": "서울특별시",
+      "do": "특별/광역시"
+    },
+    {
+      "la": "Seulum"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Seoul"
+    },
+    {
+      "lt": "Seulas"
+    },
+    {
+      "lv": "Seula"
+    },
+    {
+      "mo": "Сеул"
+    },
+    {
+      "mr": "सोल"
+    },
+    {
+      "ms": "Seoul"
+    },
+    {
+      "nl": "Seoel"
+    },
+    {
+      "nn": "Seoul"
+    },
+    {
+      "no": "Seoul"
+    },
+    {
+      "pl": "Seul"
+    },
+    {
+      "pt": "Seul"
+    },
+    {
+      "rm": "Seoul"
+    },
+    {
+      "ro": "Seul"
+    },
+    {
+      "ru": "Сеул"
+    },
+    {
+      "scn": "Seoul"
+    },
+    {
+      "sh": "Seoul"
+    },
+    {
+      "sk": "Soul"
+    },
+    {
+      "sl": "Seul"
+    },
+    {
+      "sq": "Seoul"
+    },
+    {
+      "sr": "Сеул"
+    },
+    {
+      "sv": "Seoul"
+    },
+    {
+      "sw": "Seoul"
+    },
+    {
+      "ta": "சியோல்"
+    },
+    {
+      "tg": "Сеул"
+    },
+    {
+      "th": "โซล"
+    },
+    {
+      "tpi": "Seoul"
+    },
+    {
+      "tr": "Seul"
+    },
+    {
+      "ug": "سېئول"
+    },
+    {
+      "vi": "Seoul"
+    },
+    {
+      "vo": "Söul"
+    },
+    {
+      "zh": "首爾"
+    }
+  ],
+  "name": "Seoul",
+  "stat": {
+    "level": 1.0,
+    "population": 10349312
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 34,
+      "kf": 1
+    },
+    {
+      "id": 7668,
+      "dist": 47,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 36,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 31,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 30,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 36,
+      "kf": 1
+    }
+  ],
+  "zoom": 1
+  },
+  {
+  "id": 1835895,
+  "coord": {
+    "lon": 126.452217,
+    "lat": 36.78167
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko": "서산",
+      "do": "충청남도"
+    }
+  ],
+  "name": "Suisan",
+  "stat": {
+    "level": 1.0,
+    "population": 74208
+  },
+  "stations": [
+    {
+      "id": 8515,
+      "dist": 27,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1835967,
+  "coord": {
+    "lon": 128.297501,
+    "lat": 36.240829
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "선산",
+      "do": "경상북도"
+    }
+  ],
+  "name": "Jenzan",
+  "stat": {
+    "level": 1.0,
+    "population": 20673
+  },
+  "stations": [
+    {
+      "id": 8516,
+      "dist": 18,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 22,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1836208,
+  "coord": {
+    "lon": 127.131393,
+    "lat": 36.915562
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko": "성환",
+      "do": "충청남도",
+      "en": "Seonghwan"
+    }
+  ],
+  
+  "name": "Songwon",
+  "stat": {
+    "level": 1.0,
+    "population": 29239
+  },
+  "stations": [
+    {
+      "id": 7671,
+      "dist": 37,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 21,
+      "kf": 1
+    },
+    {
+      "id": 7696,
+      "dist": 39,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 49,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1836553,
+  "coord": {
+    "lon": 128.59111,
+    "lat": 38.208328
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "속초",
+      "do": "강원도"
+    }
+  ],
+  "name": "Sogcho",
+  "stat": {
+    "level": 1.0,
+    "population": 89047
+  },
+  "stations": [
+    {
+      "id": 7654,
+      "dist": 17,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1837706,
+  "coord": {
+    "lon": 128.160553,
+    "lat": 36.415279
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "상주",
+      "do": "경상북도"
+    }
+  ],
+  "name": "Sangju",
+  "stat": {
+    "level": 1.0,
+    "population": 55640
+  },
+  "stations": [
+    {
+      "id": 8516,
+      "dist": 20,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 39,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1838069,
+  "coord": {
+    "lon": 129.170837,
+    "lat": 37.440559
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "삼척",
+      "do": "강원도"
+    }
+  ],
+  "name": "Santyoku",
+  "stat": {
+    "level": 1.0,
+    "population": 42145
+  },
+  "stations": [
+    {
+      "id": 7654,
+      "dist": 81,
+      "kf": 1
+    },
+    {
+      "id": 8512,
+      "dist": 63,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1838508,
+  "coord": {
+    "lon": 126.912498,
+    "lat": 36.28194
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko":"부여",
+      "do":"충청남도",
+      "link": "http://en.wikipedia.org/wiki/Buyeo_County"
+    },
+    {
+      "ru": "Пуйо"
+    }
+  ],
+  "name": "Fuyo",
+  "stat": {
+    "level": 1.0,
+    "population": 32642
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 49,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1838524,
+  "coord": {
+    "lon": 129.040283,
+    "lat": 35.102779
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1838519
+  },
+  "langs": [
+    {
+      "ko": "부산광역시",
+      "do": "특별/광역시"
+    }
+  ],
+  "name": "Busan",
+  "stat": {
+    "level": 1.0,
+    "population": 3678555
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 12,
+      "kf": 1
+    }
+  ],
+  "zoom": 4
+  },
+  {
+  "id": 1838716,
+  "coord": {
+    "lon": 126.783058,
+    "lat": 37.49889
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "부천",
+      "do": "경기도"
+    }
+  ],
+  "name": "Bucheon",
+  "stat": {
+    "level": 1.0,
+    "population": 850731
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 15,
+      "kf": 1
+    },
+    {
+      "id": 7668,
+      "dist": 29,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 37,
+      "kf": 1
+    },
+    {
+      "id": 7676,
+      "dist": 34,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 48,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 40,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 18,
+      "kf": 1
+    }
+  ],
+  "zoom": 12
+  },
+  {
+  "id": 1838722,
+  "coord": {
+    "lon": 126.731941,
+    "lat": 35.728062
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845789
+  },
+  "langs": [
+    {
+      "ko":"부안",
+      "do":"전라북도",
+      "link": "http://en.wikipedia.org/wiki/Buan"
+    }
+  ],
+  "name": "Puan",
+  "stat": {
+    "level": 1.0,
+    "population": 22267
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 21,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1839011,
+  "coord": {
+    "lon": 127.342934,
+    "lat": 34.84494
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845788
+  },
+  "langs": [
+    {
+      "ko": "벌교",
+      "do": "전라남도"
+    }
+  ],
+  "name": "Beolgyo",
+  "stat": {
+    "level": 1.0,
+    "population": 19842
+  },
+  "zoom": 9
+  },
+  {
+  "id": 1839071,
+  "coord": {
+    "lon": 129.365005,
+    "lat": 36.032219
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "포항",
+      "do": "경상북도"
+    }
+  ],
+  "name": "Hoko",
+  "stat": {
+    "level": 1.0,
+    "population": 500000
+  },
+  "stations": [
+    {
+      "id": 7693,
+      "dist": 65,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1839652,
+  "coord": {
+    "lon": 127.070557,
+    "lat": 37.152222
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "오산",
+      "do": "경기도"
+    }
+  ],
+  "name": "Osan",
+  "stat": {
+    "level": 1.0,
+    "population": 158978
+  },
+  "stations": [
+    {
+      "id": 7671,
+      "dist": 10,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 7,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 45,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 26,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 49,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1839726,
+  "coord": {
+    "lon": 127.004173,
+    "lat": 36.783611
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko": "아산시",
+      "do": "경기도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Asan"
+    },
+    {
+      "ru": "Асан"
+    },
+    {
+      "sv": "Asan"
+    }
+  ],
+  "name": "Asan",
+  "stat": {
+    "level": 1.0,
+    "population": 97749
+  },
+  "stations": [
+    {
+      "id": 7673,
+      "dist": 34,
+      "kf": 1
+    },
+    {
+      "id": 7696,
+      "dist": 44,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1839873,
+  "coord": {
+    "lon": 127.568001,
+    "lat": 36.301201
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845106
+  },
+  "langs": [
+    {
+      "ko": "옥천",
+      "do": "충청북도"
+    }
+  ],
+  "name": "ogcheongun",
+  "stat": {
+    "level": 1.0,
+    "population": 56634
+  },
+  "stations": [
+    {
+      "id": 7696,
+      "dist": 46,
+      "kf": 1
+    },
+    {
+      "id": 8516,
+      "dist": 47,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1840179,
+  "coord": {
+    "lon": 128.467606,
+    "lat": 38.378811
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "고성",
+      "do": "강원도"
+    }
+  ],
+  "name": "Kosong",
+  "stat": {
+    "level": 1.0,
+    "population": 62446
+  },
+  "stations": [
+    {
+      "id": 7654,
+      "dist": 39,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1840211,
+  "coord": {
+    "lon": 127.084717,
+    "lat": 36.203892
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko": "논산",
+      "do": "충청남도"
+    }
+  ],
+  "name": "Nonsan",
+  "stat": {
+    "level": 1.0,
+    "population": 43845
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 53,
+      "kf": 1
+    },
+    {
+      "id": 7666,
+      "dist": 42,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 99,
+      "kf": 1
+    },
+    {
+      "id": 7696,
+      "dist": 68,
+      "kf": 1
+    },
+    {
+      "id": 8515,
+      "dist": 83,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1840379,
+  "coord": {
+    "lon": 127.385834,
+    "lat": 35.41
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845789
+  },
+  "langs": [
+    {
+      "ko": "남원",
+      "do": "전라북도"
+    }
+  ],
+  "name": "Nangen",
+  "stat": {
+    "level": 1.0,
+    "population": 58057
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 88,
+      "kf": 1
+    },
+    {
+      "id": 8518,
+      "dist": 94,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1840536,
+  "coord": {
+    "lon": 126.717499,
+    "lat": 35.028332
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845788
+  },
+  "langs": [
+    {
+      "ko": "나주",
+      "do": "전라남도"
+    }
+  ],
+  "name": "Naju",
+  "stat": {
+    "level": 1.0,
+    "population": 42459
+  },
+  "stations": [
+    {
+      "id": 7640,
+      "dist": 66,
+      "kf": 1
+    },
+    {
+      "id": 7642,
+      "dist": 97,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1840862,
+  "coord": {
+    "lon": 126.785004,
+    "lat": 37.85944
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "문산",
+      "do": "경기도",
+      "ru": "Мунсан"
+    }
+  ],
+  "name": "Munsan",
+  "stat": {
+    "level": 1.0,
+    "population": 43208
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 45,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 45,
+      "kf": 1
+    },
+    {
+      "id": 8521,
+      "dist": 48,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1840886,
+  "coord": {
+    "lon": 128.199463,
+    "lat": 36.594582
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "문경",
+      "do":"경상북도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Mungyeong"
+    }
+  ],
+  "name": "Mungyeong",
+  "stat": {
+    "level": 1.0,
+    "population": 81525
+  },
+  "stations": [
+    {
+      "id": 8516,
+      "dist": 40,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1841066,
+  "coord": {
+    "lon": 126.388611,
+    "lat": 34.79361
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845788
+  },
+  "langs": [
+    {
+      "ko": "목포",
+      "do": "전라남도"
+    }
+  ],
+  "name": "Moppo",
+  "stat": {
+    "level": 1.0,
+    "population": 268402
+  },
+  "stations": [
+    {
+      "id": 7640,
+      "dist": 26,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1841149,
+  "coord": {
+    "lon": 128.748886,
+    "lat": 35.493328
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko": "밀양",
+      "do": "경상남도"
+    }
+  ],
+  "name": "Miryang",
+  "stat": {
+    "level": 1.0,
+    "population": 53103
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 38,
+      "kf": 1
+    },
+    {
+      "id": 7693,
+      "dist": 44,
+      "kf": 1
+    },
+    {
+      "id": 8518,
+      "dist": 31,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1841245,
+  "coord": {
+    "lon": 128.572495,
+    "lat": 35.208061
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko": "마산",
+      "do": "경상남도"
+    }
+  ],
+  "name": "Masan",
+  "stat": {
+    "level": 1.0,
+    "population": 349706
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 33,
+      "kf": 1
+    },
+    {
+      "id": 8518,
+      "dist": 24,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1841603,
+  "coord": {
+    "lon": 129.21167,
+    "lat": 35.842781
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "경주",
+      "do": "경상북도"
+    }
+  ],
+  "name": "Kyonju",
+  "stat": {
+    "level": 1.0,
+    "population": 155237
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 77,
+      "kf": 1
+    },
+    {
+      "id": 7693,
+      "dist": 49,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 95,
+      "kf": 1
+    },
+    {
+      "id": 8518,
+      "dist": 86,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1841775,
+  "coord": {
+    "lon": 127.589172,
+    "lat": 34.975281
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845788
+  },
+  "langs": [
+    {
+      "ko": "광양",
+      "do": "전라남도"
+    }
+  ],
+  "name": "Kwangyang",
+  "stat": {
+    "level": 1.0,
+    "population": 89281
+  },
+  "stations": [
+    {
+      "id": 8518,
+      "dist": 88,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1841810,
+  "coord": {
+    "lon": 127.257217,
+    "lat": 37.41
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko":"광주광역시",
+      "do":"경기도",
+      "link": "http://en.wikipedia.org/wiki/Gwangju%2C_Gyeonggi"
+    }
+  ],
+  "name": "Kwangju",
+  "stat": {
+    "level": 1.0,
+    "population": 81780
+  },
+  "stations": [
+    {
+      "id": 7671,
+      "dist": 24,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 40,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 12,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 6,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 24,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1841811,
+  "coord": {
+    "lon": 126.915558,
+    "lat": 35.15472
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1841808
+  },
+  "langs": [
+    {
+      "ko": "광주광역시",
+      "do": "특별/광역시"
+    }
+  ],
+  "name": "Gwangju",
+  "stat": {
+    "level": 1.0,
+    "population": 1416938
+  },
+  "stations": [
+    {
+      "id": 7640,
+      "dist": 88,
+      "kf": 1
+    },
+    {
+      "id": 7642,
+      "dist": 87,
+      "kf": 1
+    }
+  ],
+  "zoom": 7
+  },
+  {
+  "id": 1841976,
+  "coord": {
+    "lon": 127.464439,
+    "lat": 35.209438
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845788
+  },
+  "langs": [
+    {
+      "ko": "구례",
+      "do": "전라남도"
+    }
+  ],
+  "name": "Kurye",
+  "stat": {
+    "level": 1.0,
+    "population": 30000
+  },
+  "stations": [
+    {
+      "id": 8518,
+      "dist": 90,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1841988,
+  "coord": {
+    "lon": 127.139397,
+    "lat": 37.598598
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "구리",
+      "do": "경기도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Guri"
+    }
+  ],
+  "name": "Kuri",
+  "stat": {
+    "level": 1.0,
+    "population": 195236
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 48,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 39,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 19,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 27,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 40,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1842016,
+  "coord": {
+    "lon": 128.572784,
+    "lat": 36.234718
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "군위",
+      "do": "경상북도"
+    }
+  ],
+  "name": "Kunwi",
+  "stat": {
+    "level": 1.0,
+    "population": 34293
+  },
+  "stations": [
+    {
+      "id": 7693,
+      "dist": 39,
+      "kf": 1
+    },
+    {
+      "id": 8516,
+      "dist": 43,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 40,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1842025,
+  "coord": {
+    "lon": 126.711388,
+    "lat": 35.978611
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845789
+  },
+  "langs": [
+    {
+      "ko": "군산",
+      "do": "전라북도"
+    }
+  ],
+  "name": "Kunsan",
+  "stat": {
+    "level": 1.0,
+    "population": 243406
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 12,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1842153,
+  "coord": {
+    "lon": 127.488892,
+    "lat": 36.103062
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko":"금산",
+      "do":"충청남도",
+      "link": "http://en.wikipedia.org/wiki/Geumsan"
+    }
+  ],
+  "name": "Kinzan",
+  "stat": {
+    "level": 1.0,
+    "population": 25243
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 81,
+      "kf": 1
+    },
+    {
+      "id": 7666,
+      "dist": 68,
+      "kf": 1
+    },
+    {
+      "id": 7696,
+      "dist": 68,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 62,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1842225,
+  "coord": {
+    "lon": 128.335999,
+    "lat": 36.113602
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "구미",
+      "do": "경상북도",
+      "ru": "Куми"
+    }
+  ],
+  "name": "Kumi",
+  "stat": {
+    "level": 1.0,
+    "population": 291006
+  },
+  "stations": [
+    {
+      "id": 7693,
+      "dist": 38,
+      "kf": 1
+    },
+    {
+      "id": 8516,
+      "dist": 26,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 15,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1842485,
+  "coord": {
+    "lon": 126.834999,
+    "lat": 37.656391
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "고양",
+      "do": "경기도"
+    }
+  ],
+  "name": "Goyang",
+  "stat": {
+    "level": 1.0,
+    "population": 1073069
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 28,
+      "kf": 1
+    },
+    {
+      "id": 7668,
+      "dist": 39,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 49,
+      "kf": 1
+    },
+    {
+      "id": 7676,
+      "dist": 49,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 46,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 46,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 29,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1842518,
+  "coord": {
+    "lon": 128.323608,
+    "lat": 34.976311
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko": "고성",
+      "do": "경상남도"
+    }
+  ],
+  "name": "Goseong",
+  "stat": {
+    "level": 1.0,
+    "population": 26704
+  },
+  "stations": [
+    {
+      "id": 8518,
+      "dist": 47,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1842616,
+  "coord": {
+    "lon": 127.124718,
+    "lat": 36.455559
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko": "공주",
+      "do": "충청남도"
+    }
+  ],
+  "name": "Kongju",
+  "stat": {
+    "level": 1.0,
+    "population": 72435
+  },
+  "stations": [
+    {
+      "id": 7696,
+      "dist": 44,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1842754,
+  "coord": {
+    "lon": 128.588608,
+    "lat": 34.850281
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko" : "거제시",
+      "do" : "경상남도",
+      "link": "http://en.wikipedia.org/wiki/Geoje"
+    }
+  ],
+  "name": "Kyosai",
+  "stat": {
+    "level": 1.0,
+    "population": 72124
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 48,
+      "kf": 1
+    }
+  ],
+  "zoom": 12
+  },
+  {
+  "id": 1842800,
+  "coord": {
+    "lon": 127.794724,
+    "lat": 36.810829
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845106
+  },
+  "langs": [
+    {
+      "ko": "괴산",
+      "do": "충청북도"
+    }
+  ],
+  "name": "Koesan",
+  "stat": {
+    "level": 1.0,
+    "population": 44461
+  },
+  "stations": [
+    {
+      "id": 7696,
+      "dist": 28,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1842859,
+  "coord": {
+    "lon": 126.699997,
+    "lat": 35.433331
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845789
+  },
+  "langs": [
+    {
+      "ko": "고창",
+      "do": "전라북도"
+    }
+  ],
+  "name": "Kochang",
+  "stat": {
+    "level": 1.0,
+    "population": 72996
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 52,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1842939,
+  "coord": {
+    "lon": 126.888893,
+    "lat": 35.80167
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845789
+  },
+  "langs": [
+    {
+      "ko": "김제",
+      "do": "전라북도"
+    }
+  ],
+  "name": "Kimje",
+  "stat": {
+    "level": 1.0,
+    "population": 44894
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 26,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1842943,
+  "coord": {
+    "lon": 128.881104,
+    "lat": 35.234169
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko": "김해",
+      "do": "경상남도"
+    }
+  ],
+  "name": "Kimhae",
+  "stat": {
+    "level": 1.0,
+    "population": 356242
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 8,
+      "kf": 1
+    },
+    {
+      "id": 8518,
+      "dist": 44,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1842944,
+  "coord": {
+    "lon": 128.119812,
+    "lat": 36.121761
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "김천",
+      "do": "경상북도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Gimcheon"
+    }
+  ],
+  "name": "Gimcheon",
+  "stat": {
+    "level": 1.0,
+    "population": 150000
+  },
+  "stations": [
+    {
+      "id": 8516,
+      "dist": 13,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 8,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1842966,
+  "coord": {
+    "lon": 129.213882,
+    "lat": 35.244171
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1838519
+  },
+  "langs": [
+    {
+      "ko": "당진",
+      "do": "충청남도"
+    }
+  ],
+  "name": "Kijang",
+  "stat": {
+    "level": 1.0,
+    "population": 43064
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 25,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1843082,
+  "coord": {
+    "lon": 127.51059,
+    "lat": 37.831009
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko" : "가평",
+      "do" : "강원도",
+      "link": "http://en.wikipedia.org/wiki/Gapyeong_County"
+    }
+  ],
+  "name": "Gapyeong",
+  "stat": {
+    "level": 1.0,
+    "population": 55415
+  },
+  "stations": [
+    {
+      "id": 8511,
+      "dist": 32,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 39,
+      "kf": 1
+    },
+    {
+      "id": 8521,
+      "dist": 28,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 47,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1843137,
+  "coord": {
+    "lon": 128.896103,
+    "lat": 37.755562
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "강릉",
+      "do": "강원도"
+    }
+  ],
+  "name": "Kang-neung",
+  "stat": {
+    "level": 1.0,
+    "population": 180611
+  },
+  "stations": [
+    {
+      "id": 7654,
+      "dist": 39,
+      "kf": 1
+    }
+  ],
+  "zoom": 7
+  },
+  {
+  "id": 1843163,
+  "coord": {
+    "lon": 126.485558,
+    "lat": 37.747219
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843561
+  },
+  "langs": [
+    {
+      "ko": "강화",
+      "do": "인천광역시"
+    }
+  ],
+  "name": "Kanghwa",
+  "stat": {
+    "level": 1.0,
+    "population": 25535
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 32,
+      "kf": 1
+    },
+    {
+      "id": 7668,
+      "dist": 30,
+      "kf": 1
+    },
+    {
+      "id": 7676,
+      "dist": 47,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 30,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1843491,
+  "coord": {
+    "lon": 126.954437,
+    "lat": 35.94389
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845789
+  },
+  "langs": [
+    {
+      "ko": "익산",
+      "do": "전라북도"
+    }
+  ],
+  "name": "Iksan",
+  "stat": {
+    "level": 1.0,
+    "population": 283501
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 30,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1843564,
+  "coord": {
+    "lon": 126.731667,
+    "lat": 37.453609
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1843561
+  },
+  "langs": [
+    {
+      "ko": "인천광역시",
+      "do": "특별/광역시"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Incheon"
+    },
+    {
+      "lv": "Inčona"
+    },
+    {
+      "nl": "Incheon"
+    },
+    {
+      "no": "Incheon"
+    },
+    {
+      "pl": "Inch'ŏn"
+    },
+    {
+      "pt": "Incheon"
+    },
+    {
+      "ru": "Инчхон"
+    },
+    {
+      "sv": "Inchon"
+    },
+    {
+      "tr": "İncheon"
+    },
+    {
+      "vi": "Nhân Xuyên"
+    },
+    {
+      "zh": "仁川"
+    }
+  ],
+  "name": "Incheon",
+  "stat": {
+    "level": 1.0,
+    "population": 2628000
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 10,
+      "kf": 1
+    },
+    {
+      "id": 7668,
+      "dist": 24,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 37,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 48,
+      "kf": 1
+    },
+    {
+      "id": 7676,
+      "dist": 27,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 43,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 13,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1843585,
+  "coord": {
+    "lon": 127.279442,
+    "lat": 35.61306
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845789
+  },
+  "langs": [
+    {
+      "ko": "임실",
+      "do": "전라북도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Imsil"
+    }
+  ],
+  "name": "Imsil",
+  "stat": {
+    "level": 1.0,
+    "population": 37514
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 67,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 95,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1843702,
+  "coord": {
+    "lon": 127.442497,
+    "lat": 37.279171
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "이촌",
+      "do": "경상북도"
+    }
+  ],
+  "name": "Ichon",
+  "stat": {
+    "level": 1.0,
+    "population": 196230
+  },
+  "stations": [
+    {
+      "id": 7671,
+      "dist": 33,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 42,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 27,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 22,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 15,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1843841,
+  "coord": {
+    "lon": 126.985001,
+    "lat": 35.059441
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845788
+  },
+  "langs": [
+    {
+      "ko": "화순",
+      "do": "전라남도"
+    }
+  ],
+  "name": "Hwasun",
+  "stat": {
+    "level": 1.0,
+    "population": 59914
+  },
+  "stations": [
+    {
+      "id": 7640,
+      "dist": 87,
+      "kf": 1
+    },
+    {
+      "id": 7642,
+      "dist": 99,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1843847,
+  "coord": {
+    "lon": 126.816902,
+    "lat": 37.206821
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "화성시",
+      "do": "경기도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Hwaseong,_Gyeonggi"
+    }
+  ],
+  "name": "Hwaseong",
+  "stat": {
+    "level": 1.0,
+    "population": 476297
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 34,
+      "kf": 1
+    },
+    {
+      "id": 7668,
+      "dist": 43,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 22,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 22,
+      "kf": 1
+    },
+    {
+      "id": 7676,
+      "dist": 33,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 38,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 36,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1844045,
+  "coord": {
+    "lon": 127.706673,
+    "lat": 38.10611
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "화천군",
+      "do": "강원도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Hwacheon"
+    }
+  ],
+  "name": "Hwacheon",
+  "stat": {
+    "level": 1.0,
+    "population": 23822
+  },
+  "stations": [
+    {
+      "id": 8511,
+      "dist": 12,
+      "kf": 1
+    },
+    {
+      "id": 8521,
+      "dist": 36,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1844174,
+  "coord": {
+    "lon": 126.665001,
+    "lat": 36.600899
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845105
+  },
+  "langs": [
+    {
+      "ko" : "홍성",
+      "do" : "충청남도",
+      "link": "http://en.wikipedia.org/wiki/Hongseong"
+    }
+  ],
+  "name": "Hongsung",
+  "stat": {
+    "level": 1.0,
+    "population": 37985
+  },
+  "stations": [
+    {
+      "id": 8515,
+      "dist": 35,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1844191,
+  "coord": {
+    "lon": 127.885696,
+    "lat": 37.691799
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "홍천군",
+      "do": "강원도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Hongcheon"
+    }
+  ],
+  "name": "Hongchon",
+  "stat": {
+    "level": 1.0,
+    "population": 75251
+  },
+  "stations": [
+    {
+      "id": 8510,
+      "dist": 19,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 45,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1844308,
+  "coord": {
+    "lon": 128.820007,
+    "lat": 35.91333
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "하양",
+      "do": "경상북도"
+    }
+  ],
+  "name": "Hayang",
+  "stat": {
+    "level": 1.0,
+    "population": 40423
+  },
+  "stations": [
+    {
+      "id": 7693,
+      "dist": 14,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1844751,
+  "coord": {
+    "lon": 126.598892,
+    "lat": 34.57111
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845788
+  },
+  "langs": [
+    {
+      "ko": "해남",
+      "do": "전라남도"
+    }
+  ],
+  "name": "Haenam",
+  "stat": {
+    "level": 1.0,
+    "population": 23928
+  },
+  "stations": [
+    {
+      "id": 7640,
+      "dist": 33,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1845136,
+  "coord": {
+    "lon": 127.734169,
+    "lat": 37.874722
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "춘천",
+      "do": "강원도"
+    }
+  ],
+  "name": "Chuncheon",
+  "stat": {
+    "level": 1.0,
+    "population": 209746
+  },
+  "stations": [
+    {
+      "id": 8510,
+      "dist": 43,
+      "kf": 1
+    },
+    {
+      "id": 8511,
+      "dist": 30,
+      "kf": 1
+    },
+    {
+      "id": 8521,
+      "dist": 41,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1845457,
+  "coord": {
+    "lon": 127.148888,
+    "lat": 35.821941
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1845789
+  },
+  "langs": [
+    {
+      "ko": "전주",
+      "do": "전라북도"
+    }
+  ],
+  "name": "Jeonju",
+  "stat": {
+    "level": 1.0,
+    "population": 711424
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 48,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1845519,
+  "coord": {
+    "lon": 129.057007,
+    "lat": 36.43351
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "청송",
+      "do": "경상북도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Cheongsong"
+    }
+  ],
+  "name": "Cheongsong gun",
+  "stat": {
+    "level": 1.0,
+    "population": 31313
+  },
+  "stations": [
+    {
+      "id": 7693,
+      "dist": 70,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 89,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1845604,
+  "coord": {
+    "lon": 127.489723,
+    "lat": 36.637218
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1845106
+  },
+  "langs": [
+    {
+      "ko": "청주",
+      "do": "충청북도"
+    }
+  ],
+  "name": "Cheongju",
+  "stat": {
+    "level": 1.0,
+    "population": 634596
+  },
+  "stations": [
+    {
+      "id": 7696,
+      "dist": 9,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1846052,
+  "coord": {
+    "lon": 128.084717,
+    "lat": 35.19278
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko": "진주",
+      "do": "경상남도"
+    }
+  ],
+  "name": "Chinju",
+  "stat": {
+    "level": 1.0,
+    "population": 307242
+  },
+  "stations": [
+    {
+      "id": 8518,
+      "dist": 38,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1846069,
+  "coord": {
+    "lon": 128.659714,
+    "lat": 35.149441
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko": "진해",
+      "do": "경상남도"
+    }
+  ],
+  "name": "Chinhae",
+  "stat": {
+    "level": 1.0,
+    "population": 134889
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 25,
+      "kf": 1
+    },
+    {
+      "id": 8518,
+      "dist": 33,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1846095,
+  "coord": {
+    "lon": 127.443329,
+    "lat": 36.85667
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845106
+  },
+  "langs": [
+    {
+      "ko" : "진천",
+      "do" : "충청북도",
+      "link": "http://en.wikipedia.org/wiki/Jincheon"
+    }
+  ],
+  "name": "Chinchon",
+  "stat": {
+    "level": 1.0,
+    "population": 60964
+  },
+  "stations": [
+    {
+      "id": 7673,
+      "dist": 44,
+      "kf": 1
+    },
+    {
+      "id": 7696,
+      "dist": 16,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1846114,
+  "coord": {
+    "lon": 127.425278,
+    "lat": 35.791672
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1845789
+  },
+  "langs": [
+    {
+      "ko": "진안군",
+      "do": "전라북도"
+    }
+  ],
+  "name": "jin-angun",
+  "stat": {
+    "level": 1.0,
+    "population": 31273
+  },
+  "stations": [
+    {
+      "id": 7642,
+      "dist": 73,
+      "kf": 1
+    },
+    {
+      "id": 7666,
+      "dist": 95,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 73,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1846266,
+  "coord": {
+    "lon": 126.521942,
+    "lat": 33.50972
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1846265
+  },
+  "langs": [
+    {
+      "ko": "제주특별자치시",
+      "do": "특별/광역시"
+    }
+  ],
+  "name": "Jeju",
+  "stat": {
+    "level": 1.0,
+    "population": 408364
+  },
+  "zoom": 6
+  },
+  {
+  "id": 1846326,
+  "coord": {
+    "lon": 128.681107,
+    "lat": 35.228062
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPLA",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko": "창원",
+      "do": "경상남도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Changwon"
+    },
+    {
+      "pl": "Ch'angwŏn"
+    },
+    {
+      "pt": "Changwon"
+    },
+    {
+      "ru": "Чханвон"
+    },
+    {
+      "sv": "Changwon"
+    },
+    {
+      "zh": "昌原"
+    }
+  ],
+  "name": "Changwon",
+  "stat": {
+    "level": 1.0,
+    "population": 550000
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 24,
+      "kf": 1
+    },
+    {
+      "id": 8518,
+      "dist": 29,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1846898,
+  "coord": {
+    "lon": 126.926941,
+    "lat": 37.392502
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "안양",
+      "do": "경기도"
+    }
+  ],
+  "name": "Anyang",
+  "stat": {
+    "level": 1.0,
+    "population": 634367
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 29,
+      "kf": 1
+    },
+    {
+      "id": 7668,
+      "dist": 42,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 20,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 34,
+      "kf": 1
+    },
+    {
+      "id": 7676,
+      "dist": 41,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 37,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 25,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 32,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+  "id": 1846912,
+  "coord": {
+    "lon": 127.270279,
+    "lat": 37.01083
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "안성시",
+      "do": "경기도"
+    },
+    {
+      "link": "http://en.wikipedia.org/wiki/Anseong"
+    },
+    {
+      "ru": "Ансон"
+    },
+    {
+      "sv": "Anseong"
+    }
+  ],
+  "name": "Anseong",
+  "stat": {
+    "level": 1.0,
+    "population": 69255
+  },
+  "stations": [
+    {
+      "id": 7671,
+      "dist": 31,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 23,
+      "kf": 1
+    },
+    {
+      "id": 7696,
+      "dist": 38,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 39,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 49,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1846918,
+  "coord": {
+    "lon": 126.821938,
+    "lat": 37.323608
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "안산",
+      "do": "경기도"
+    }
+  ],
+  "name": "Ansan",
+  "stat": {
+    "level": 1.0,
+    "population": 650728
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 24,
+      "kf": 1
+    },
+    {
+      "id": 7668,
+      "dist": 36,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 23,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 31,
+      "kf": 1
+    },
+    {
+      "id": 7676,
+      "dist": 31,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 49,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 34,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 27,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1846986,
+  "coord": {
+    "lon": 128.725006,
+    "lat": 36.565559
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841597
+  },
+  "langs": [
+    {
+      "ko": "안동",
+      "do": "경상북도"
+    }
+  ],
+  "name": "Andong",
+  "stat": {
+    "level": 1.0,
+    "population": 129319
+  },
+  "stations": [
+    {
+      "id": 7693,
+      "dist": 75,
+      "kf": 1
+    },
+    {
+      "id": 8512,
+      "dist": 95,
+      "kf": 1
+    },
+    {
+      "id": 8517,
+      "dist": 75,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1882056,
+  "coord": {
+    "lon": 128.626663,
+    "lat": 34.8825
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko": "신현리",
+      "do": "경상남도"
+    }
+  ],
+  "name": "Sinhyeon",
+  "stat": {
+    "level": 1.0,
+    "population": 82560
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 43,
+      "kf": 1
+    }
+  ],
+  "zoom": 8
+  },
+  {
+  "id": 1892823,
+  "coord": {
+    "lon": 129.106934,
+    "lat": 37.543892
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1843125
+  },
+  "langs": [
+    {
+      "ko": "동해시",
+      "do": "강원도"
+    }
+  ],
+  "name": "Tonghae",
+  "stat": {
+    "level": 1.0,
+    "population": 101128
+  },
+  "stations": [
+    {
+      "id": 7654,
+      "dist": 69,
+      "kf": 1
+    },
+    {
+      "id": 8510,
+      "dist": 94,
+      "kf": 1
+    },
+    {
+      "id": 8512,
+      "dist": 60,
+      "kf": 1
+    }
+  ],
+  "zoom": 9
+  },
+  {
+  "id": 1897000,
+  "coord": {
+    "lon": 127.137779,
+    "lat": 37.43861
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko" : "성남",
+      "do" : "경기도",
+      "link": "http://en.wikipedia.org/wiki/Seongnam"
+    }
+  ],
+  "name": "Seongnam",
+  "stat": {
+    "level": 1.0,
+    "population": 1031935
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 46,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 21,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 39,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 18,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 10,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 49,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 34,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1897007,
+  "coord": {
+    "lon": 127.205559,
+    "lat": 37.540001
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "하남",
+      "do": "경기도"
+    }
+  ],
+  "name": "Hanam",
+  "stat": {
+    "level": 1.0,
+    "population": 134902
+  },
+  "stations": [
+    {
+      "id": 7671,
+      "dist": 34,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 11,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 20,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 32,
+      "kf": 1
+    }
+  ],
+  "zoom": 12
+  },
+  {
+  "id": 1912205,
+  "coord": {
+    "lon": 129.16861,
+    "lat": 35.406109
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1902028
+  },
+  "langs": [
+    {
+      "ko": "양산(웅산)",
+      "do": "경상남도"
+    }
+  ],
+  "name": "Ungsang",
+  "stat": {
+    "level": 1.0,
+    "population": 83360
+  },
+  "stations": [
+    {
+      "id": 7657,
+      "dist": 32,
+      "kf": 1
+    }
+  ],
+  "zoom": 10
+  },
+  {
+  "id": 1912209,
+  "coord": {
+    "lon": 127.220284,
+    "lat": 37.589722
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "와부읍",
+      "do": "경기도"
+    }
+  ],
+  "name": "Wabu",
+  "stat": {
+    "level": 1.0,
+    "population": 96775
+  },
+  "stations": [
+    {
+      "id": 7671,
+      "dist": 40,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 13,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 25,
+      "kf": 1
+    },
+    {
+      "id": 8521,
+      "dist": 49,
+      "kf": 1
+    },
+    {
+      "id": 8522,
+      "dist": 34,
+      "kf": 1
+    }
+  ],
+  "zoom": 12
+  },
+  {
+  "id": 1948005,
+  "coord": {
+    "lon": 126.866386,
+    "lat": 37.477219
+  },
+  "country": "KR",
+  "geoname": {
+    "cl": "P",
+    "code": "PPL",
+    "parent": 1841610
+  },
+  "langs": [
+    {
+      "ko": "광명",
+      "do": "경기도"
+    }
+  ],
+  "name": "Kwangmyong",
+  "stat": {
+    "level": 1.0,
+    "population": 357545
+  },
+  "stations": [
+    {
+      "id": 6983,
+      "dist": 22,
+      "kf": 1
+    },
+    {
+      "id": 7668,
+      "dist": 36,
+      "kf": 1
+    },
+    {
+      "id": 7671,
+      "dist": 31,
+      "kf": 1
+    },
+    {
+      "id": 7673,
+      "dist": 45,
+      "kf": 1
+    },
+    {
+      "id": 7676,
+      "dist": 39,
+      "kf": 1
+    },
+    {
+      "id": 8514,
+      "dist": 41,
+      "kf": 1
+    },
+    {
+      "id": 8519,
+      "dist": 33,
+      "kf": 1
+    },
+    {
+      "id": 8520,
+      "dist": 25,
+      "kf": 1
+    }
+  ],
+  "zoom": 11
+  },
+  {
+    "id": 6395804,
+    "coord": {
+      "lon": 126.108627,
+      "lat": 34.826199
+    },
+    "country": "KR",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 1845788
+    },
+    "langs": [
+      {
+        "ko": "신안군",
+        "do": "전라남도"
+      }
+    ],
+    "name": "Sinan",
+    "stat": {
+      "level": 1.0,
+      "population": 53150
+    },
+    "stations": [
+      {
+        "id": 7640,
+        "dist": 28,
+        "kf": 1
+      }
+    ],
+    "zoom": 10
+  },
+  {
+    "id": 6903078,
+    "coord": {
+      "lon": 128.495056,
+      "lat": 35.541451
+    },
+    "country": "KR",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 1902028
+    },
+    "langs": [
+      {
+        "ko": "창녕",
+        "do": "경상남도"
+      }
+    ],
+    "name": "Changnyeong",
+    "stat": {
+      "level": 1.0,
+      "population": 74668
+    },
+    "stations": [
+      {
+        "id": 7693,
+        "dist": 41,
+        "kf": 1
+      },
+      {
+        "id": 8518,
+        "dist": 17,
+        "kf": 1
+      }
+    ],
+    "zoom": 9
+  }
+]
