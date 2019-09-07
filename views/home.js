@@ -14,8 +14,8 @@ module.exports = {
                body{
                     margin:0px;
                     display:flex;
-                    height:335px;
-                    width:755px;
+                    height:480px;
+                    width:800px;
                }
                 .container{
                     display: flex;
@@ -31,9 +31,6 @@ module.exports = {
                 }
                 .content aside{
                     border-left:1px solid gray;    
-                }
-                main,nav, aside{
-                    flex-shrink: 0;
                 }
             </style>
         </head>
