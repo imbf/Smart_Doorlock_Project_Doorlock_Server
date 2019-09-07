@@ -14,3 +14,11 @@ module.exports.doorlockdb = mysql.createConnection({
    database: 'doorlockdb',
    dateStrings: 'date', 
 });
+
+//TEST
+module.exports.db = mysql.createConnection({
+   host : '168.131.35.103',
+   password: '1111',
+   user : 'root',
+   database : 'hi'
+})

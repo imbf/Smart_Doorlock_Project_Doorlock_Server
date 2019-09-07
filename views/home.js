@@ -1,9 +1,3 @@
-const express = require('express');
-const app = express();
-const fs = require('fs');
-const student = JSON.parse(fs.readFileSync('current.city.list.json'));
-
-
 module.exports = {
     html:function(pmWeather){
         return `<!DOCTYPE html>

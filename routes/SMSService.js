@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { doorlockdb, mobiusdb} = require('../db.js');
+const { doorlockdb, mobiusdb, db} = require('../db.js');
 const SMSServiceHome = require('../views/SMSServiceHome');
 
 const AWS = require('aws-sdk');
@@ -12,6 +12,15 @@ AWS.config.update({
    accessKeyId: "AKIA3FQV6I4BN5BS2DUA",   //Access Key for AWS user
    secretAccessKey: "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",   //Secret Access Key for AWS User
 });
+
+//test
+router.get('/test', (request, response) => {
+   db.query('SELECT * FROM HI', function(error,result,fields) {
+      response.send(result);
+      console.log(result);
+   })
+})
+//
 
 router.get('/', (request, response) => {
    doorlockdb.query(`SELECT * FROM smsservice ORDER BY createtime DESC LIMIT 10`, function(error, result, fields){
