@@ -32,7 +32,10 @@ module.exports = {
                 }
                 .flex_content aside{
                     border-left:1px solid gray;
-
+                }
+                img{
+                    width:100px;
+                    height:100px;
                 }
             </style>
         </head>
