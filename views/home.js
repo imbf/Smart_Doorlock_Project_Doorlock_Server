@@ -1,10 +1,9 @@
 module.exports = {
     html:function(pmWeather){
-        return `<!DOCTYPE html>
+        return `<!doctype>
+        <html>
         <head>
-            <title>스마트도어락</title>
-            <h2 style="text-align:center">스마트 도어락</h2>
-            <hr>
+            <meta charset="utf-8">
             <style>
                 table,caption,tr,td{
                     border:1px solid #444444;
@@ -12,16 +11,58 @@ module.exports = {
                     padding:0px;
                     border-collapse:collapse;
                 }
+               body{
+                  display:flex;
+               }
+                .container{
+                    display: flex;
+                    width:100%;
+                    height:100%;
+                    flex-direction: column;
+                }
+                header{
+                    border-bottom:1px solid gray;
+                    padding-left:20px;
+                }
+                footer{
+                    border-top:1px solid gray;
+                    padding:20px;
+                    text-align: center;
+                }
+                .content{
+                    display:flex;
+                }
+                .content nav{
+                    border-right:1px solid gray;
+                }
+                .content aside{
+                    border-left:1px solid gray;    
+                }
+                main,nav, aside{
+                    flex-basis: 150px;
+                    flex-shrink: 0;
+                }
             </style>
         </head>
-        <body style="background-color:Ivory">
-        ${this.doorButton()}    
-        ${this.password()}
-        ${this.SMSService()}
-        ${this.weatherTable(pmWeather)}<br>
-        ${this.pmTable(pmWeather)}
-
+        <body>
+            <div class="container">
+                <section class="content">
+                    <nav>
+                    ${this.weatherTable(pmWeather)}<br>
+                    ${this.pmTable(pmWeather)}
+                    </nav>
+                    <main>
+                        여백    
+                    </main>
+                    <aside>
+                    ${this.doorButton()}    
+                    ${this.password()}
+                    ${this.SMSService()}
+                    </aside>
+                </section>
+            </div>
         </body>
+        </html>
         `;
     },    //${this.PMTable(PM,image,info)}
     image: function(pmWeather){
