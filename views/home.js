@@ -23,10 +23,6 @@ module.exports = {
                     height:100%;
                     flex-direction: column;
                 }
-                header{
-                    border-bottom:1px solid gray;
-                    padding-left:20px;
-                }
                 .content{
                     display:flex;
                 }
@@ -65,22 +61,22 @@ module.exports = {
     image: function(pmWeather){
         if(pmWeather.dustKind === '미세먼지'){
             if(pmWeather.pm.pm10Value[0]<=30)
-                return `<img src="public/좋음.PNG" style="width:182px;height:170px;overflow:hidden">`;
+                return `<img src="public/좋음.PNG" style="overflow:hidden">`;
             else if(pmWeather.pm.pm10Value[0]<=80)
-                return `<img src="public/보통.PNG" style="width:182px;height:170px;overflow:hidden">`;
+                return `<img src="public/보통.PNG" style="overflow:hidden">`;
             else if(pmWeather.pm.pm10Value[0]<=150)
-                return `<img src="public/나쁨.PNG" style="width:182px;height:170px;overflow:hidden">`;
+                return `<img src="public/나쁨.PNG" style="overflow:hidden">`;
             else
-                return `<img src="public/매우 나쁨.PNG" style="width:182px;height:170px;overflow:hidden">`;
+                return `<img src="public/매우 나쁨.PNG" style="overflow:hidden">`;
         }else{
             if(pmWeather.pm.pm25Value[0]<=15)
-            return `<img src="public/좋음.PNG" style="width:179px;height:170px;overflow:hidden">`;
+            return `<img src="public/좋음.PNG" style="overflow:hidden">`;
             else if(pmWeather.pm.pm25Value[0]<=35)
-            return `<img src="public/보통.PNG" style="width:179px;height:170px;overflow:hidden">`;
+            return `<img src="public/보통.PNG" style="overflow:hidden">`;
             else if(pmWeather.pm.pm25Value[0]<=75)
-            return `<img src="public/나쁨.PNG" style="width:179px;height:170px;overflow:hidden">`;
+            return `<img src="public/나쁨.PNG" style="overflow:hidden">`;
             else
-            return `<img src="public/매우 나쁨.PNG" style="width:179px;height:170px;overflow:hidden">`;
+            return `<img src="public/매우 나쁨.PNG" style="overflow:hidden">`;
         }
     },
     info : function(pmWeather){
@@ -99,12 +95,12 @@ module.exports = {
                 <tr >
                     <td>
                         <form action="/fine_Dust">
-                            <input type="submit" value="미세먼지" style="width:100%;height:40px;background-color:whitesmoke">
+                            <input type="submit" value="미세먼지" style="width:100%;background-color:whitesmoke">
                         </form>
                     </td>
                     <td>
                         <form action="/fine_fine_Dust">
-                            <input type="submit" value="초미세먼지" style="width:100%;height:40px;background-color:whitesmoke">
+                            <input type="submit" value="초미세먼지" style="width:100%;background-color:whitesmoke">
                         </form>    
                     </td>
                 </tr>
