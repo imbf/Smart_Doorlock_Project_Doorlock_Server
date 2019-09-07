@@ -14,32 +14,36 @@ module.exports = {
                body{
                     margin:0px;
                     display:flex;
-                    height:480px;
-                    width:800px;
+                    width:100%;
+                    height:100%;
+                    postition:absolute;
                }
-                .container{
+                .flex_container{
                     display: flex;
                     width:100%;
                     height:100%;
                     flex-direction: column;
                 }
-                .content{
+                .flex_content{
                     display:flex;
                 }
-                .content nav{
+                .flex_content nav{
                     border-right:1px solid gray;
                 }
-                .content aside{
-                    border-left:1px solid gray;    
+                .flex_content aside{
+                    border-left:1px solid gray;
+
                 }
             </style>
         </head>
         <body>
-            <div class="container">
-                <section class="content">
+            <div class="flex_container">
+                <section class="flex_content">
                     <nav>
-                    ${this.weatherTable(pmWeather)}<br>
-                    ${this.pmTable(pmWeather)}
+                        ${this.weatherTable(pmWeather)}<br>
+
+                        ${this.pmTable(pmWeather)}
+
                     </nav>
                     <main>
                         여백    
@@ -58,22 +62,22 @@ module.exports = {
     image: function(pmWeather){
         if(pmWeather.dustKind === '미세먼지'){
             if(pmWeather.pm.pm10Value[0]<=30)
-                return `<img src="public/좋음.PNG" style="overflow:hidden">`;
+                return `<img src="public/좋음.PNG">`;
             else if(pmWeather.pm.pm10Value[0]<=80)
-                return `<img src="public/보통.PNG" style="overflow:hidden">`;
+                return `<img src="public/보통.PNG">`;
             else if(pmWeather.pm.pm10Value[0]<=150)
-                return `<img src="public/나쁨.PNG" style="overflow:hidden">`;
+                return `<img src="public/나쁨.PNG">`;
             else
-                return `<img src="public/매우 나쁨.PNG" style="overflow:hidden">`;
+                return `<img src="public/매우 나쁨.PNG">`;
         }else{
             if(pmWeather.pm.pm25Value[0]<=15)
-            return `<img src="public/좋음.PNG" style="overflow:hidden">`;
+            return `<img src="public/좋음.PNG">`;
             else if(pmWeather.pm.pm25Value[0]<=35)
-            return `<img src="public/보통.PNG" style="overflow:hidden">`;
+            return `<img src="public/보통.PNG">`;
             else if(pmWeather.pm.pm25Value[0]<=75)
-            return `<img src="public/나쁨.PNG" style="overflow:hidden">`;
+            return `<img src="public/나쁨.PNG">`;
             else
-            return `<img src="public/매우 나쁨.PNG" style="overflow:hidden">`;
+            return `<img src="public/매우 나쁨.PNG">`;
         }
     },
     info : function(pmWeather){
@@ -89,15 +93,15 @@ module.exports = {
         <table>
             <caption style="background-color:aqua"><h2>미세먼지 알림</h2><small>(${pmWeather.pm.dataTime}기준)(${pmWeather.pm.cityName})</small></caption>
             <thead>
-                <tr >
+                <tr>
                     <td>
                         <form action="/fine_Dust">
-                            <input type="submit" value="미세먼지" style="width:100%;background-color:whitesmoke">
+                            <input type="submit" value="미세먼지">
                         </form>
                     </td>
                     <td>
                         <form action="/fine_fine_Dust">
-                            <input type="submit" value="초미세먼지" style="width:100%;background-color:whitesmoke">
+                            <input type="submit" value="초미세먼지">
                         </form>    
                     </td>
                 </tr>
@@ -125,11 +129,11 @@ module.exports = {
         list = `<tr>`;
         for(var i=0;i<7;i++){
             if(pmWeather.detailWeather[i].day>=1)
-            list += `<td style="font-size:80%;text-align:center">내일${pmWeather.detailWeather[i].hour}시</td>`;
+            list += `<td>내일${pmWeather.detailWeather[i].hour}시</td>`;
             else
-            list += `<td style="font-size:80%;text-align:center">${pmWeather.detailWeather[i].hour}시</td>`;
+            list += `<td>${pmWeather.detailWeather[i].hour}시</td>`;
         }
-        list = list + `</thead><tbody><tr style="font-size:90%">`
+        list = list + `</thead><tbody><tr>`
         for(var i=0;i<7;i++){
             list+=`<td style="text-align:center">
                     날씨<br> ${pmWeather.detailWeather[i].wfKor}<br><br>
@@ -142,7 +146,7 @@ module.exports = {
         <table>
             <caption style="background-color:aqua">
                 ${title}<br>
-                <small style="font-size:70%">${pmWeather.weather.pubDate}기준</small>
+                <small>${pmWeather.weather.pubDate}기준</small>
             </caption>
             <thead>
                 ${list}
