@@ -13,7 +13,7 @@ module.exports = {
                 }
                body{
                     background-image:url('public/background.jpg');
-                    background-size:contain;
+                    background-size:cover;
                     margin:0px;
                     display:flex;
                     width:100%;
