@@ -12,7 +12,8 @@ module.exports = {
                     border-collapse:collapse;
                 }
                body{
-                  display:flex;
+                    margin:0px;
+                    display:flex;
                }
                 .container{
                     display: flex;
