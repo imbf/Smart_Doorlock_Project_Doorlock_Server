@@ -12,6 +12,8 @@ module.exports = {
                     border-collapse:collapse;
                 }
                body{
+                    background-image:url('public/background.jpg');
+                    background-size:contain;
                     margin:0px;
                     display:flex;
                     width:100%;
