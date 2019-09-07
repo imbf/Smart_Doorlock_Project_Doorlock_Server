@@ -14,6 +14,8 @@ module.exports = {
                body{
                     margin:0px;
                     display:flex;
+                    height:485px;
+                    width:755px;
                }
                 .container{
                     display: flex;
