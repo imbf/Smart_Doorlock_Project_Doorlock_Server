@@ -42,7 +42,6 @@ module.exports = {
                     border-left:1px solid gray;    
                 }
                 main,nav, aside{
-                    flex-basis: 150px;
                     flex-shrink: 0;
                 }
             </style>
