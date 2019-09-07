@@ -98,10 +98,10 @@ module.exports = {
     },
     pmTable:function(pmWeather){
         return `
-        <table style="width:300px ;height:200px">
+        <table>
             <caption style="background-color:aqua"><h2>미세먼지 알림</h2><small>(${pmWeather.pm.dataTime}기준)(${pmWeather.pm.cityName})</small></caption>
             <thead>
-                <tr style="height:40px">
+                <tr >
                     <td>
                         <form action="/fine_Dust">
                             <input type="submit" value="미세먼지" style="width:100%;height:40px;background-color:whitesmoke">
@@ -151,7 +151,7 @@ module.exports = {
         }
         
         return `
-        <table style="width:450px ;height:200px">
+        <table>
             <caption style="background-color:aqua">
                 ${title}<br>
                 <small style="font-size:70%">${pmWeather.weather.pubDate}기준</small>
