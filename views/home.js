@@ -14,7 +14,7 @@ module.exports = {
                body{
                     margin:0px;
                     display:flex;
-                    height:485px;
+                    height:435px;
                     width:755px;
                }
                 .container{
@@ -26,11 +26,6 @@ module.exports = {
                 header{
                     border-bottom:1px solid gray;
                     padding-left:20px;
-                }
-                footer{
-                    border-top:1px solid gray;
-                    padding:20px;
-                    text-align: center;
                 }
                 .content{
                     display:flex;
