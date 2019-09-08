@@ -9,6 +9,7 @@ module.exports.mobiusdb = mysql.createConnection({
 
 module.exports.doorlockdb = mysql.createConnection({
    host : '168.131.35.103',
+   port : 3306,
    user : 'root',
    password: '111111',
    database: 'doorlockdb',
