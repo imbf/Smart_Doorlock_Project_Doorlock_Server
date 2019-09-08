@@ -39,6 +39,10 @@ module.exports = {
                     width:100px;
                     height:100px;
                 }
+                .weatherTable td{
+                    text-align:center;
+                    font-weight:bold;
+                }
             </style>
         </head>
         <body>
@@ -96,7 +100,10 @@ module.exports = {
     pmTable:function(pmWeather){
         return `
         <table>
-            <caption style="background-color:aqua"><h2>미세먼지 알림</h2><small>(${pmWeather.pm.dataTime}기준)(${pmWeather.pm.cityName})</small></caption>
+            <caption style="background-color:#e4b9b9">
+            <div style="font-size:1.5rem;font-weight:bold;">미세먼지 알림</div>
+            <small>${pmWeather.pm.dataTime}기준(${pmWeather.pm.cityName})</small></caption>
+            
             <thead>
                 <tr>
                     <td>
@@ -131,16 +138,28 @@ module.exports = {
             else
             title +=pmWeather.weather.title[0].charAt(i);
         }
-        list = `<tr>`;
+        list = `<tr class="weatherTable">`;
         for(var i=0;i<7;i++){
-            if(pmWeather.detailWeather[i].day>=1)
-            list += `<td>내일${pmWeather.detailWeather[i].hour}시</td>`;
-            else
-            list += `<td>${pmWeather.detailWeather[i].hour}시</td>`;
+            if(pmWeather.detailWeather[i].day>=1){
+                if(pmWeather.detailWeather[i].hour>=12 && pmWeather.detailWeather[i].hour<24){
+                    list += `<td>${pmWeather.detailWeather[i].hour}PM</td>`;
+                }
+                else{
+                    list += `<td>${pmWeather.detailWeather[i].hour}AM</td>`;
+                }
+            }
+            else{
+                if(pmWeather.detailWeather[i].hour>=12 && pmWeather.detailWeather[i].hour<24){
+                    list += `<td>${pmWeather.detailWeather[i].hour}PM</td>`;
+                }
+                else{
+                    list += `<td>${pmWeather.detailWeather[i].hour}AM</td>`;
+                }
+            }
         }
         list = list + `</thead><tbody><tr>`
         for(var i=0;i<7;i++){
-            list+=`<td style="text-align:center">
+            list+=`<td style="text-align:center;width:70px">
                     날씨<br> ${pmWeather.detailWeather[i].wfKor}<br><br>
                     기온<br> ${pmWeather.detailWeather[i].temp}°C<br><br>
                     풍향<br> ${pmWeather.detailWeather[i].wdKor}
@@ -149,8 +168,8 @@ module.exports = {
         
         return `
         <table>
-            <caption style="background-color:aqua">
-                ${title}<br>
+            <caption style="background-color:#e4b9b9">
+                <div style="font-size:1.5rem;font-weight:bold;">${title}</div>
                 <small>${pmWeather.weather.pubDate}기준</small>
             </caption>
             <thead>
@@ -161,7 +180,6 @@ module.exports = {
         `;
     },
     doorButton:() =>{
-
         return `
         <form action="/DoorLock_Open" >
             <input type="submit" value="문열기" style="width:200px;height:100px;background-color:YellowGreen;float:right">

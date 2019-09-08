@@ -43,7 +43,7 @@ app.get('/fine_fine_Dust', (request,response) => {
 
 app.get('/DoorLock_Open', (request, response) => {
     const options = {
-        uri:'http://192.168.0.33:7579/Mobius/lock/update',
+        uri:'http://192.168.0.44:7579/Mobius/lock/update',
         method: 'POST',
         followRedirect:true,
         maxRedirects:10,
