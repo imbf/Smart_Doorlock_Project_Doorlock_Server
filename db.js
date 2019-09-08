@@ -14,5 +14,4 @@ module.exports.doorlockdb = mysql.createConnection({
    password: '111111',
    database: 'doorlockdb',
    dateStrings: 'date', 
-});
-
+})

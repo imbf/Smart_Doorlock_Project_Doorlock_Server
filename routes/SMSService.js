@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { doorlockdb, mobiusdb, db} = require('../db.js');
+const { doorlockdb, mobiusdb} = require('../db.js');
 const SMSServiceHome = require('../views/SMSServiceHome');
 
 const AWS = require('aws-sdk');
