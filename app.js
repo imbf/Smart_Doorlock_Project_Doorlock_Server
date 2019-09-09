@@ -43,7 +43,7 @@ app.get('/fine_fine_Dust', (request,response) => {
 
 app.get('/DoorLock_Open', (request, response) => {
     const options = {
-        uri:'http://192.168.0.44:7579/Mobius/lock/update',
+        uri:'http://168.131.35.103:7579/Mobius/lock/update',
         method: 'POST',
         followRedirect:true,
         maxRedirects:10,
@@ -69,6 +69,6 @@ app.use('/password', passwordRouter);
 app.use('/SMSService', SMSServiceRouter);
 
 app.listen(3000, () => {    //히로쿠에 사이트를 hosting하고 싶으면 PORT 입력
-    
+
     console.log('3000번 포트에서 스마트 도어락 서버가 대기중입니다.');
 });
