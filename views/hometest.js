@@ -74,17 +74,16 @@ module.exports = {
                       color:black;
                       text-decoration:underline;
                   }
+                  #memo ol li a{
+                     text-decoration:none;
+                     color:black;
+                  }
               </style>
           </head>
           <body class="container">
               <div id="content-1">
                   <div id="content-1-1">
-                      <span id="memo">
-                          <ol>
-                              <li>주민등록등본 가져가기</li>
-                              <li>컴퓨터 네트워크 과제 가져가기</li>
-                          </ol>
-                      </span>
+                     ${memo()}
                   </div>
                   <div id="content-1-2">
                       날씨
@@ -104,5 +103,27 @@ module.exports = {
           </body>
       </html>
       `;
+   },
+   memo: function(){
+      return`
+      <span id="memo">
+         <ol>
+            <li><a href="www.naver.com">주민등록등본 가져가기</a></li>
+            <li><a href="www.naver.com">컴퓨터 네트워크 과제 가져가기</a></li>
+         </ol>
+      </span>
+      `;
+   },
+   weather: function(){
+
+   },
+   PM:function(){
+
+   },
+   bulbGroup:function(){
+
+   },
+   doorLock:function(){
+
    }
 }
