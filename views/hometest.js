@@ -30,7 +30,6 @@ module.exports = {
                       display:flex;
                       width:320px;
                       flex-direction:column;
-                      flex-grow:2;
                       box-sizing:border-box;
                       margin:1px;
                   }
@@ -93,52 +92,52 @@ module.exports = {
                      font-size:1.5em;
                  }
                  #pmText{
-                    
-                 }
-                 #pm{
-                     width:150px;
-                     height:186px;
-                     box-sizing:border-box;
-                     margin-right:1px;
-                 }
-                 #pm #pmName{
-                     position:absolute;
-                     bottom:30%;
-                     left:17.7%;
-                     font-size:1.2rem;
-                     color:antiquewhite;
-                     font-weight:bold;
-                 }
-                 #pm #pmValue{
-                     position:absolute;
-                     bottom:3%;
-                     left:19.5%;
-                     font-size:1.2rem;
-                     color:antiquewhite;
-                     font-weight:bold;
-                 }
-                 #detailPm{
-                     width:150px;
-                     height:186px;
-                     box-sizing:border-box;
-                     
-                 }
-                 #detailPm #detailPmName{
-                     position:absolute;
-                     bottom:30%;
-                     left:35.3%;
-                     font-size:1.2rem;
-                     color:antiquewhite;
-                     font-weight:bold;
-                 }
-                 #detailPm #detailPmValue{
-                     position:absolute;
-                     bottom:3%;
-                     left:38.6%;
-                     font-size:1.2rem;
-                     color:antiquewhite;
-                     font-weight:bold;
-                 }
+               
+               }
+               #pm{
+                   width:150px;
+                   height:185px;
+                   box-sizing:border-box;
+                   margin-right:1px;
+               }
+               #pm #pmName{
+                   position:relative;
+                   left:40px;
+                   bottom:165px;
+                   font-size:1.2rem;
+                   color:antiquewhite;
+                   font-weight:bold;
+               }
+               #pm #pmValue{
+                   position:relative;
+                   right:30px;
+                   bottom:35px;
+                   font-size:1.2rem;
+                   color:antiquewhite;
+                   font-weight:bold;
+               }
+               #detailPm{
+                   width:150px;
+                   height:185px;
+                   box-sizing:border-box;
+                   
+               }
+               #detailPm #detailPmName{
+                   position:relative;
+                   left:30px;
+                   bottom:165px;
+                   font-size:1.2rem;
+                   color:antiquewhite;
+                   font-weight:bold;
+               }
+               #detailPm #detailPmValue{
+                   position:relative;
+                   right:45px;
+                   bottom:35px;
+                   font-size:1.2rem;
+                   color:antiquewhite;
+                   font-weight:bold;
+               }
               </style>
           </head>
           <body class="container">
