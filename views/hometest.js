@@ -1,3 +1,5 @@
+const openAPI = require('../openAPI');
+
 module.exports = {
    html:function(){
       return`
@@ -49,7 +51,6 @@ module.exports = {
                   #content-1-3{
                       height:188px;
                       box-sizing:border-box;
-                      border:1px solid black;
                       margin:0px;
                   }
                   #content-2-1{
@@ -78,6 +79,66 @@ module.exports = {
                      text-decoration:none;
                      color:black;
                   }
+                  .pmContainer{
+                     display:flex;
+                     flex-direction:row;
+                 }
+                 #pmTextContent{
+                     display:flex;
+                     flex-direction:row;
+                     box-sizing:border-box;
+                     width:100px;
+                     height:186px;
+                     text-align:center;
+                     font-size:1.5em;
+                 }
+                 #pmText{
+                    
+                 }
+                 #pm{
+                     width:150px;
+                     height:186px;
+                     box-sizing:border-box;
+                     margin-right:1px;
+                 }
+                 #pm #pmName{
+                     position:absolute;
+                     bottom:30%;
+                     left:17.7%;
+                     font-size:1.2rem;
+                     color:antiquewhite;
+                     font-weight:bold;
+                 }
+                 #pm #pmValue{
+                     position:absolute;
+                     bottom:3%;
+                     left:19.5%;
+                     font-size:1.2rem;
+                     color:antiquewhite;
+                     font-weight:bold;
+                 }
+                 #detailPm{
+                     width:150px;
+                     height:186px;
+                     box-sizing:border-box;
+                     
+                 }
+                 #detailPm #detailPmName{
+                     position:absolute;
+                     bottom:30%;
+                     left:35.3%;
+                     font-size:1.2rem;
+                     color:antiquewhite;
+                     font-weight:bold;
+                 }
+                 #detailPm #detailPmValue{
+                     position:absolute;
+                     bottom:3%;
+                     left:38.6%;
+                     font-size:1.2rem;
+                     color:antiquewhite;
+                     font-weight:bold;
+                 }
               </style>
           </head>
           <body class="container">
@@ -86,10 +147,10 @@ module.exports = {
                      ${this.memo()}
                   </div>
                   <div id="content-1-2">
-                      날씨
+                     ${this.weather()}
                   </div>
                   <div id="content-1-3">
-                      미세먼지
+                     ${this.PM()}
                   </div>
               </div>
               <div id="content-2">
@@ -118,7 +179,33 @@ module.exports = {
 
    },
    PM:function(){
-
+      return`
+      <div class="pmContainer">
+      <div id="pmTextContent">
+          <span id="pmText">
+              
+          </span>
+      </div>
+      <div id="pm">
+          <img src="./public/vertical_prettybad.jpg" width="100%" height="100%">
+          <content id="pmName">
+              미세먼지
+          </content>
+          <content id="pmValue">
+              수치
+          </content>
+      </div>
+      <div id="detailPm">
+          <img src="./public/verical_good.jpg" width="100%" height="100%">
+          <content id="detailPmName">
+              초미세먼지
+          </content>
+          <content id="detailPmValue">
+              수치
+          </content>
+      </div>
+  </div>
+      `;
    },
    bulbGroup:function(){
 
