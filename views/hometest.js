@@ -95,14 +95,14 @@ module.exports = {
                
                }
                #pm{
-                   width:150px;
+                   width:165px;
                    height:185px;
                    box-sizing:border-box;
                    margin-right:1px;
                }
                #pm #pmName{
                    position:relative;
-                   left:40px;
+                   left:46px;
                    bottom:165px;
                    font-size:1.2rem;
                    color:antiquewhite;
@@ -117,14 +117,13 @@ module.exports = {
                    font-weight:bold;
                }
                #detailPm{
-                   width:150px;
+                   width:165px;
                    height:185px;
                    box-sizing:border-box;
-                   
                }
                #detailPm #detailPmName{
                    position:relative;
-                   left:30px;
+                   left:38px;
                    bottom:165px;
                    font-size:1.2rem;
                    color:antiquewhite;
@@ -132,7 +131,7 @@ module.exports = {
                }
                #detailPm #detailPmValue{
                    position:relative;
-                   right:45px;
+                   right:47px;
                    bottom:35px;
                    font-size:1.2rem;
                    color:antiquewhite;
@@ -178,6 +177,24 @@ module.exports = {
 
    },
    PM:function(){
+      var pm10Image="";
+      var pm25Image="";
+      if(openAPI.PM.pm10Value[0]<=30)
+         pm10Image = "/public/vertical_good.jpg";
+      else if(openAPI.PM.pm10Value[0]<=80)
+         pm10Image = "/public/vertical_normal.jpg";
+      else if(openAPI.PM.pm10Value[0]<=150)
+         pm10Image = "/public/vertical_bad.jpg";
+      else
+         pm10Image = "/public/vertical_prettybad.jpg";
+      if(openAPI.PM.pm25Value[0]<=15)
+         pm25Image = "/public/vertical_good.jpg";
+      else if(openAPI.PM.pm25Value[0]<=35)
+         pm25Image = "/public/vertical_normal.jpg";
+      else if(openAPI.PM.pm25Value[0]<=75)
+         pm25Image = "/public/vertical_bad.jpg";
+      else
+         pm25Image = "/public/vertical_prettybad.jpg";
       return`
       <div class="pmContainer">
       <div id="pmTextContent">
@@ -186,24 +203,24 @@ module.exports = {
           </span>
       </div>
       <div id="pm">
-          <img src="./public/vertical_prettybad.jpg" width="100%" height="100%">
+          <img src=${pm10Image} width="100%" height="100%">
           <content id="pmName">
               미세먼지
           </content>
           <content id="pmValue">
-              수치
+              (${openAPI.PM.pm10Value[0]}<span style="font-size:0.6rem">㎍/㎥</span>)
           </content>
       </div>
       <div id="detailPm">
-          <img src="./public/verical_good.jpg" width="100%" height="100%">
+          <img src=${pm25Image} width="100%" height="100%">
           <content id="detailPmName">
               초미세먼지
           </content>
           <content id="detailPmValue">
-              수치
+              (${openAPI.PM.pm25Value[0]}<span style="font-size:0.6rem">㎍/㎥</span>)
           </content>
       </div>
-  </div>
+      </div>
       `;
    },
    bulbGroup:function(){
