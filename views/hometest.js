@@ -5,6 +5,10 @@ module.exports = {
       <html>
           <head>
               <style>
+                  body{
+                     background-image:url('public/background.jpg');
+                     background-size:cover;
+                  }
                   .container{
                       display:flex;
                       flex-direction:row;
