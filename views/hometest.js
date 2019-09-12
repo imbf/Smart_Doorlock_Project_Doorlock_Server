@@ -5,6 +5,8 @@ module.exports = {
   <head>
       <style>
           .container{
+              margin:0;
+              box-sizing:border-box;
               display:flex;
               flex-direction:column;
               width:800px;
