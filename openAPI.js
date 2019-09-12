@@ -15,7 +15,7 @@ request(PMUrl,function(error,response,body){
         }
         var json =JSON.parse(JSON.stringify(result));
         module.exports.PM = json.response.body[0].items[0].item[1];
-        console.log(json.response.body[0].items[0].item[1].pm10Value[0])
+        console.log(json.response.body[0].items[0].item[1])
     });
 });
 

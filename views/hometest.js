@@ -86,7 +86,7 @@ module.exports = {
                      display:flex;
                      flex-direction:row;
                      box-sizing:border-box;
-                     width:100px;
+                     width:110px;
                      height:186px;
                      text-align:center;
                      font-size:1.5em;
@@ -199,7 +199,10 @@ module.exports = {
       <div class="pmContainer">
       <div id="pmTextContent">
           <span id="pmText">
-              
+            <br>
+            <br>
+            <div style="font-size:1.08rem;margin:0px;font-weight:bold">경기도 ${openAPI.PM.cityName[0]}</div>
+            <div style="font-size:1rem;">${openAPI.PM.dataTime[0]}기준</div>
           </span>
       </div>
       <div id="pm">
