@@ -83,7 +83,7 @@ module.exports = {
           <body class="container">
               <div id="content-1">
                   <div id="content-1-1">
-                     ${memo()}
+                     ${this.memo()}
                   </div>
                   <div id="content-1-2">
                       날씨
