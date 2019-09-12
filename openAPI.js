@@ -15,7 +15,6 @@ request(PMUrl,function(error,response,body){
         }
         var json =JSON.parse(JSON.stringify(result));
         module.exports.PM = json.response.body[0].items[0].item[1];
-        console.log(json.response.body[0].items[0].item[1])
     });
 });
 
@@ -30,5 +29,6 @@ request(weatherUrl,function(error,response,body){
         var json2=JSON.parse(JSON.stringify(result));
         module.exports.weather=json2.rss.channel[0];
         module.exports.detailWeather=json2.rss.channel[0].item[0].description[0].body[0].data;
+        console.log(json2.rss.channel[0]);
     });
 });

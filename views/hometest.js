@@ -36,12 +36,12 @@ module.exports = {
                   #content-1-1{
                       display:flex;
                       align-items:center;
-                      height:100px;
+                      height:90px;
                       box-sizing:border-box;
                       margin:0px;
                   }
                   #content-1-2{
-                      height:188px;
+                      height:200px;
                       box-sizing:border-box;
                       border:1px solid black;
                       margin-top:1px;
