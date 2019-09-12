@@ -4,6 +4,7 @@ const path = require('path');
 const static = require('serve-static');
 const openAPI = require('./openAPI');
 const homeTemplate = require('./views/home.js');
+const hometest = require('./views/hometest');
 const Mrequest = require('request');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT   //히로쿠 사용 포트
@@ -28,7 +29,9 @@ app.get('/', (request,response) => { // => 는 변수를 생성하고 무명함�
         detailWeather : openAPI.detailWeather,
         dustKind : dustKind,
     }
-    response.send(homeTemplate.html(pmWeather));
+    //response.send(homeTemplate.html(pmWeather));
+    //test
+    response.send(hometest.html());
 });
 
 app.get('/fine_Dust',(request,response) => {
