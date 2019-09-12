@@ -29,9 +29,10 @@ module.exports = {
                       margin:1px;
                   }
                   #content-1-1{
+                      display:flex;
+                      align-items:center;
                       height:100px;
                       box-sizing:border-box;
-                      border:1px solid black;
                       margin:0px;
                   }
                   #content-1-2{
@@ -59,13 +60,28 @@ module.exports = {
                       border:1px solid black;
                       margin-top:1px;
                   }
+                  #memo{
+                      background-color:#FFE4C4;
+                      margin-left:11px;
+                      width:400px;
+                      border-radius:1em;
+                      font-size:1.1em;
+                      font-weight: bold;
+                      color:black;
+                      text-decoration:underline;
+                  }
               </style>
           </head>
           <body class="container">
               <div id="content-1">
                   <div id="content-1-1">
-                      메모
-                  </div >
+                      <span id="memo">
+                          <ol>
+                              <li>주민등록등본 가져가기</li>
+                              <li>컴퓨터 네트워크 과제 가져가기</li>
+                          </ol>
+                      </span>
+                  </div>
                   <div id="content-1-2">
                       날씨
                   </div>
