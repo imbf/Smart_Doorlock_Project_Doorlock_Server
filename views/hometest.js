@@ -1,6 +1,6 @@
 module.exports = {
-   html : () =>{
-    `<!DOCTYPE html>
+   html :function(){
+    return`<!DOCTYPE html>
 <html lang="ko">
   <head>
       <style>
