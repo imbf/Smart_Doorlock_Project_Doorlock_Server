@@ -67,7 +67,7 @@ module.exports = {
                   #memo{
                       background-color:#FFE4C4;
                       margin-left:11px;
-                      width:400px;
+                      width:350px;
                       border-radius:1em;
                       font-size:1.1em;
                       font-weight: bold;
