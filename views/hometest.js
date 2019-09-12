@@ -41,7 +41,7 @@ module.exports = {
                       margin:0px;
                   }
                   #content-1-2{
-                      height:200px;
+                      height:198px;
                       box-sizing:border-box;
                       border:1px solid black;
                       margin-top:1px;
