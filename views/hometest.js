@@ -43,7 +43,6 @@ module.exports = {
                   #content-1-2{
                       height:198px;
                       box-sizing:border-box;
-                      border:1px solid black;
                       margin-top:1px;
                       margin-bottom:1px;
                   }
@@ -137,6 +136,19 @@ module.exports = {
                    color:antiquewhite;
                    font-weight:bold;
                }
+               #content-1-2 table{
+                width:450px;
+                height:193px;
+                text-align:center;
+                font-size:1.1rem;
+                font-weight:bold;
+                }
+                table, th, td {
+                    border-radius:0.5em;
+                }
+                #tableTitle td{
+                    text-align:center;
+                }
               </style>
           </head>
           <body class="container">
@@ -174,7 +186,84 @@ module.exports = {
       `;
    },
    weather: function(){
+        var title=``;
+        for(i=16;i<openAPI.weather.title[0].length;i++){
+            if(i<=openAPI.weather.title[0].length-3 && i>=openAPI.weather.title[0].length-4);
+            else
+            title +=openAPI.weather.title[0].charAt(i);
+        }
+        var time=``;
+        var image=``;
+        var temperate=``;
+        var wind=``;
+        for(var i=0;i<6;i++){
+            // time
+            if(openAPI.detailWeather[i].day>=1){
+                if(openAPI.detailWeather[i].hour>=12 && openAPI.detailWeather[i].hour<24){
+                    time += `<td>${openAPI.detailWeather[i].hour}PM</td>`;
+                }
+                else{
+                    time += `<td>${openAPI.detailWeather[i].hour}AM</td>`;
+                }
+            }
+            else{
+                if(openAPI.detailWeather[i].hour>=12 && openAPI.detailWeather[i].hour<24){
+                    time += `<td>${openAPI.detailWeather[i].hour}PM</td>`;
+                }
+                else{
+                    time += `<td>${openAPI.detailWeather[i].hour}AM</td>`;
+                }
+            }
+            //image
+            if(openAPI.detailWeather[i].wfKor == "흐림")
+                image += `<td><img src="/public/cloud.svg"></td>`;
+            else if(openAPI.detailWeather[i].wfKor == "구름 많음")
+                image += `<td><img src="/public/clouds.svg"></td>`;
+            else if(openAPI.detailWeather[i].wfKor == "비")
+                image += `<td><img src="/public/rain.svg"></td>`;
+            else if(openAPI.detailWeather[i].wfKor == "소나기")
+                image += `<td><img src"/public/shower.svg"></td>`;
+            else if(openAPI.detailWeather[i].wfKor == "눈")
+                image += `<td><img src"/public/snow.svg"></td>`;
+            else if(openAPI.detailWeather[i].wfKor == "맑음")
+                image += `<td><img src"/public/sun.svg"></td>`;
+            else
+                image += `<td>${openAPI.detailWeather[i].wfkor}</td>`;
+            //temperate
+            temperate += `<td>${openAPI.detailWeather[i].temp}°C</td>`;
+            //wind
+            wind += `<td>${openAPI.detailWeather[i].wdKor}</td>`;
 
+        }
+        
+
+      return`
+      <table>
+        <thead>
+            <tr id="tableTitle">
+                <td colspan="7" style="background-color:snow">${title}</td>
+            </tr>
+            <tr>
+                <td style="background-color:snow">시간</td>
+                ${time}
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color:snow">날씨</td>
+                ${image}
+            </tr>
+            <tr>
+                <td style="background-color:snow">기온</td>
+                ${temperate}
+            </tr>
+            <tr>
+                <td style="background-color:snow">풍향</td>
+                ${wind}
+            </tr>
+        </tbody>
+    </table>
+      `;
    },
    PM:function(){
       var pm10Image="";

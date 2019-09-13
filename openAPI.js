@@ -30,5 +30,6 @@ request(weatherUrl,function(error,response,body){
         module.exports.weather=json2.rss.channel[0];
         module.exports.detailWeather=json2.rss.channel[0].item[0].description[0].body[0].data;
         console.log(json2.rss.channel[0]);
+        console.log(json2.rss.channel[0].item[0].description[0].body[0].data);
     });
 });
