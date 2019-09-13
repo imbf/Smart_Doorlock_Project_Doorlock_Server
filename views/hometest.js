@@ -52,15 +52,16 @@ module.exports = {
                       margin:0px;
                   }
                   #content-2-1{
+                      display:flex;
+                      flex-direction:column;
                       height:269px;
                       box-sizing:border-box;
-                      border:1px solid black;
                       margin:0px;
                   }
                   #content-2-2{
+                      display:flex;
                       height:208px;
                       box-sizing:border-box;
-                      border:1px solid black;
                       margin-top:1px;
                   }
                   #memo{
@@ -149,6 +150,93 @@ module.exports = {
                 #tableTitle td{
                     text-align:center;
                 }
+                #content-2-2-1{
+                    width:200px;
+                    height:208px;
+                    border:1px solid black;
+                    box-sizing:border-box;
+                    margin:0px;
+                }  
+                #content-2-2-2{
+                    display:flex;
+                    flex-direction:column;
+                    width:120px;
+                    height:208px;
+                    box-sizing:border-box;
+                    margin:0px;
+                }
+                #content-2-2-2-1{
+                    box-sizing: border-box;
+                    width:120px;
+                    height:104px;
+                    border:1px solid black;
+                }
+                #content-2-2-2-2{
+                    box-sizing: border-box;
+                    width:120px;
+                    height:104px;
+                    border:1px solid black;
+                }
+                #content-2-1-1{
+                    display: flex;
+                    box-sizing:border-box;
+                    width:320px;
+                    height:105px;
+                }
+                #content-2-1-2{
+                    display:flex;
+                    box-sizing:border-box;
+                    width:320px;
+                    height:59px;
+                }
+                #content-2-1-3{
+                    display:flex;
+                    box-sizing:border-box;
+                    width:320px;
+                    height:105px;
+                }
+                #content-2-1-1-1{
+                    box-sizing:border-box;
+                    border:1px solid black;
+                    width:160px;
+                    height:105px;
+                }
+                #content-2-1-1-2{
+                    box-sizing:border-box;
+                    border:1px solid black;
+                    width:160px;
+                    height:105px;
+                }
+                #content-2-1-2-1{
+                    box-sizing:border-box;
+                    border:1px solid black;
+                    width:100px;
+                    height:59px;
+                }
+                #content-2-1-2-2{
+                    box-sizing:border-box;
+                    border:1px solid black;
+                    width:120px;
+                    height:59px;
+                }
+                #content-2-1-2-3{
+                    box-sizing:border-box;
+                    border:1px solid black;
+                    width:100px;
+                    height:59px;
+                }
+                #content-2-1-3-1{
+                    box-sizing:border-box;
+                    border:1px solid black;
+                    width:160px;
+                    height:105px;
+                }
+                #content-2-1-3-2{
+                    box-sizing:border-box;
+                    border:1px solid black;
+                    width:160px;
+                    height:105px;
+                }
               </style>
           </head>
           <body class="container">
@@ -165,10 +253,45 @@ module.exports = {
               </div>
               <div id="content-2">
                   <div id="content-2-1">
-                      전등제어
+                    <div id="content-2-1-1">
+                        <div id="content-2-1-1-1">
+                            전구1
+                        </div>
+                        <div id="content-2-1-1-2">
+                            전구4
+                        </div>
+                    </div>
+                    <div id="content-2-1-2">
+                        <div id="content-2-1-2-1">
+                        
+                        </div>
+                        <div id="content-2-1-2-2">
+                            적용
+                        </div>
+                        <div id="content-2-1-2-3">
+                        </div>
+                    </div>
+                    <div id="content-2-1-3">
+                        <div id="content-2-1-3-1">
+                            전구2
+                        </div>
+                        <div id="content-2-1-3-2">
+                            전구3
+                        </div>
+                    </div>
                   </div>
                   <div id="content-2-2">
-                      문열기
+                    <div id="content-2-2-1">
+                        문열기 버튼
+                    </div>
+                    <div id="content-2-2-2">
+                        <div id="content-2-2-2-1">
+                            비밀번호 설정
+                        </div>
+                        <div id="content-2-2-2-2">
+                            일회용 출입관리
+                        </div>
+                    </div>  
                   </div>
               </div>
           </body>
@@ -192,6 +315,7 @@ module.exports = {
             else
             title +=openAPI.weather.title[0].charAt(i);
         }
+        var pubDate = openAPI.weather.pubDate[0];
         var time=``;
         var image=``;
         var temperate=``;
@@ -241,7 +365,8 @@ module.exports = {
       <table>
         <thead>
             <tr id="tableTitle">
-                <td colspan="7" style="background-color:snow">${title}</td>
+                <td colspan="7" style="background-color:snow">${title}
+                </td>
             </tr>
             <tr>
                 <td style="background-color:snow">시간</td>
