@@ -150,32 +150,15 @@ module.exports = {
                 #tableTitle td{
                     text-align:center;
                 }
-                #content-2-2-1{
-                    width:200px;
-                    height:208px;
-                    border:1px solid black;
-                    box-sizing:border-box;
-                    margin:0px;
-                }  
-                #content-2-2-2{
-                    display:flex;
-                    flex-direction:column;
-                    width:120px;
-                    height:208px;
-                    box-sizing:border-box;
-                    margin:0px;
-                }
                 #content-2-2-2-1{
                     box-sizing: border-box;
                     width:120px;
                     height:104px;
-                    border:1px solid black;
                 }
                 #content-2-2-2-2{
                     box-sizing: border-box;
                     width:120px;
                     height:104px;
-                    border:1px solid black;
                 }
                 #content-2-1-1{
                     display: flex;
@@ -207,18 +190,6 @@ module.exports = {
                     width:160px;
                     height:105px;
                 }
-                #content-2-1-2-1{
-                    box-sizing:border-box;
-                    border:1px solid black;
-                    width:100px;
-                    height:59px;
-                }
-                #content-2-1-2-2{
-                    box-sizing:border-box;
-                    border:1px solid black;
-                    width:120px;
-                    height:59px;
-                }
                 #content-2-1-2-3{
                     box-sizing:border-box;
                     border:1px solid black;
@@ -236,6 +207,73 @@ module.exports = {
                     border:1px solid black;
                     width:160px;
                     height:105px;
+                }
+                #content-2-2-1{
+                    width:200px;
+                    height:208px;
+                    box-sizing:border-box;
+                    margin:0px;
+                }  
+                #content-2-2-2{
+                    display:flex;
+                    flex-direction:column;
+                    width:120px;
+                    height:208px;
+                    box-sizing:border-box;
+                    margin:0px;
+                }
+                #content-2-1-2-1{
+                    box-sizing:border-box;
+                    border:1px solid black;
+                    width:100px;
+                    height:59px;
+                }
+                #content-2-1-2-2{
+                    box-sizing:border-box;
+                    border:1px solid black;
+                    width:120px;
+                    height:59px;
+                }
+                #openButton{
+                    position:relative;
+                    top:30px;
+                    left:25px;
+                    width: 170px;
+                    height: 170px;
+                    padding: 12px 16px;
+                    border:2px solid black;
+                    border-radius: 85px;
+                    font-size: 2.5rem;
+                    font-weight:bold;
+                    opacity:0.8;
+                    background-color:wheat;
+                }
+                #passwordButton{
+                    position:relative;
+                    left:-3px;
+                    width: 100px;
+                    height: 100px;
+                    padding: 29px 13px;
+                    border:2px solid black;
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    font-weight:bold;
+                    opacity:0.8;
+                    background-color:wheat;
+                }
+                #inOutAdminButton{
+                    position:relative;
+                    top:10px;
+                    left:-10px;
+                    width: 80px;
+                    height: 80px;
+                    padding: 10px 0px;
+                    border:2px solid black;
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    font-weight:bold;
+                    opacity:0.8;
+                    background-color:wheat;
                 }
               </style>
           </head>
@@ -281,17 +319,7 @@ module.exports = {
                     </div>
                   </div>
                   <div id="content-2-2">
-                    <div id="content-2-2-1">
-                        문열기 버튼
-                    </div>
-                    <div id="content-2-2-2">
-                        <div id="content-2-2-2-1">
-                            비밀번호 설정
-                        </div>
-                        <div id="content-2-2-2-2">
-                            일회용 출입관리
-                        </div>
-                    </div>  
+                    ${this.doorLock()}
                   </div>
               </div>
           </body>
@@ -444,6 +472,24 @@ module.exports = {
 
    },
    doorLock:function(){
-
+    return`
+    <div id="content-2-2-1"> <!--200 x 208-->
+        <button type="button" id="openButton" onclick="openButton_click();">
+            문열기
+        </button>
+    </div>
+    <div id="content-2-2-2">
+        <div id="content-2-2-2-1"> <!-- 120 x 104 -->
+            <button type="button" id="inOutAdminButton" onclick="idOutAdminButton_click()">
+                출입관리
+            </button>
+        </div>
+        <div id="content-2-2-2-2"> <!-- 120 x 104 -->
+            <button type="button" id="passwordButton" onclick="passwordButton_click()">
+                비밀번호 설정
+            </button>
+        </div>
+    </div>
+    `;
    }
 }
