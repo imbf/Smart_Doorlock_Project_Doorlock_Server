@@ -55,11 +55,11 @@ module.exports = {
                   #content-2-1{
                     display:flex;
                     flex-direction:column;
-                    width:319px;
+                    width:320px;
                     height:269px;
                     box-sizing:border-box;
                     margin:0px;
-                    border:2px solid black;
+                    border:1px solid black;
                     border-radius:20px;
                   }
                   #content-2-2{
@@ -187,12 +187,12 @@ module.exports = {
                 }
                 #content-2-1-1-2{
                     box-sizing:border-box;
-                    width:159px;
+                    width:160px;
                     height:105px;
                 }
                 #content-2-1-2-3{
                     box-sizing:border-box;
-                    width:99px;
+                    width:100px;
                     height:59px;
                 }
                 #content-2-1-3-1{
@@ -202,7 +202,7 @@ module.exports = {
                 }
                 #content-2-1-3-2{
                     box-sizing:border-box;
-                    width:159px;
+                    width:160px;
                     height:105px;
                 }
                 #content-2-2-1{
