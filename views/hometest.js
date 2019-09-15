@@ -55,7 +55,7 @@ module.exports = {
                   #content-2-1{
                     display:flex;
                     flex-direction:column;
-                    width:320px;
+                    width:319px;
                     height:269px;
                     box-sizing:border-box;
                     margin:0px;
