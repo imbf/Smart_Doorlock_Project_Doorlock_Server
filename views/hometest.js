@@ -55,9 +55,11 @@ module.exports = {
                   #content-2-1{
                     display:flex;
                     flex-direction:column;
+                    width:320px;
                     height:269px;
                     box-sizing:border-box;
                     margin:0px;
+                    border:2px solid black;
                     border-radius:20px;
                   }
                   #content-2-2{
