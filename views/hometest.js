@@ -59,7 +59,7 @@ module.exports = {
                     height:269px;
                     box-sizing:border-box;
                     margin:0px;
-                    border:1px solid black;
+                    border:2px solid black;
                     border-radius:20px;
                   }
                   #content-2-2{
@@ -165,44 +165,44 @@ module.exports = {
                 #content-2-1-1{
                     display: flex;
                     box-sizing:border-box;
-                    width:320px;
+                    width:318px;
                     height:105px;
                 }
                 #content-2-1-2{
                     display:flex;
                     box-sizing:border-box;
-                    width:320px;
+                    width:318px;
                     height:59px;
                 }
                 #content-2-1-3{
                     display:flex;
                     box-sizing:border-box;
-                    width:320px;
+                    width:318px;
                     height:105px;
                 }
                 #content-2-1-1-1{
                     box-sizing:border-box;
-                    width:160px;
+                    width:159px;
                     height:105px;
                 }
                 #content-2-1-1-2{
                     box-sizing:border-box;
-                    width:160px;
+                    width:159px;
                     height:105px;
                 }
                 #content-2-1-2-3{
                     box-sizing:border-box;
-                    width:100px;
+                    width:99px;
                     height:59px;
                 }
                 #content-2-1-3-1{
                     box-sizing:border-box;
-                    width:160px;
+                    width:159px;
                     height:105px;
                 }
                 #content-2-1-3-2{
                     box-sizing:border-box;
-                    width:160px;
+                    width:159px;
                     height:105px;
                 }
                 #content-2-2-1{
@@ -221,7 +221,7 @@ module.exports = {
                 }
                 #content-2-1-2-1{
                     box-sizing:border-box;
-                    width:100px;
+                    width:99px;
                     height:59px;
                 }
                 #content-2-1-2-2{
