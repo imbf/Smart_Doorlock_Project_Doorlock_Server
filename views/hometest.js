@@ -6,6 +6,7 @@ module.exports = {
       <!doctype html>
       <html>
           <head>
+          <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
               <style>
                   body{
                      background-image:url('public/background.jpg');
@@ -245,8 +246,7 @@ module.exports = {
                     border-radius: 85px;
                     font-size: 2.5rem;
                     font-weight:bold;
-                    opacity:0.8;
-                    background-color:wheat;
+                    background-color:snow;
                 }
                 #passwordButton{
                     position:relative;
@@ -258,8 +258,7 @@ module.exports = {
                     border-radius: 50px;
                     font-size: 1rem;
                     font-weight:bold;
-                    opacity:0.8;
-                    background-color:wheat;
+                    background-color:snow;
                 }
                 #inOutAdminButton{
                     position:relative;
@@ -272,8 +271,7 @@ module.exports = {
                     border-radius: 50px;
                     font-size: 1rem;
                     font-weight:bold;
-                    opacity:0.8;
-                    background-color:wheat;
+                    background-color:snow;
                 }
               </style>
           </head>
@@ -322,6 +320,38 @@ module.exports = {
                     ${this.doorLock()}
                   </div>
               </div>
+          <script>
+            var groupLed = 0;
+            function openButton_click(callBack){
+                $.ajax({
+                    url: 'http://168.131.35.103:7579/Mobius/lock/update',
+                    type: 'POST',
+                    dataType:"json",
+                    headers:{
+                        'Accept':'application/json',
+                        'X-M2M-RI':12345,
+                        'X-M2M-Origin':'JongJin',
+                        'Content-Type':'application/vnd.onem2m-res+json;ty=4'
+                    },
+                    data:JSON.stringify({
+                        'm2m:cin':{
+                            'con':'123'
+                        }
+                    })
+                });
+                document.getElementById("openButton").style.backgroundColor="red";
+                setTimeout(callBack, 5000);
+            }
+            function colorChange(){
+                document.getElementById("openButton").style.backgroundColor="snow";
+            }
+            function inOutAdminButton_click(){
+                location.href="/SMSService";
+            }
+            function passwordButton_click(){
+                location.href="/password/set";
+            }
+          </script>
           </body>
       </html>
       `;
@@ -473,18 +503,18 @@ module.exports = {
    },
    doorLock:function(){
     return`
-    <div id="content-2-2-1"> <!--200 x 208-->
-        <button type="button" id="openButton" onclick="openButton_click();">
-            문열기
-        </button>
+    <div id="content-2-2-1">
+    <button id="openButton" onclick="openButton_click(colorChange);">
+        문열기
+    </button>
     </div>
     <div id="content-2-2-2">
-        <div id="content-2-2-2-1"> <!-- 120 x 104 -->
-            <button type="button" id="inOutAdminButton" onclick="idOutAdminButton_click()">
+        <div id="content-2-2-2-1">
+            <button type="button" id="inOutAdminButton" onclick="inOutAdminButton_click()()">
                 출입관리
             </button>
         </div>
-        <div id="content-2-2-2-2"> <!-- 120 x 104 -->
+        <div id="content-2-2-2-2">
             <button type="button" id="passwordButton" onclick="passwordButton_click()">
                 비밀번호 설정
             </button>
