@@ -53,11 +53,13 @@ module.exports = {
                       margin:0px;
                   }
                   #content-2-1{
-                      display:flex;
-                      flex-direction:column;
-                      height:269px;
-                      box-sizing:border-box;
-                      margin:0px;
+                    display:flex;
+                    flex-direction:column;
+                    height:269px;
+                    box-sizing:border-box;
+                    margin:0px;
+                    border:2px solid black;
+                    border-radius:20px;
                   }
                   #content-2-2{
                       display:flex;
@@ -181,31 +183,26 @@ module.exports = {
                 }
                 #content-2-1-1-1{
                     box-sizing:border-box;
-                    border:1px solid black;
                     width:160px;
                     height:105px;
                 }
                 #content-2-1-1-2{
                     box-sizing:border-box;
-                    border:1px solid black;
                     width:160px;
                     height:105px;
                 }
                 #content-2-1-2-3{
                     box-sizing:border-box;
-                    border:1px solid black;
                     width:100px;
                     height:59px;
                 }
                 #content-2-1-3-1{
                     box-sizing:border-box;
-                    border:1px solid black;
                     width:160px;
                     height:105px;
                 }
                 #content-2-1-3-2{
                     box-sizing:border-box;
-                    border:1px solid black;
                     width:160px;
                     height:105px;
                 }
@@ -225,13 +222,11 @@ module.exports = {
                 }
                 #content-2-1-2-1{
                     box-sizing:border-box;
-                    border:1px solid black;
                     width:100px;
                     height:59px;
                 }
                 #content-2-1-2-2{
                     box-sizing:border-box;
-                    border:1px solid black;
                     width:120px;
                     height:59px;
                 }
@@ -273,6 +268,52 @@ module.exports = {
                     font-weight:bold;
                     background-color:snow;
                 }
+                #bulb-1-text{
+                    position:relative;
+                    font-size:1.1rem;
+                    font-weight:bold;
+                    bottom:30px;
+                    left:20px;
+                }
+                #bulb-2-text{
+                    position:relative;
+                    font-size:1.1rem;
+                    font-weight:bold;
+                    bottom:32px;
+                    left:20px;
+                }
+                #bulb-3-text{
+                    position:relative;
+                    font-size:1.2rem;
+                    font-weight:bold;
+                    bottom:33px;
+                    left:20px;
+                }
+                #bulb-4-text{
+                    position:relative;
+                    font-size:1.2rem;
+                    font-weight:bold;
+                    bottom:30px;
+                    left:20px;
+                }
+                #bulb-1, #bulb-2, #bulb-3, #bulb-4{
+                    position:relative;
+                }
+                #bulb-2, #bulb-3{
+                    bottom:5px;
+                }
+                #admitButton{
+                    position:relative;
+                    left:20px;
+                    bottom:10px;
+                    width:80px;
+                    height:80px;
+                    border:2px solid black;
+                    border-radius:40px;
+                    background-color:cyan;
+                    font-size:1.4rem;
+                    font-weight:bold;
+                }
               </style>
           </head>
           <body class="container">
@@ -289,14 +330,56 @@ module.exports = {
               </div>
               <div id="content-2">
                   <div id="content-2-1">
-                    ${this.bulbGroup}
+                    ${this.bulbGroup()}
                   </div>
                   <div id="content-2-2">
                     ${this.doorLock()}
                   </div>
               </div>
           <script>
-            var groupLed = 0;
+            var groupLed = 15;
+            function imageChange(id){
+                var imagePath = document.getElementById(id).src;
+                var strArray = imagePath.split("/");
+                var imageSrc = strArray[strArray.length-1];
+                
+                //alert(strArray[strArray.length-1]);
+                //alert(id);
+                if(id == "bulb-1"){
+                    if(imageSrc == 'onBulb.svg'){
+                        document.getElementById(id).src="/public/offBulb.svg";
+                        groupLed -= 1;
+                    }else if(imageSrc == 'offBulb.svg'){
+                        document.getElementById(id).src="/public/onBulb.svg";
+                        groupLed += 1;                    
+                    }
+                }else if(id =="bulb-2"){
+                    if(imageSrc == 'onBulb.svg'){
+                        document.getElementById(id).src="/public/offBulb.svg";
+                        groupLed -= 2;
+                    }else if(imageSrc == 'offBulb.svg'){
+                        document.getElementById(id).src="/public/onBulb.svg";
+                        groupLed += 2;                    
+                    }
+                }else if(id =="bulb-3"){
+                    if(imageSrc == 'onBulb.svg'){
+                        document.getElementById(id).src="/public/offBulb.svg";
+                        groupLed -= 4;
+                    }else if(imageSrc == 'offBulb.svg'){
+                        document.getElementById(id).src="/public/onBulb.svg";
+                        groupLed += 4;                    
+                    }
+                }else{
+                    if(imageSrc == 'onBulb.svg'){
+                        document.getElementById(id).src="/public/offBulb.svg";
+                        groupLed -= 8;
+                    }else if(imageSrc == 'offBulb.svg'){
+                        document.getElementById(id).src="/public/onBulb.svg";
+                        groupLed += 8;                    
+                    }
+                }
+                document.getElementById('admitButton').style.backgroundColor="red";
+            }
             function openButton_click(callBack){
                 $.ajax({
                     url: 'http://168.131.35.103:7579/Mobius/lock/update',
@@ -325,6 +408,25 @@ module.exports = {
             }
             function passwordButton_click(){
                 location.href="/password/set";
+            }
+            function admitButton_click(){
+                $.ajax({
+                    url:'http://168.131.35.103:7579/Mobius/LEDGroup/update',
+                    type:'POST',
+                    dataType:"json",
+                    headers:{
+                        'Accept': 'application/json',
+                        'X-M2M-RI': 12345,
+                        'X-M2M-Origin': 'JongJin',
+                        'Content-Type': 'application/vnd.onem2m-res+json;ty=4'
+                    },
+                    data:JSON.stringify({
+                       'm2m:cin':{
+                            'con':groupLed
+                       }
+                    })
+                });
+                document.getElementById('admitButton').style.backgroundColor="cyan";
             }
           </script>
           </body>
@@ -474,8 +576,39 @@ module.exports = {
       `;
    },
    bulbGroup:function(){
-    return `
-
+    return`
+    <div id="content-2-1-1">
+        <div id="content-2-1-1-1"> <!-- 160 X 105 -->
+            <img id="bulb-1" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <span id="bulb-1-text">안방</span>
+        </div>
+        <div id="content-2-1-1-2"> <!-- 160 X 105 -->                      
+            <img id="bulb-4" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <span id="bulb-4-text">서재</span>
+        </div>
+    </div>
+    <div id="content-2-1-2">
+        <div id="content-2-1-2-1"> <!-- 100 X 59 -->
+        
+        </div>
+        <div id="content-2-1-2-2"> <!-- 120 X 59 -->
+            <button type="button" id="admitButton" onclick="admitButton_click()">
+                적용
+            </button>
+        </div>
+        <div id="content-2-1-2-3"> <!-- 100 X 59 -->
+        </div>
+    </div>
+    <div id="content-2-1-3">
+        <div id="content-2-1-3-1"> <!-- 160 X 105 -->
+            <img id="bulb-2" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <span id="bulb-2-text">옷방</span>
+        </div>
+        <div id="content-2-1-3-2"> <!-- 160 X 105 -->
+            <img id="bulb-3" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <span id="bulb-3-text">거실</span>
+        </div>
+    </div>
     `;
    },
    doorLock:function(){
