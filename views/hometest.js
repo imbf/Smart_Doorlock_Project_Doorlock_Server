@@ -289,32 +289,7 @@ module.exports = {
               </div>
               <div id="content-2">
                   <div id="content-2-1">
-                    <div id="content-2-1-1">
-                        <div id="content-2-1-1-1">
-                            전구1
-                        </div>
-                        <div id="content-2-1-1-2">
-                            전구4
-                        </div>
-                    </div>
-                    <div id="content-2-1-2">
-                        <div id="content-2-1-2-1">
-                        
-                        </div>
-                        <div id="content-2-1-2-2">
-                            적용
-                        </div>
-                        <div id="content-2-1-2-3">
-                        </div>
-                    </div>
-                    <div id="content-2-1-3">
-                        <div id="content-2-1-3-1">
-                            전구2
-                        </div>
-                        <div id="content-2-1-3-2">
-                            전구3
-                        </div>
-                    </div>
+                    ${this.bulbGroup}
                   </div>
                   <div id="content-2-2">
                     ${this.doorLock()}
@@ -404,11 +379,11 @@ module.exports = {
             else if(openAPI.detailWeather[i].wfKor == "비")
                 image += `<td><img src="/public/rain.svg"></td>`;
             else if(openAPI.detailWeather[i].wfKor == "소나기")
-                image += `<td><img src"/public/shower.svg"></td>`;
+                image += `<td><img src="/public/shower.svg"></td>`;
             else if(openAPI.detailWeather[i].wfKor == "눈")
-                image += `<td><img src"/public/snow.svg"></td>`;
+                image += `<td><img src="/public/snow.svg"></td>`;
             else if(openAPI.detailWeather[i].wfKor == "맑음")
-                image += `<td><img src"/public/sun.svg"></td>`;
+                image += `<td><img src="/public/sun.svg"></td>`;
             else
                 image += `<td>${openAPI.detailWeather[i].wfkor}</td>`;
             //temperate
@@ -499,7 +474,9 @@ module.exports = {
       `;
    },
    bulbGroup:function(){
+    return `
 
+    `;
    },
    doorLock:function(){
     return`
