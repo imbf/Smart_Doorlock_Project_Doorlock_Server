@@ -187,12 +187,12 @@ module.exports = {
                 }
                 #content-2-1-1-2{
                     box-sizing:border-box;
-                    width:160px;
+                    width:159px;
                     height:105px;
                 }
                 #content-2-1-2-3{
                     box-sizing:border-box;
-                    width:100px;
+                    width:99px;
                     height:59px;
                 }
                 #content-2-1-3-1{
@@ -202,7 +202,7 @@ module.exports = {
                 }
                 #content-2-1-3-2{
                     box-sizing:border-box;
-                    width:160px;
+                    width:159px;
                     height:105px;
                 }
                 #content-2-2-1{
