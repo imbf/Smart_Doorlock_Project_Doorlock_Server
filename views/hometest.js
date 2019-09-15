@@ -63,6 +63,7 @@ module.exports = {
                   }
                   #content-2-2{
                       display:flex;
+                      width:320px;
                       height:208px;
                       box-sizing:border-box;
                       margin-top:1px;
@@ -70,7 +71,7 @@ module.exports = {
                   #memo{
                       background-color:#FFE4C4;
                       margin-left:11px;
-                      width:350px;
+                      width:400px;
                       border-radius:1em;
                       font-size:1.1em;
                       font-weight: bold;
@@ -90,13 +91,10 @@ module.exports = {
                      flex-direction:row;
                      box-sizing:border-box;
                      width:110px;
-                     height:186px;
+                     height:185px;
                      text-align:center;
                      font-size:1.5em;
                  }
-                 #pmText{
-               
-               }
                #pm{
                    width:165px;
                    height:185px;
