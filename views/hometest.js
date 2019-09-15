@@ -59,7 +59,7 @@ module.exports = {
                     height:269px;
                     box-sizing:border-box;
                     margin:0px;
-                    border:2px solid black;
+                    border:1px solid black;
                     border-radius:20px;
                   }
                   #content-2-2{
