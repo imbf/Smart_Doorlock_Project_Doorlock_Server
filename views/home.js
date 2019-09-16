@@ -1,203 +1,634 @@
+const openAPI = require('../openAPI');
+
 module.exports = {
-    html:function(pmWeather){
-        return `<!doctype>
-        <html>
-        <head>
-            <meta charset="utf-8">
-            <style>
-                table,caption,tr,td{
-                    border:1px solid #444444;
-                    margin:0px;
-                    padding:0px;
-                    border-collapse:collapse;
-                }
-               body{
-                    background-image:url('public/background.jpg');
-                    background-size:cover;
-                    margin:0px;
+   html:function(){
+      return`
+      <!doctype html>
+      <html>
+          <head>
+          <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+              <style>
+                  body{
+                     background-image:url('public/background.jpg');
+                     background-size:cover;
+                  }
+                  .container{
+                      display:flex;
+                      flex-direction:row;
+                      box-sizing:border-box;  
+                      width:800px;
+                      height:480px;
+                      margin:0px; /*본래는 0px이다.*/
+                  }
+                  #content-1{
+                      display:flex;
+                      flex-direction:column;
+                      width:476px;
+                      box-sizing:border-box;
+                      margin:1px;
+                  }
+                  #content-2{
+                      display:flex;
+                      width:320px;
+                      flex-direction:column;
+                      box-sizing:border-box;
+                      margin:1px;
+                  }
+                  #content-1-1{
+                      display:flex;
+                      align-items:center;
+                      height:90px;
+                      box-sizing:border-box;
+                      margin:0px;
+                  }
+                  #content-1-2{
+                      height:198px;
+                      box-sizing:border-box;
+                      margin-top:1px;
+                      margin-bottom:1px;
+                  }
+                  #content-1-3{
+                      height:188px;
+                      box-sizing:border-box;
+                      margin:0px;
+                  }
+                  #content-2-1{
                     display:flex;
-                    width:100%;
-                    height:100%;
-                    postition:absolute;
+                    flex-direction:column;
+                    width:320px;
+                    height:269px;
+                    box-sizing:border-box;
+                    margin:0px;
+                    border:2px solid black;
+                    border-radius:20px;
+                  }
+                  #content-2-2{
+                      display:flex;
+                      width:320px;
+                      height:208px;
+                      box-sizing:border-box;
+                      margin-top:1px;
+                  }
+                  #memo{
+                      background-color:#FFE4C4;
+                      margin-left:11px;
+                      width:400px;
+                      border-radius:1em;
+                      font-size:1.1em;
+                      font-weight: bold;
+                      color:black;
+                      text-decoration:underline;
+                  }
+                  #memo ol li a{
+                     text-decoration:none;
+                     color:black;
+                  }
+                  .pmContainer{
+                     display:flex;
+                     flex-direction:row;
+                 }
+                 #pmTextContent{
+                     display:flex;
+                     flex-direction:row;
+                     box-sizing:border-box;
+                     width:110px;
+                     height:185px;
+                     text-align:center;
+                     font-size:1.5em;
+                 }
+               #pm{
+                   width:165px;
+                   height:185px;
+                   box-sizing:border-box;
+                   margin-right:1px;
                }
-                .flex_container{
-                    display: flex;
-                    width:100%;
-                    height:100%;
-                    flex-direction: column;
+               #pm #pmName{
+                   position:relative;
+                   left:46px;
+                   bottom:165px;
+                   font-size:1.2rem;
+                   color:antiquewhite;
+                   font-weight:bold;
+               }
+               #pm #pmValue{
+                   position:relative;
+                   right:30px;
+                   bottom:35px;
+                   font-size:1.2rem;
+                   color:antiquewhite;
+                   font-weight:bold;
+               }
+               #detailPm{
+                   width:165px;
+                   height:185px;
+                   box-sizing:border-box;
+               }
+               #detailPm #detailPmName{
+                   position:relative;
+                   left:38px;
+                   bottom:165px;
+                   font-size:1.2rem;
+                   color:antiquewhite;
+                   font-weight:bold;
+               }
+               #detailPm #detailPmValue{
+                   position:relative;
+                   right:47px;
+                   bottom:35px;
+                   font-size:1.2rem;
+                   color:antiquewhite;
+                   font-weight:bold;
+               }
+               #content-1-2 table{
+                width:450px;
+                height:193px;
+                text-align:center;
+                font-size:1.1rem;
+                font-weight:bold;
                 }
-                .flex_content{
-                    display:flex;
+                table, th, td {
+                    border-radius:0.5em;
                 }
-                .flex_content nav{
-                    border-right:1px solid gray;
-                }
-                .flex_content aside{
-                    border-left:1px solid gray;
-                }
-                img{
-                    width:100px;
-                    height:100px;
-                }
-                .weatherTable td{
+                #tableTitle td{
                     text-align:center;
+                }
+                #content-2-2-2-1{
+                    box-sizing: border-box;
+                    width:120px;
+                    height:104px;
+                }
+                #content-2-2-2-2{
+                    box-sizing: border-box;
+                    width:120px;
+                    height:104px;
+                }
+                #content-2-1-1{
+                    display: flex;
+                    box-sizing:border-box;
+                    width:318px;
+                    height:105px;
+                }
+                #content-2-1-2{
+                    display:flex;
+                    box-sizing:border-box;
+                    width:318px;
+                    height:59px;
+                }
+                #content-2-1-3{
+                    display:flex;
+                    box-sizing:border-box;
+                    width:318px;
+                    height:105px;
+                }
+                #content-2-1-1-1{
+                    box-sizing:border-box;
+                    width:159px;
+                    height:105px;
+                }
+                #content-2-1-1-2{
+                    box-sizing:border-box;
+                    width:159px;
+                    height:105px;
+                }
+                #content-2-1-2-3{
+                    box-sizing:border-box;
+                    width:99px;
+                    height:59px;
+                }
+                #content-2-1-3-1{
+                    box-sizing:border-box;
+                    width:159px;
+                    height:105px;
+                }
+                #content-2-1-3-2{
+                    box-sizing:border-box;
+                    width:159px;
+                    height:105px;
+                }
+                #content-2-2-1{
+                    width:200px;
+                    height:208px;
+                    box-sizing:border-box;
+                    margin:0px;
+                }  
+                #content-2-2-2{
+                    display:flex;
+                    flex-direction:column;
+                    width:120px;
+                    height:208px;
+                    box-sizing:border-box;
+                    margin:0px;
+                }
+                #content-2-1-2-1{
+                    box-sizing:border-box;
+                    width:99px;
+                    height:59px;
+                }
+                #content-2-1-2-2{
+                    box-sizing:border-box;
+                    width:120px;
+                    height:59px;
+                }
+                #openButton{
+                    position:relative;
+                    top:30px;
+                    left:25px;
+                    width: 170px;
+                    height: 170px;
+                    padding: 12px 16px;
+                    border:2px solid black;
+                    border-radius: 85px;
+                    font-size: 2.5rem;
+                    font-weight:bold;
+                    background-color:snow;
+                }
+                #passwordButton{
+                    position:relative;
+                    left:-3px;
+                    width: 100px;
+                    height: 100px;
+                    padding: 29px 13px;
+                    border:2px solid black;
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    font-weight:bold;
+                    background-color:snow;
+                }
+                #inOutAdminButton{
+                    position:relative;
+                    top:10px;
+                    left:-10px;
+                    width: 80px;
+                    height: 80px;
+                    padding: 10px 0px;
+                    border:2px solid black;
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    font-weight:bold;
+                    background-color:snow;
+                }
+                #bulb-1-text{
+                    position:relative;
+                    font-size:1.1rem;
+                    font-weight:bold;
+                    bottom:30px;
+                    left:20px;
+                }
+                #bulb-2-text{
+                    position:relative;
+                    font-size:1.1rem;
+                    font-weight:bold;
+                    bottom:32px;
+                    left:20px;
+                }
+                #bulb-3-text{
+                    position:relative;
+                    font-size:1.2rem;
+                    font-weight:bold;
+                    bottom:33px;
+                    left:20px;
+                }
+                #bulb-4-text{
+                    position:relative;
+                    font-size:1.2rem;
+                    font-weight:bold;
+                    bottom:30px;
+                    left:20px;
+                }
+                #bulb-1, #bulb-2, #bulb-3, #bulb-4{
+                    position:relative;
+                }
+                #bulb-2, #bulb-3{
+                    bottom:5px;
+                }
+                #admitButton{
+                    position:relative;
+                    left:20px;
+                    bottom:10px;
+                    width:80px;
+                    height:80px;
+                    border:2px solid black;
+                    border-radius:40px;
+                    background-color:cyan;
+                    font-size:1.4rem;
                     font-weight:bold;
                 }
-            </style>
-        </head>
-        <body>
-            <div class="flex_container">
-                <section class="flex_content">
-                    <nav>
-                        ${this.weatherTable(pmWeather)}<br>
-
-                        ${this.pmTable(pmWeather)}
-
-                    </nav>
-                    <main>
-                        여백    
-                    </main>
-                    <aside>
-                    ${this.doorButton()}    
-                    ${this.password()}
-                    ${this.SMSService()}
-                    </aside>
-                </section>
-            </div>
-        </body>
-        </html>
-        `;
-    },    //${this.PMTable(PM,image,info)}
-    image: function(pmWeather){
-        if(pmWeather.dustKind === '미세먼지'){
-            if(pmWeather.pm.pm10Value[0]<=30)
-                return `<img src="public/좋음.PNG">`;
-            else if(pmWeather.pm.pm10Value[0]<=80)
-                return `<img src="public/보통.PNG">`;
-            else if(pmWeather.pm.pm10Value[0]<=150)
-                return `<img src="public/나쁨.PNG">`;
+              </style>
+          </head>
+          <body class="container">
+              <div id="content-1">
+                  <div id="content-1-1">
+                     ${this.memo()}
+                  </div>
+                  <div id="content-1-2">
+                     ${this.weather()}
+                  </div>
+                  <div id="content-1-3">
+                     ${this.PM()}
+                  </div>
+              </div>
+              <div id="content-2">
+                  <div id="content-2-1">
+                    ${this.bulbGroup()}
+                  </div>
+                  <div id="content-2-2">
+                    ${this.doorLock()}
+                  </div>
+              </div>
+          <script>
+            var groupLed = 15;
+            function imageChange(id){
+                var imagePath = document.getElementById(id).src;
+                var strArray = imagePath.split("/");
+                var imageSrc = strArray[strArray.length-1];
+                
+                //alert(strArray[strArray.length-1]);
+                //alert(id);
+                if(id == "bulb-1"){
+                    if(imageSrc == 'onBulb.svg'){
+                        document.getElementById(id).src="/public/offBulb.svg";
+                        groupLed -= 1;
+                    }else if(imageSrc == 'offBulb.svg'){
+                        document.getElementById(id).src="/public/onBulb.svg";
+                        groupLed += 1;                    
+                    }
+                }else if(id =="bulb-2"){
+                    if(imageSrc == 'onBulb.svg'){
+                        document.getElementById(id).src="/public/offBulb.svg";
+                        groupLed -= 2;
+                    }else if(imageSrc == 'offBulb.svg'){
+                        document.getElementById(id).src="/public/onBulb.svg";
+                        groupLed += 2;                    
+                    }
+                }else if(id =="bulb-3"){
+                    if(imageSrc == 'onBulb.svg'){
+                        document.getElementById(id).src="/public/offBulb.svg";
+                        groupLed -= 4;
+                    }else if(imageSrc == 'offBulb.svg'){
+                        document.getElementById(id).src="/public/onBulb.svg";
+                        groupLed += 4;                    
+                    }
+                }else{
+                    if(imageSrc == 'onBulb.svg'){
+                        document.getElementById(id).src="/public/offBulb.svg";
+                        groupLed -= 8;
+                    }else if(imageSrc == 'offBulb.svg'){
+                        document.getElementById(id).src="/public/onBulb.svg";
+                        groupLed += 8;                    
+                    }
+                }
+                document.getElementById('admitButton').style.backgroundColor="red";
+            }
+            function openButton_click(callBack){
+                $.ajax({
+                    url: 'http://168.131.35.103:7579/Mobius/lock/update',
+                    type: 'POST',
+                    dataType:"json",
+                    headers:{
+                        'Accept':'application/json',
+                        'X-M2M-RI':12345,
+                        'X-M2M-Origin':'JongJin',
+                        'Content-Type':'application/vnd.onem2m-res+json;ty=4'
+                    },
+                    data:JSON.stringify({
+                        'm2m:cin':{
+                            'con':'123'
+                        }
+                    })
+                });
+                document.getElementById("openButton").style.backgroundColor="red";
+                setTimeout(callBack, 5000);
+            }
+            function colorChange(){
+                document.getElementById("openButton").style.backgroundColor="snow";
+            }
+            function inOutAdminButton_click(){
+                location.href="/SMSService";
+            }
+            function passwordButton_click(){
+                location.href="/password/set";
+            }
+            function admitButton_click(){
+                $.ajax({
+                    url:'http://168.131.35.103:7579/Mobius/LEDGroup/update',
+                    type:'POST',
+                    dataType:"json",
+                    headers:{
+                        'Accept': 'application/json',
+                        'X-M2M-RI': 12345,
+                        'X-M2M-Origin': 'JongJin',
+                        'Content-Type': 'application/vnd.onem2m-res+json;ty=4'
+                    },
+                    data:JSON.stringify({
+                       'm2m:cin':{
+                            'con':groupLed
+                       }
+                    })
+                });
+                document.getElementById('admitButton').style.backgroundColor="cyan";
+            }
+          </script>
+          </body>
+      </html>
+      `;
+   },
+   memo: function(){
+      return`
+      <span id="memo">
+         <ol>
+            <li><a href="www.naver.com">주민등록등본 가져가기</a></li>
+            <li><a href="www.naver.com">컴퓨터 네트워크 과제 가져가기</a></li>
+         </ol>
+      </span>
+      `;
+   },
+   weather: function(){
+        var title=``;
+        for(i=16;i<openAPI.weather.title[0].length;i++){
+            if(i<=openAPI.weather.title[0].length-3 && i>=openAPI.weather.title[0].length-4);
             else
-                return `<img src="public/매우 나쁨.PNG">`;
-        }else{
-            if(pmWeather.pm.pm25Value[0]<=15)
-            return `<img src="public/좋음.PNG">`;
-            else if(pmWeather.pm.pm25Value[0]<=35)
-            return `<img src="public/보통.PNG">`;
-            else if(pmWeather.pm.pm25Value[0]<=75)
-            return `<img src="public/나쁨.PNG">`;
-            else
-            return `<img src="public/매우 나쁨.PNG">`;
+            title +=openAPI.weather.title[0].charAt(i);
         }
-    },
-    info : function(pmWeather){
-        if(pmWeather.dustKind==='미세먼지')
-        return `미세먼지 농도 
-        <h1>${pmWeather.pm.pm10Value[0]}㎍/㎥</h1>`;
-        else
-        return `초미세먼지 농도 
-        <h1>${pmWeather.pm.pm25Value[0]}㎍/㎥</h1>`;
-    },
-    pmTable:function(pmWeather){
-        return `
-        <table>
-            <caption style="background-color:#e4b9b9">
-            <div style="font-size:1.5rem;font-weight:bold;">미세먼지 알림</div>
-            <small>${pmWeather.pm.dataTime}기준(${pmWeather.pm.cityName})</small></caption>
-            
-            <thead>
-                <tr>
-                    <td>
-                        <form action="/fine_Dust">
-                            <input type="submit" value="미세먼지">
-                        </form>
-                    </td>
-                    <td>
-                        <form action="/fine_fine_Dust">
-                            <input type="submit" value="초미세먼지">
-                        </form>    
-                    </td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td >
-                        ${this.image(pmWeather)}
-                    </td>
-                    <td style="table-layout:fixed">
-                        ${this.info(pmWeather)}
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        `;
-    },
-    weatherTable:(pmWeather) => {
-        var title='';
-        for(i=16;i<pmWeather.weather.title[0].length;i++){
-            if(i<=pmWeather.weather.title[0].length-3 && i>=pmWeather.weather.title[0].length-4);
-            else
-            title +=pmWeather.weather.title[0].charAt(i);
-        }
-        list = `<tr class="weatherTable">`;
-        for(var i=0;i<7;i++){
-            if(pmWeather.detailWeather[i].day>=1){
-                if(pmWeather.detailWeather[i].hour>=12 && pmWeather.detailWeather[i].hour<24){
-                    list += `<td>${pmWeather.detailWeather[i].hour}PM</td>`;
+        var pubDate = openAPI.weather.pubDate[0];
+        var time=``;
+        var image=``;
+        var temperate=``;
+        var wind=``;
+        for(var i=0;i<6;i++){
+            // time
+            if(openAPI.detailWeather[i].day>=1){
+                if(openAPI.detailWeather[i].hour>=12 && openAPI.detailWeather[i].hour<24){
+                    time += `<td>${openAPI.detailWeather[i].hour}PM</td>`;
                 }
                 else{
-                    list += `<td>${pmWeather.detailWeather[i].hour}AM</td>`;
+                    time += `<td>${openAPI.detailWeather[i].hour}AM</td>`;
                 }
             }
             else{
-                if(pmWeather.detailWeather[i].hour>=12 && pmWeather.detailWeather[i].hour<24){
-                    list += `<td>${pmWeather.detailWeather[i].hour}PM</td>`;
+                if(openAPI.detailWeather[i].hour>=12 && openAPI.detailWeather[i].hour<24){
+                    time += `<td>${openAPI.detailWeather[i].hour}PM</td>`;
                 }
                 else{
-                    list += `<td>${pmWeather.detailWeather[i].hour}AM</td>`;
+                    time += `<td>${openAPI.detailWeather[i].hour}AM</td>`;
                 }
             }
-        }
-        list = list + `</thead><tbody><tr>`
-        for(var i=0;i<7;i++){
-            list+=`<td style="text-align:center;width:70px">
-                    날씨<br> ${pmWeather.detailWeather[i].wfKor}<br><br>
-                    기온<br> ${pmWeather.detailWeather[i].temp}°C<br><br>
-                    풍향<br> ${pmWeather.detailWeather[i].wdKor}
-            </td>`;
+            //image
+            if(openAPI.detailWeather[i].wfKor == "흐림")
+                image += `<td><img src="/public/cloud.svg"></td>`;
+            else if(openAPI.detailWeather[i].wfKor == "구름 많음")
+                image += `<td><img src="/public/clouds.svg"></td>`;
+            else if(openAPI.detailWeather[i].wfKor == "비")
+                image += `<td><img src="/public/rain.svg"></td>`;
+            else if(openAPI.detailWeather[i].wfKor == "소나기")
+                image += `<td><img src="/public/shower.svg"></td>`;
+            else if(openAPI.detailWeather[i].wfKor == "눈")
+                image += `<td><img src="/public/snow.svg"></td>`;
+            else if(openAPI.detailWeather[i].wfKor == "맑음")
+                image += `<td><img src="/public/sun.svg"></td>`;
+            else
+                image += `<td>${openAPI.detailWeather[i].wfkor}</td>`;
+            //temperate
+            temperate += `<td>${openAPI.detailWeather[i].temp}°C</td>`;
+            //wind
+            wind += `<td>${openAPI.detailWeather[i].wdKor}</td>`;
+
         }
         
-        return `
-        <table>
-            <caption style="background-color:#e4b9b9">
-                <div style="font-size:1.5rem;font-weight:bold;">${title}</div>
-                <small>${pmWeather.weather.pubDate}기준</small>
-            </caption>
-            <thead>
-                ${list}
-                </tr>
-            </tbody>
-        </table>
-        `;
-    },
-    doorButton:() =>{
-        return `
-        <form action="/DoorLock_Open" >
-            <input type="submit" value="문열기" style="width:200px;height:100px;background-color:YellowGreen;float:right">
-        </form>   
-        `;
-    },
-    password: () => {
-        return `
-        <form action="/password/set" method="GET">
-            <input type="submit" value="비밀번호 설정" style="width:200px;height:100px;background-color:YellowGreen;float:right">
-        </form>
-        `;
-    },
-    SMSService: () => {
-        return `
-        <form action="/SMSService" method="GET">
-            <input type="submit" value="일회용 출입 요청 서비스" style="width:200px;height:100px;background-color:YellowGreen;float:right">
-        </form>
-        `;
-    }
+
+      return`
+      <table>
+        <thead>
+            <tr id="tableTitle">
+                <td colspan="7" style="background-color:snow">${title}
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color:snow">시간</td>
+                ${time}
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color:snow">날씨</td>
+                ${image}
+            </tr>
+            <tr>
+                <td style="background-color:snow">기온</td>
+                ${temperate}
+            </tr>
+            <tr>
+                <td style="background-color:snow">풍향</td>
+                ${wind}
+            </tr>
+        </tbody>
+    </table>
+      `;
+   },
+   PM:function(){
+      var pm10Image="";
+      var pm25Image="";
+      if(openAPI.PM.pm10Value[0]<=30)
+         pm10Image = "/public/vertical_good.jpg";
+      else if(openAPI.PM.pm10Value[0]<=80)
+         pm10Image = "/public/vertical_normal.jpg";
+      else if(openAPI.PM.pm10Value[0]<=150)
+         pm10Image = "/public/vertical_bad.jpg";
+      else
+         pm10Image = "/public/vertical_prettybad.jpg";
+      if(openAPI.PM.pm25Value[0]<=15)
+         pm25Image = "/public/vertical_good.jpg";
+      else if(openAPI.PM.pm25Value[0]<=35)
+         pm25Image = "/public/vertical_normal.jpg";
+      else if(openAPI.PM.pm25Value[0]<=75)
+         pm25Image = "/public/vertical_bad.jpg";
+      else
+         pm25Image = "/public/vertical_prettybad.jpg";
+      return`
+      <div class="pmContainer">
+      <div id="pmTextContent">
+          <span id="pmText">
+            <br>
+            <br>
+            <div style="font-size:1.08rem;margin:0px;font-weight:bold">경기도 ${openAPI.PM.cityName[0]}</div>
+            <div style="font-size:1rem;">${openAPI.PM.dataTime[0]}기준</div>
+          </span>
+      </div>
+      <div id="pm">
+          <img src=${pm10Image} width="100%" height="100%">
+          <content id="pmName">
+              미세먼지
+          </content>
+          <content id="pmValue">
+              (${openAPI.PM.pm10Value[0]}<span style="font-size:0.6rem">㎍/㎥</span>)
+          </content>
+      </div>
+      <div id="detailPm">
+          <img src=${pm25Image} width="100%" height="100%">
+          <content id="detailPmName">
+              초미세먼지
+          </content>
+          <content id="detailPmValue">
+              (${openAPI.PM.pm25Value[0]}<span style="font-size:0.6rem">㎍/㎥</span>)
+          </content>
+      </div>
+      </div>
+      `;
+   },
+   bulbGroup:function(){
+    return`
+    <div id="content-2-1-1">
+        <div id="content-2-1-1-1"> <!-- 160 X 105 -->
+            <img id="bulb-1" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <span id="bulb-1-text">안방</span>
+        </div>
+        <div id="content-2-1-1-2"> <!-- 160 X 105 -->                      
+            <img id="bulb-4" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <span id="bulb-4-text">서재</span>
+        </div>
+    </div>
+    <div id="content-2-1-2">
+        <div id="content-2-1-2-1"> <!-- 100 X 59 -->
+        
+        </div>
+        <div id="content-2-1-2-2"> <!-- 120 X 59 -->
+            <button type="button" id="admitButton" onclick="admitButton_click()">
+                적용
+            </button>
+        </div>
+        <div id="content-2-1-2-3"> <!-- 100 X 59 -->
+        </div>
+    </div>
+    <div id="content-2-1-3">
+        <div id="content-2-1-3-1"> <!-- 160 X 105 -->
+            <img id="bulb-2" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <span id="bulb-2-text">옷방</span>
+        </div>
+        <div id="content-2-1-3-2"> <!-- 160 X 105 -->
+            <img id="bulb-3" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <span id="bulb-3-text">거실</span>
+        </div>
+    </div>
+    `;
+   },
+   doorLock:function(){
+    return`
+    <div id="content-2-2-1">
+    <button id="openButton" onclick="openButton_click(colorChange);">
+        문열기
+    </button>
+    </div>
+    <div id="content-2-2-2">
+        <div id="content-2-2-2-1">
+            <button type="button" id="inOutAdminButton" onclick="inOutAdminButton_click()()">
+                출입관리
+            </button>
+        </div>
+        <div id="content-2-2-2-2">
+            <button type="button" id="passwordButton" onclick="passwordButton_click()">
+                비밀번호 설정
+            </button>
+        </div>
+    </div>
+    `;
+   }
 }

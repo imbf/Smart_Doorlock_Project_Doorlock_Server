@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const passwordRouter = require('./routes/password.js');
 const SMSServiceRouter = require('./routes/SMSService.js');
 
-const hometest = require('./views/hometest');
+const home = require('./views/home');
 
 app.use('/public', static(path.join(__dirname,'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', (request,response) => { // => 는 변수를 생성하고 무명함수를 변수에 담을 때 사용하는 문법
     //response.send(homeTemplate.html(pmWeather));
     //test
-    response.send(hometest.html());
+    response.send(home.html());
 });
 /* 사용하지 않을 Function Page
 app.get('/fine_Dust',(request,response) => {

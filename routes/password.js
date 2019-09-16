@@ -1,11 +1,11 @@
 const express = require('express');
-const setPassword = require('../views/setPassword');
+const setPasswordPage = require('../views/setPasswordPage');
 const { doorlockdb } = require('../db');
 
 const router = express.Router();
 
 router.get('/set', (request, response) => {
-   response.send(setPassword.html('홈'));
+   response.send(setPasswordPage.html());
 });
 
 router.post('/setpassword', (request, response) => {
