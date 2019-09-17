@@ -31,30 +31,6 @@ app.get('/fine_fine_Dust', (request,response) => {
 });
 */
 
-app.get('/DoorLock_Open', (request, response) => {
-    const options = {
-        uri:'http://168.131.35.103:7579/Mobius/lock/update',
-        method: 'POST',
-        followRedirect:true,
-        maxRedirects:10,
-        headers:{
-            'Accept': 'application/json',
-            'X-M2M-RI': 12345,
-            'X-M2M-Origin': 'JongJin',
-            'Content-Type': 'application/vnd.onem2m-res+json; ty=4',
-        },
-        body:{
-            "m2m:cin":{
-                "con":"123"
-            }
-        },
-        json:true
-    }
-    Mrequest.post(options,(err,httpResponse,body)=> {
-        console.log(httpResponse);
-    });
-    response.redirect('/');    
-});
 app.use('/password', passwordRouter);
 app.use('/SMSService', SMSServiceRouter);
 
