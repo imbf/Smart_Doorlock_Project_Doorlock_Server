@@ -9,6 +9,7 @@ module.exports ={
             body{
                 background-image:url('background.jpg');
                 background-size:cover;
+                margin:0px;
             }
             .container{
                 display:flex;
