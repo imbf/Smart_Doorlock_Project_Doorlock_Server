@@ -4,7 +4,7 @@ const { doorlockdb } = require('../db');
 
 const router = express.Router();
 
-router.get('/set', (request, response) => {
+router.get('/', (request, response) => {
    response.send(setPasswordPage.html());
 });
 

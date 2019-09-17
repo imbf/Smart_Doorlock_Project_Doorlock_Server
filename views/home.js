@@ -406,7 +406,7 @@ module.exports = {
                 location.href="/SMSService";
             }
             function passwordButton_click(){
-                location.href="/password/set";
+                location.href="/password";
             }
             function admitButton_click(){
                 $.ajax({
