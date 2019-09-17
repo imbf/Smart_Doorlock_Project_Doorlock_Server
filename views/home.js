@@ -5,6 +5,7 @@ var bulbNumber=0;
 
 mobiusdb.query(`SELECT * FROM cin WHERE pi='/Mobius/LEDGroup/update' ORDER BY ri DESC LIMIT 1`,function(error,result,fields){
     bulbNumber=result[0].con;
+    console.log(bulbNumber);
 })
 
 module.exports = {
