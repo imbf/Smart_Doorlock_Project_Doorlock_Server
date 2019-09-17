@@ -10,7 +10,7 @@ module.exports = {
               <style>
                   body{
                     background-image:url('http://image.downloadwap.co.uk/wallpapers/wp/new/37/plantsgree_hfZKHogc.jpg');
-                     background-size:cover;
+                     background-size:contain;
                   }
                   .container{
                       display:flex;
