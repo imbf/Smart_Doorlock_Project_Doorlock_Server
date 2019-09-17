@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 
 const passwordRouter = require('./routes/password.js');
 const SMSServiceRouter = require('./routes/SMSService.js');
-const mobiusdb = require('../db').mobiusdb;
+const mobiusdb = require('./db').mobiusdb;
 const home = require('./views/home');
 
 
