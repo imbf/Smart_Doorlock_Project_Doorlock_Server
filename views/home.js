@@ -9,7 +9,7 @@ module.exports = {
           <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
               <style>
                   body{
-                     background-image:url('public/background.jpg');
+                    background-image:url('http://image.downloadwap.co.uk/wallpapers/wp/new/37/plantsgree_hfZKHogc.jpg');
                      background-size:cover;
                   }
                   .container{
@@ -61,6 +61,7 @@ module.exports = {
                     margin:0px;
                     border:2px solid black;
                     border-radius:20px;
+                    background-color:#EDEEEE;
                   }
                   #content-2-2{
                       display:flex;
