@@ -330,7 +330,7 @@ module.exports = {
               </div>
               <div id="content-2">
                   <div id="content-2-1">
-                    ${this.bulbGroup()}
+                    ${this.bulbGroup(bulbNumber)}
                   </div>
                   <div id="content-2-2">
                     ${this.doorLock()}
@@ -575,7 +575,7 @@ module.exports = {
       </div>
       `;
    },
-   bulbGroup:function(){
+   bulbGroup:function(bulbNumber){
     var bulbImage1 ='';
     var bulbImage2 ='';
     var bulbImage3 ='';
