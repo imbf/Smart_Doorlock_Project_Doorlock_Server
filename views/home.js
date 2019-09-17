@@ -9,8 +9,8 @@ module.exports = {
           <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
               <style>
                   body{
-                    background-image:url('http://image.downloadwap.co.uk/wallpapers/wp/new/37/plantsgree_hfZKHogc.jpg');
-                     background-size:contain;
+                    background-image:url('/public/background.jpg');
+                     background-size:cover;
                   }
                   .container{
                       display:flex;
