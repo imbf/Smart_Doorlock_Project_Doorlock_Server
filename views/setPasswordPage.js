@@ -15,7 +15,7 @@ module.exports ={
                 display:flex;
                 flex-direction:row;
                 box-sizing:border-box;
-                border:1px solid black;
+                border:2px solid black;
                 width:800px;
                 height:480px;
             }
