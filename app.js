@@ -7,13 +7,11 @@ const bodyParser = require('body-parser');
 
 const passwordRouter = require('./routes/password.js');
 const SMSServiceRouter = require('./routes/SMSService.js');
-const mobiusdb = require('./db').mobiusdb;
 const home = require('./views/home');
 
-// 전구 숫자 표시하는 Number
-var bulbNumber=0;
-
 app.use('/public', static(path.join(__dirname,'public')));
+app.use(bodyParser.urlencoded({ extended: false }));
+
 // init시 초기 LED 설정
 var options = {
     url: 'http://168.131.35.103:7579/Mobius/LEDGroup/update',
@@ -37,9 +35,10 @@ Mrequest(options);
 app.get('/', (request,response) => { // => 는 변수를 생성하고 무명함수를 변수에 담을 때 사용하는 문법
     //response.send(homeTemplate.html(pmWeather));
     //test
+    var mobiusdb = require('./db').mobiusdb;
+    var bulbNumber=0;
     mobiusdb.query(`SELECT * FROM cin WHERE pi='/Mobius/LEDGroup/update' ORDER BY ri DESC LIMIT 1`,function(error,result,fields){
         bulbNumber=result[0].con;
-        
     })
     response.send(home.html(bulbNumber));
 });

@@ -1,12 +1,7 @@
 const openAPI = require('../openAPI');
-var bulbNumber=0;
-const mobiusdb = require('../db').mobiusdb;
-mobiusdb.query(`SELECT * FROM cin WHERE pi='/Mobius/LEDGroup/update' ORDER BY ri DESC LIMIT 1`,function(error,result,fields){
-    bulbNumber=result[0].con;
-})
 
 module.exports = {
-   html:function(){
+   html:function(bulbNumber){
       return`
       <!doctype html>
       <html>
@@ -335,7 +330,7 @@ module.exports = {
               </div>
               <div id="content-2">
                   <div id="content-2-1">
-                    ${this.bulbGroup()}
+                    ${this.bulbGroup(bulbNumber)}
                   </div>
                   <div id="content-2-2">
                     ${this.doorLock()}
@@ -580,7 +575,7 @@ module.exports = {
       </div>
       `;
    },
-   bulbGroup:function(){
+   bulbGroup:function(bulbNumber){
     var bulbImage1 ='';
     var bulbImage2 ='';
     var bulbImage3 ='';
