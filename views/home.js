@@ -581,88 +581,88 @@ module.exports = {
     var bulbImage3 ='';
     var bulbImage4 ='';
     if(bulbNumber==15){
-        var bulbImage1 ='/public/onBulb.svg';
-        var bulbImage2 ='/public/onBulb.svg';
-        var bulbImage3 ='/public/onBulb.svg';
-        var bulbImage4 ='/public/onBulb.svg';
+        bulbImage1 ='/public/onBulb.svg';
+        bulbImage2 ='/public/onBulb.svg';
+        bulbImage3 ='/public/onBulb.svg';
+        bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==14){
-        var bulbImage1 ='/public/offBulb.svg';
-        var bulbImage2 ='/public/onBulb.svg';
-        var bulbImage3 ='/public/onBulb.svg';
-        var bulbImage4 ='/public/onBulb.svg';
+        bulbImage1 ='/public/offBulb.svg';
+        bulbImage2 ='/public/onBulb.svg';
+        bulbImage3 ='/public/onBulb.svg';
+        bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==13){
-        var bulbImage1 ='/public/onBulb.svg';
-        var bulbImage2 ='/public/offBulb.svg';
-        var bulbImage3 ='/public/onBulb.svg';
-        var bulbImage4 ='/public/onBulb.svg';
+        bulbImage1 ='/public/onBulb.svg';
+        bulbImage2 ='/public/offBulb.svg';
+        bulbImage3 ='/public/onBulb.svg';
+        bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==12){
-        var bulbImage1 ='/public/offBulb.svg';
-        var bulbImage2 ='/public/offBulb.svg';
-        var bulbImage3 ='/public/onBulb.svg';
-        var bulbImage4 ='/public/onBulb.svg';
+        bulbImage ='/public/offBulb.svg';
+        bulbImage2 ='/public/offBulb.svg';
+        bulbImage3 ='/public/onBulb.svg';
+        bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==11){
-        var bulbImage1 ='/public/onBulb.svg';
-        var bulbImage2 ='/public/onBulb.svg';
-        var bulbImage3 ='/public/offBulb.svg';
-        var bulbImage4 ='/public/onBulb.svg';
+        bulbImage ='/public/onBulb.svg';
+        bulbImage2 ='/public/onBulb.svg';
+        bulbImage3 ='/public/offBulb.svg';
+        bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==10){
-        var bulbImage1 ='/public/offBulb.svg';
-        var bulbImage2 ='/public/onBulb.svg';
-        var bulbImage3 ='/public/offBulb.svg';
-        var bulbImage4 ='/public/onBulb.svg';
+        bulbImage ='/public/offBulb.svg';
+        bulbImage2 ='/public/onBulb.svg';
+        bulbImage3 ='/public/offBulb.svg';
+        bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==9){
-        var bulbImage1 ='/public/onBulb.svg';
-        var bulbImage2 ='/public/offBulb.svg';
-        var bulbImage3 ='/public/offBulb.svg';
-        var bulbImage4 ='/public/onBulb.svg';
+        bulbImage ='/public/onBulb.svg';
+        bulbImage2 ='/public/offBulb.svg';
+        bulbImage3 ='/public/offBulb.svg';
+        bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==8){
-        var bulbImage1 ='/public/offBulb.svg';
-        var bulbImage2 ='/public/offBulb.svg';
-        var bulbImage3 ='/public/offBulb.svg';
-        var bulbImage4 ='/public/onBulb.svg';
+        bulbImage ='/public/offBulb.svg';
+        bulbImage2 ='/public/offBulb.svg';
+        bulbImage3 ='/public/offBulb.svg';
+        bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==7){
-        var bulbImage1 ='/public/onBulb.svg';
-        var bulbImage2 ='/public/onBulb.svg';
-        var bulbImage3 ='/public/onBulb.svg';
-        var bulbImage4 ='/public/offBulb.svg';
+        bulbImage ='/public/onBulb.svg';
+        bulbImage2 ='/public/onBulb.svg';
+        bulbImage3 ='/public/onBulb.svg';
+        bulbImage4 ='/public/offBulb.svg';
     }else if(bulbNumber==6){
-        var bulbImage1 ='/public/offBulb.svg';
-        var bulbImage2 ='/public/onBulb.svg';
-        var bulbImage3 ='/public/onBulb.svg';
-        var bulbImage4 ='/public/offBulb.svg';
+        bulbImage ='/public/offBulb.svg';
+        bulbImage2 ='/public/onBulb.svg';
+        bulbImage3 ='/public/onBulb.svg';
+        bulbImage4 ='/public/offBulb.svg';
     }else if(bulbNumber==5){
-        var bulbImage1 ='/public/onBulb.svg';
-        var bulbImage2 ='/public/offBulb.svg';
-        var bulbImage3 ='/public/onBulb.svg';
-        var bulbImage4 ='/public/offBulb.svg';
+        bulbImage ='/public/onBulb.svg';
+        bulbImage2 ='/public/offBulb.svg';
+        bulbImage3 ='/public/onBulb.svg';
+        bulbImage4 ='/public/offBulb.svg';
     }else if(bulbNumber==4){
-        var bulbImage1 ='/public/offBulb.svg';
-        var bulbImage2 ='/public/offBulb.svg';
-        var bulbImage3 ='/public/onBulb.svg';
-        var bulbImage4 ='/public/offBulb.svg';
+        bulbImage ='/public/offBulb.svg';
+        bulbImage2 ='/public/offBulb.svg';
+        bulbImage3 ='/public/onBulb.svg';
+        bulbImage4 ='/public/offBulb.svg';
     }else if(bulbNumber==3){
-        var bulbImage1 ='/public/onBulb.svg';
-        var bulbImage2 ='/public/onBulb.svg';
-        var bulbImage3 ='/public/offBulb.svg';
-        var bulbImage4 ='/public/offBulb.svg';
+        bulbImage ='/public/onBulb.svg';
+        bulbImage2 ='/public/onBulb.svg';
+        bulbImage3 ='/public/offBulb.svg';
+        bulbImage4 ='/public/offBulb.svg';
     }
     else if(bulbNumber==2){
-        var bulbImage1 ='/public/offBulb.svg';
-        var bulbImage2 ='/public/onBulb.svg';
-        var bulbImage3 ='/public/offBulb.svg';
-        var bulbImage4 ='/public/offBulb.svg';
+        bulbImage ='/public/offBulb.svg';
+        bulbImage2 ='/public/onBulb.svg';
+        bulbImage3 ='/public/offBulb.svg';
+        bulbImage4 ='/public/offBulb.svg';
     }
     else if(bulbNumber==1){
-        var bulbImage1 ='/public/onBulb.svg';
-        var bulbImage2 ='/public/offBulb.svg';
-        var bulbImage3 ='/public/offBulb.svg';
-        var bulbImage4 ='/public/offBulb.svg';
+        bulbImage ='/public/onBulb.svg';
+        bulbImage2 ='/public/offBulb.svg';
+        bulbImage3 ='/public/offBulb.svg';
+        bulbImage4 ='/public/offBulb.svg';
     }
     else if(bulbNumber==0){
-        var bulbImage1 ='/public/offBulb.svg';
-        var bulbImage2 ='/public/offBulb.svg';
-        var bulbImage3 ='/public/offBulb.svg';
-        var bulbImage4 ='/public/offBulb.svg';
+        bulbImage ='/public/offBulb.svg';
+        bulbImage2 ='/public/offBulb.svg';
+        bulbImage3 ='/public/offBulb.svg';
+        bulbImage4 ='/public/offBulb.svg';
     }
     return`
     <div id="content-2-1-1">
