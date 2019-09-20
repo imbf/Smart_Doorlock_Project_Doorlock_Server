@@ -1,6 +1,6 @@
 const openAPI = require('../openAPI');
 var bulbNumber=0;
-const mobiusdb = require('./db').mobiusdb;
+const mobiusdb = require('../db').mobiusdb;
 mobiusdb.query(`SELECT * FROM cin WHERE pi='/Mobius/LEDGroup/update' ORDER BY ri DESC LIMIT 1`,function(error,result,fields){
     bulbNumber=result[0].con;
 })
