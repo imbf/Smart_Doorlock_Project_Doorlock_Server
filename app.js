@@ -37,7 +37,7 @@ app.get('/', (request,response) => { // => 는 변수를 생성하고 무명함�
     //test
     var mobiusdb = require('./db').mobiusdb;
     var bulbNumber=0;
-    mobiusdb.query(`SELECT * FROM cin WHERE pi='/Mobius/LEDGroup/update' ORDER BY ri DESC LIMIT 1`,function(error,result,fields){
+    await mobiusdb.query(`SELECT * FROM cin WHERE pi='/Mobius/LEDGroup/update' ORDER BY ri DESC LIMIT 1`,function(error,result,fields){
         bulbNumber=result[0].con;
         console.log("하이",bulbNumber);
     })

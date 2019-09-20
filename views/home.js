@@ -330,7 +330,7 @@ module.exports = {
               </div>
               <div id="content-2">
                   <div id="content-2-1">
-                    ${this.bulbGroup(bulbNumber)}
+                    ${this.bulbGroup()}
                   </div>
                   <div id="content-2-2">
                     ${this.doorLock()}
@@ -575,103 +575,15 @@ module.exports = {
       </div>
       `;
    },
-   bulbGroup:function(bulbNumber){
-    var bulbImage1 ='';
-    var bulbImage2 ='';
-    var bulbImage3 ='';
-    var bulbImage4 ='';
-    if(bulbNumber==15){
-        bulbImage1 ='/public/onBulb.svg';
-        bulbImage2 ='/public/onBulb.svg';
-        bulbImage3 ='/public/onBulb.svg';
-        bulbImage4 ='/public/onBulb.svg';
-    }else if(bulbNumber==14){
-        bulbImage1 ='/public/offBulb.svg';
-        bulbImage2 ='/public/onBulb.svg';
-        bulbImage3 ='/public/onBulb.svg';
-        bulbImage4 ='/public/onBulb.svg';
-    }else if(bulbNumber==13){
-        bulbImage1 ='/public/onBulb.svg';
-        bulbImage2 ='/public/offBulb.svg';
-        bulbImage3 ='/public/onBulb.svg';
-        bulbImage4 ='/public/onBulb.svg';
-    }else if(bulbNumber==12){
-        bulbImage1 ='/public/offBulb.svg';
-        bulbImage2 ='/public/offBulb.svg';
-        bulbImage3 ='/public/onBulb.svg';
-        bulbImage4 ='/public/onBulb.svg';
-    }else if(bulbNumber==11){
-        bulbImage1 ='/public/onBulb.svg';
-        bulbImage2 ='/public/onBulb.svg';
-        bulbImage3 ='/public/offBulb.svg';
-        bulbImage4 ='/public/onBulb.svg';
-    }else if(bulbNumber==10){
-        bulbImage1 ='/public/offBulb.svg';
-        bulbImage2 ='/public/onBulb.svg';
-        bulbImage3 ='/public/offBulb.svg';
-        bulbImage4 ='/public/onBulb.svg';
-    }else if(bulbNumber==9){
-        bulbImage1 ='/public/onBulb.svg';
-        bulbImage2 ='/public/offBulb.svg';
-        bulbImage3 ='/public/offBulb.svg';
-        bulbImage4 ='/public/onBulb.svg';
-    }else if(bulbNumber==8){
-        bulbImage1 ='/public/offBulb.svg';
-        bulbImage2 ='/public/offBulb.svg';
-        bulbImage3 ='/public/offBulb.svg';
-        bulbImage4 ='/public/onBulb.svg';
-    }else if(bulbNumber==7){
-        bulbImage1 ='/public/onBulb.svg';
-        bulbImage2 ='/public/onBulb.svg';
-        bulbImage3 ='/public/onBulb.svg';
-        bulbImage4 ='/public/offBulb.svg';
-    }else if(bulbNumber==6){
-        bulbImage1 ='/public/offBulb.svg';
-        bulbImage2 ='/public/onBulb.svg';
-        bulbImage3 ='/public/onBulb.svg';
-        bulbImage4 ='/public/offBulb.svg';
-    }else if(bulbNumber==5){
-        bulbImage1 ='/public/onBulb.svg';
-        bulbImage2 ='/public/offBulb.svg';
-        bulbImage3 ='/public/onBulb.svg';
-        bulbImage4 ='/public/offBulb.svg';
-    }else if(bulbNumber==4){
-        bulbImage1 ='/public/offBulb.svg';
-        bulbImage2 ='/public/offBulb.svg';
-        bulbImage3 ='/public/onBulb.svg';
-        bulbImage4 ='/public/offBulb.svg';
-    }else if(bulbNumber==3){
-        bulbImage1 ='/public/onBulb.svg';
-        bulbImage2 ='/public/onBulb.svg';
-        bulbImage3 ='/public/offBulb.svg';
-        bulbImage4 ='/public/offBulb.svg';
-    }
-    else if(bulbNumber==2){
-        bulbImage1 ='/public/offBulb.svg';
-        bulbImage2 ='/public/onBulb.svg';
-        bulbImage3 ='/public/offBulb.svg';
-        bulbImage4 ='/public/offBulb.svg';
-    }
-    else if(bulbNumber==1){
-        bulbImage1 ='/public/onBulb.svg';
-        bulbImage2 ='/public/offBulb.svg';
-        bulbImage3 ='/public/offBulb.svg';
-        bulbImage4 ='/public/offBulb.svg';
-    }
-    else if(bulbNumber==0){
-        bulbImage1 ='/public/offBulb.svg';
-        bulbImage2 ='/public/offBulb.svg';
-        bulbImage3 ='/public/offBulb.svg';
-        bulbImage4 ='/public/offBulb.svg';
-    }
+   bulbGroup:function(){
     return`
     <div id="content-2-1-1">
         <div id="content-2-1-1-1"> <!-- 160 X 105 -->
-            <img id="bulb-1" src=${bulbImage1} width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-1" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-1-text">안방</span>
         </div>
         <div id="content-2-1-1-2"> <!-- 160 X 105 -->                      
-            <img id="bulb-4" src=${bulbImage2} width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-4" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-4-text">서재</span>
         </div>
     </div>
@@ -689,11 +601,11 @@ module.exports = {
     </div>
     <div id="content-2-1-3">
         <div id="content-2-1-3-1"> <!-- 160 X 105 -->
-            <img id="bulb-2" src=${bulbImage3} width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-2" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-2-text">옷방</span>
         </div>
         <div id="content-2-1-3-2"> <!-- 160 X 105 -->
-            <img id="bulb-3" src=${bulbImage4} width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-3" src="/public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-3-text">거실</span>
         </div>
     </div>
