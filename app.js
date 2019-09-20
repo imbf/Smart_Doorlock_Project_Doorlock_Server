@@ -10,11 +10,8 @@ const SMSServiceRouter = require('./routes/SMSService.js');
 const mobiusdb = require('./db').mobiusdb;
 const home = require('./views/home');
 
-
+// 전구 숫자 표시하는 Number
 var bulbNumber=0;
-
-
-
 
 app.use('/public', static(path.join(__dirname,'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -52,6 +49,6 @@ app.get('/', (request,response) => { // => 는 변수를 생성하고 무명함�
 app.use('/password', passwordRouter);
 app.use('/SMSService', SMSServiceRouter);
 
-app.listen(3000, () => {    //히로쿠에 사이트를 hosting하고 싶으면 PORT 입력
+app.listen(3000, () => {   
     console.log('3000번 포트에서 스마트 도어락 서버가 대기중입니다.');
 });
