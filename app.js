@@ -14,8 +14,6 @@ const home = require('./views/home');
 var bulbNumber=0;
 
 app.use('/public', static(path.join(__dirname,'public')));
-app.use(bodyParser.urlencoded({ extended: false }));
-
 // init시 초기 LED 설정
 var options = {
     url: 'http://168.131.35.103:7579/Mobius/LEDGroup/update',
