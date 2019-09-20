@@ -596,70 +596,70 @@ module.exports = {
         bulbImage3 ='/public/onBulb.svg';
         bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==12){
-        bulbImage ='/public/offBulb.svg';
+        bulbImage1 ='/public/offBulb.svg';
         bulbImage2 ='/public/offBulb.svg';
         bulbImage3 ='/public/onBulb.svg';
         bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==11){
-        bulbImage ='/public/onBulb.svg';
+        bulbImage1 ='/public/onBulb.svg';
         bulbImage2 ='/public/onBulb.svg';
         bulbImage3 ='/public/offBulb.svg';
         bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==10){
-        bulbImage ='/public/offBulb.svg';
+        bulbImage1 ='/public/offBulb.svg';
         bulbImage2 ='/public/onBulb.svg';
         bulbImage3 ='/public/offBulb.svg';
         bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==9){
-        bulbImage ='/public/onBulb.svg';
+        bulbImage1 ='/public/onBulb.svg';
         bulbImage2 ='/public/offBulb.svg';
         bulbImage3 ='/public/offBulb.svg';
         bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==8){
-        bulbImage ='/public/offBulb.svg';
+        bulbImage1 ='/public/offBulb.svg';
         bulbImage2 ='/public/offBulb.svg';
         bulbImage3 ='/public/offBulb.svg';
         bulbImage4 ='/public/onBulb.svg';
     }else if(bulbNumber==7){
-        bulbImage ='/public/onBulb.svg';
+        bulbImage1 ='/public/onBulb.svg';
         bulbImage2 ='/public/onBulb.svg';
         bulbImage3 ='/public/onBulb.svg';
         bulbImage4 ='/public/offBulb.svg';
     }else if(bulbNumber==6){
-        bulbImage ='/public/offBulb.svg';
+        bulbImage1 ='/public/offBulb.svg';
         bulbImage2 ='/public/onBulb.svg';
         bulbImage3 ='/public/onBulb.svg';
         bulbImage4 ='/public/offBulb.svg';
     }else if(bulbNumber==5){
-        bulbImage ='/public/onBulb.svg';
+        bulbImage1 ='/public/onBulb.svg';
         bulbImage2 ='/public/offBulb.svg';
         bulbImage3 ='/public/onBulb.svg';
         bulbImage4 ='/public/offBulb.svg';
     }else if(bulbNumber==4){
-        bulbImage ='/public/offBulb.svg';
+        bulbImage1 ='/public/offBulb.svg';
         bulbImage2 ='/public/offBulb.svg';
         bulbImage3 ='/public/onBulb.svg';
         bulbImage4 ='/public/offBulb.svg';
     }else if(bulbNumber==3){
-        bulbImage ='/public/onBulb.svg';
+        bulbImage1 ='/public/onBulb.svg';
         bulbImage2 ='/public/onBulb.svg';
         bulbImage3 ='/public/offBulb.svg';
         bulbImage4 ='/public/offBulb.svg';
     }
     else if(bulbNumber==2){
-        bulbImage ='/public/offBulb.svg';
+        bulbImage1 ='/public/offBulb.svg';
         bulbImage2 ='/public/onBulb.svg';
         bulbImage3 ='/public/offBulb.svg';
         bulbImage4 ='/public/offBulb.svg';
     }
     else if(bulbNumber==1){
-        bulbImage ='/public/onBulb.svg';
+        bulbImage1 ='/public/onBulb.svg';
         bulbImage2 ='/public/offBulb.svg';
         bulbImage3 ='/public/offBulb.svg';
         bulbImage4 ='/public/offBulb.svg';
     }
     else if(bulbNumber==0){
-        bulbImage ='/public/offBulb.svg';
+        bulbImage1 ='/public/offBulb.svg';
         bulbImage2 ='/public/offBulb.svg';
         bulbImage3 ='/public/offBulb.svg';
         bulbImage4 ='/public/offBulb.svg';
