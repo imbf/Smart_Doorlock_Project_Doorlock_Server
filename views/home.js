@@ -1,7 +1,7 @@
 const openAPI = require('../openAPI');
 
 module.exports = {
-   html:function(bulbNumber){
+   html:function(){
       return`
       <!doctype html>
       <html>
@@ -330,7 +330,7 @@ module.exports = {
               </div>
               <div id="content-2">
                   <div id="content-2-1">
-                    ${this.bulbGroup(bulbNumber)}
+                    ${this.bulbGroup()}
                   </div>
                   <div id="content-2-2">
                     ${this.doorLock()}
@@ -575,7 +575,7 @@ module.exports = {
       </div>
       `;
    },
-   bulbGroup:function(bulbNumber){
+   bulbGroup:function(){
     var bulbImage1 ='';
     var bulbImage2 ='';
     var bulbImage3 ='';
@@ -667,11 +667,11 @@ module.exports = {
     return`
     <div id="content-2-1-1">
         <div id="content-2-1-1-1"> <!-- 160 X 105 -->
-            <img id="bulb-1" src=${bulbImage1} width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-1" src="./public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-1-text">안방</span>
         </div>
         <div id="content-2-1-1-2"> <!-- 160 X 105 -->                      
-            <img id="bulb-4" src=${bulbImage4} width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-4" src="./public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-4-text">서재</span>
         </div>
     </div>
@@ -689,11 +689,11 @@ module.exports = {
     </div>
     <div id="content-2-1-3">
         <div id="content-2-1-3-1"> <!-- 160 X 105 -->
-            <img id="bulb-2" src=${bulbImage2} width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-2" src="./public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-2-text">옷방</span>
         </div>
         <div id="content-2-1-3-2"> <!-- 160 X 105 -->
-            <img id="bulb-3" src=${bulbImage3} width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-3" src="./public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-3-text">거실</span>
         </div>
     </div>

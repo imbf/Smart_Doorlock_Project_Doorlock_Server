@@ -30,17 +30,11 @@ var options = {
     json:true
 }
 Mrequest(options);
-var bulbNumber=0;
 
 app.get('/', (request,response) => { // => 는 변수를 생성하고 무명함수를 변수에 담을 때 사용하는 문법
     //response.send(homeTemplate.html(pmWeather));
-    //test
-    var mobiusdb = require('./db').mobiusdb;
-    mobiusdb.query(`SELECT * FROM cin WHERE pi='/Mobius/LEDGroup/update' ORDER BY ri DESC LIMIT 1`,function(error,result,fields){
-        bulbNumber=result[0].con;
-    })
-    console.log(bulbNumber);
-    response.send(home.html(bulbNumber));
+    response.send(home.html())
+
 });
 
 app.use('/password', passwordRouter);
