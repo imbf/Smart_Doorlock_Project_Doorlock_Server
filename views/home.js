@@ -10,7 +10,7 @@ module.exports = {
               <style>
                   body{
                     background-image:url('/public/background.jpg');
-                     background-size:cover;
+                     background-size:1600px;
                   }
                   .container{
                       display:flex;
