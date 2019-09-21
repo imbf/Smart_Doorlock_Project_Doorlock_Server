@@ -338,9 +338,9 @@ module.exports = {
               </div>
           <script>
             var groupLed = 15;
-            var bulbNumber=document.cookie.substr(9,document.cookie.length);
             if(document.cookie.length==0)
                document.cookie="groupLed="+groupLed;
+            var bulbNumber=document.cookie.substr(9,document.cookie.length);
             if(bulbNumber==15){
                 document.getElementById('bulb-1').src="./public/onBulb.svg";
                 document.getElementById('bulb-2').src="./public/onBulb.svg";
