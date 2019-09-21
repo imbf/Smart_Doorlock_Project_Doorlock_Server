@@ -576,6 +576,7 @@ module.exports = {
       `;
    },
    bulbGroup:function(){
+    /*
     var bulbImage1 ='';
     var bulbImage2 ='';
     var bulbImage3 ='';
@@ -664,6 +665,7 @@ module.exports = {
         bulbImage3 ='/public/offBulb.svg';
         bulbImage4 ='/public/offBulb.svg';
     }
+    */
     return`
     <div id="content-2-1-1">
         <div id="content-2-1-1-1"> <!-- 160 X 105 -->
