@@ -1,7 +1,7 @@
 const openAPI = require('../openAPI');
 
 module.exports = {
-   html:function(){
+   html:function(bulbNumber){
       return`
       <!doctype html>
       <html>
@@ -330,7 +330,7 @@ module.exports = {
               </div>
               <div id="content-2">
                   <div id="content-2-1">
-                    ${this.bulbGroup()}
+                    ${this.bulbGroup(bulbNumber)}
                   </div>
                   <div id="content-2-2">
                     ${this.doorLock()}
@@ -340,88 +340,6 @@ module.exports = {
             var groupLed = 15;
             if(document.cookie.length==0)
                document.cookie="groupLed="+groupLed;
-            var bulbNumber=document.cookie.substr(9,document.cookie.length);
-            if(bulbNumber==15){
-                document.getElementById('bulb-1').src="./public/onBulb.svg";
-                document.getElementById('bulb-2').src="./public/onBulb.svg";
-                document.getElementById('bulb-3').src="./public/onBulb.svg";
-                document.getElementById('bulb-4').src="./public/onBulb.svg";
-            }else if(bulbNumber==14){
-                document.getElementById('bulb-1').src="./public/offBulb.svg";
-                document.getElementById('bulb-2').src="./public/onBulb.svg";
-                document.getElementById('bulb-3').src="./public/onBulb.svg";
-                document.getElementById('bulb-4').src="./public/onBulb.svg";
-            }else if(bulbNumber==13){
-                document.getElementById('bulb-1').src="./public/onBulb.svg";
-                document.getElementById('bulb-2').src="./public/offBulb.svg";
-                document.getElementById('bulb-3').src="./public/onBulb.svg";
-                document.getElementById('bulb-4').src="./public/onBulb.svg";
-            }else if(bulbNumber==12){
-                document.getElementById('bulb-1').src="./public/offBulb.svg";
-                document.getElementById('bulb-2').src="./public/offBulb.svg";
-                document.getElementById('bulb-3').src="./public/onBulb.svg";
-                document.getElementById('bulb-4').src="./public/onBulb.svg";
-            }else if(bulbNumber==11){
-                document.getElementById('bulb-1').src="./public/onBulb.svg";
-                document.getElementById('bulb-2').src="./public/onBulb.svg";
-                document.getElementById('bulb-3').src="./public/offBulb.svg";
-                document.getElementById('bulb-4').src="./public/onBulb.svg";
-            }else if(bulbNumber==10){
-                document.getElementById('bulb-1').src="./public/offBulb.svg";
-                document.getElementById('bulb-2').src="./public/onBulb.svg";
-                document.getElementById('bulb-3').src="./public/offBulb.svg";
-                document.getElementById('bulb-4').src="./public/onBulb.svg";
-            }else if(bulbNumber==9){
-                document.getElementById('bulb-1').src="./public/onBulb.svg";
-                document.getElementById('bulb-2').src="./public/offBulb.svg";
-                document.getElementById('bulb-3').src="./public/offBulb.svg";
-                document.getElementById('bulb-4').src="./public/onBulb.svg";
-            }else if(bulbNumber==8){
-                document.getElementById('bulb-1').src="./public/offBulb.svg";
-                document.getElementById('bulb-2').src="./public/offBulb.svg";
-                document.getElementById('bulb-3').src="./public/offBulb.svg";
-                document.getElementById('bulb-4').src="./public/onBulb.svg";
-            }else if(bulbNumber==7){
-                document.getElementById('bulb-1').src="./public/onBulb.svg";
-                document.getElementById('bulb-2').src="./public/onBulb.svg";
-                document.getElementById('bulb-3').src="./public/onBulb.svg";
-                document.getElementById('bulb-4').src="./public/offBulb.svg";
-            }else if(bulbNumber==6){
-                document.getElementById('bulb-1').src="./public/offBulb.svg";
-                document.getElementById('bulb-2').src="./public/onBulb.svg";
-                document.getElementById('bulb-3').src="./public/onBulb.svg";
-                document.getElementById('bulb-4').src="./public/offBulb.svg";
-            }else if(bulbNumber==5){
-                document.getElementById('bulb-1').src="./public/onBulb.svg";
-                document.getElementById('bulb-2').src="./public/offBulb.svg";
-                document.getElementById('bulb-3').src="./public/onBulb.svg";
-                document.getElementById('bulb-4').src="./public/offBulb.svg";
-            }else if(bulbNumber==4){
-                document.getElementById('bulb-1').src="./public/offBulb.svg";
-                document.getElementById('bulb-2').src="./public/offBulb.svg";
-                document.getElementById('bulb-3').src="./public/onBulb.svg";
-                document.getElementById('bulb-4').src="./public/offBulb.svg";
-            }else if(bulbNumber==3){
-                document.getElementById('bulb-1').src="./public/onBulb.svg";
-                document.getElementById('bulb-2').src="./public/onBulb.svg";
-                document.getElementById('bulb-3').src="./public/offBulb.svg";
-                document.getElementById('bulb-4').src="./public/offBulb.svg";
-            }else if(bulbNumber==2){
-                document.getElementById('bulb-1').src="./public/offBulb.svg";
-                document.getElementById('bulb-2').src="./public/onBulb.svg";
-                document.getElementById('bulb-3').src="./public/offBulb.svg";
-                document.getElementById('bulb-4').src="./public/offBulb.svg";
-            }else if(bulbNumber==1){
-                document.getElementById('bulb-1').src="./public/onBulb.svg";
-                document.getElementById('bulb-2').src="./public/offBulb.svg";
-                document.getElementById('bulb-3').src="./public/offBulb.svg";
-                document.getElementById('bulb-4').src="./public/offBulb.svg";
-            }else if(bulbNumber==0){
-                document.getElementById('bulb-1').src="./public/offBulb.svg";
-                document.getElementById('bulb-2').src="./public/offBulb.svg";
-                document.getElementById('bulb-3').src="./public/offBulb.svg";
-                document.getElementById('bulb-4').src="./public/offBulb.svg";
-            }
            function imageSrcParser(id){
                strArray = document.getElementById(id).src.split("/");
                return strArray[strArray.length-1];
@@ -660,16 +578,101 @@ module.exports = {
       </div>
       `;
    },
-   bulbGroup:function(){
+   bulbGroup:function(bulbNumber){
+    bulbImage1 = '';
+    bulbImage2 = '';
+    bulbImage3 = '';
+    bulbImage4 = '';
+    if(bulbNumber==15){
+        bulbImage1 = './public/onBulb.svg';
+        bulbImage2 = './public/onBulb.svg';
+        bulbImage3 = './public/onBulb.svg';
+        bulbImage4 = './public/onBulb.svg';
+    }else if(bulbNumber==14){
+        bulbImage1 = './public/offBulb.svg';
+        bulbImage2 = './public/onBulb.svg';
+        bulbImage3 = './public/onBulb.svg';
+        bulbImage4 = './public/onBulb.svg';
+    }else if(bulbNumber==13){
+        bulbImage1 = './public/onBulb.svg';
+        bulbImage2 = './public/offBulb.svg';
+        bulbImage3 = './public/onBulb.svg';
+        bulbImage4 = './public/onBulb.svg';
+    }else if(bulbNumber==12){
+        bulbImage1 = './public/offBulb.svg';
+        bulbImage2 = './public/offBulb.svg';
+        bulbImage3 = './public/onBulb.svg';
+        bulbImage4 = './public/onBulb.svg';
+    }else if(bulbNumber==11){
+        bulbImage1 = './public/onBulb.svg';
+        bulbImage2 = './public/onBulb.svg';
+        bulbImage3 = './public/offBulb.svg';
+        bulbImage4 = './public/onBulb.svg';
+    }else if(bulbNumber==10){
+        bulbImage1 = './public/offBulb.svg';
+        bulbImage2 = './public/onBulb.svg';
+        bulbImage3 = './public/offBulb.svg';
+        bulbImage4 = './public/onBulb.svg';
+    }else if(bulbNumber==9){
+        bulbImage1 = './public/onBulb.svg';
+        bulbImage2 = './public/offBulb.svg';
+        bulbImage3 = './public/offBulb.svg';
+        bulbImage4 = './public/onBulb.svg';
+    }else if(bulbNumber==8){
+        bulbImage1 = './public/offBulb.svg';
+        bulbImage2 = './public/offBulb.svg';
+        bulbImage3 = './public/offBulb.svg';
+        bulbImage4 = './public/onBulb.svg';
+    }else if(bulbNumber==7){
+        bulbImage1 = './public/onBulb.svg';
+        bulbImage2 = './public/onBulb.svg';
+        bulbImage3 = './public/onBulb.svg';
+        bulbImage4 = './public/offBulb.svg';
+    }else if(bulbNumber==6){
+        bulbImage1 = './public/offBulb.svg';
+        bulbImage2 = './public/onBulb.svg';
+        bulbImage3 = './public/onBulb.svg';
+        bulbImage4 = './public/offBulb.svg';
+    }else if(bulbNumber==5){
+        bulbImage1 = './public/onBulb.svg';
+        bulbImage2 = './public/offBulb.svg';
+        bulbImage3 = './public/onBulb.svg';
+        bulbImage4 = './public/offBulb.svg';
+    }else if(bulbNumber==4){
+        bulbImage1 = './public/offBulb.svg';
+        bulbImage2 = './public/offBulb.svg';
+        bulbImage3 = './public/onBulb.svg';
+        bulbImage4 = './public/offBulb.svg';
+    }else if(bulbNumber==3){
+        bulbImage1 = './public/onBulb.svg';
+        bulbImage2 = './public/onBulb.svg';
+        bulbImage3 = './public/offBulb.svg';
+        bulbImage4 = './public/offBulb.svg';
+    }else if(bulbNumber==2){
+        bulbImage1 = './public/offBulb.svg';
+        bulbImage2 = './public/onBulb.svg';
+        bulbImage3 = './public/offBulb.svg';
+        bulbImage4 = './public/offBulb.svg';
+    }else if(bulbNumber==1){
+        bulbImage1 = './public/onBulb.svg';
+        bulbImage2 = './public/offBulb.svg';
+        bulbImage3 = './public/offBulb.svg';
+        bulbImage4 = './public/offBulb.svg';
+    }else if(bulbNumber==0){
+        bulbImage1 = './public/offBulb.svg';
+        bulbImage2 = './public/offBulb.svg';
+        bulbImage3 = './public/offBulb.svg';
+        bulbImage4 = './public/offBulb.svg';
+    }
 
     return`
     <div id="content-2-1-1">
         <div id="content-2-1-1-1"> <!-- 160 X 105 -->
-            <img id="bulb-1" src="./public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-1" src=${bulbImage1} width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-1-text">안방</span>
         </div>
         <div id="content-2-1-1-2"> <!-- 160 X 105 -->                      
-            <img id="bulb-4" src="./public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-4" src=${bulbImage4} width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-4-text">서재</span>
         </div>
     </div>
@@ -687,11 +690,11 @@ module.exports = {
     </div>
     <div id="content-2-1-3">
         <div id="content-2-1-3-1"> <!-- 160 X 105 -->
-            <img id="bulb-2" src="./public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-2" src=${bulbImage2} width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-2-text">옷방</span>
         </div>
         <div id="content-2-1-3-2"> <!-- 160 X 105 -->
-            <img id="bulb-3" src="./public/onBulb.svg" width=100% height=100% onclick="imageChange(this.id)">
+            <img id="bulb-3" src=${bulbImage3} width=100% height=100% onclick="imageChange(this.id)">
             <span id="bulb-3-text">거실</span>
         </div>
     </div>
