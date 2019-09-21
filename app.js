@@ -36,8 +36,10 @@ Mrequest(options);
 
 
 app.get('/', (request,response) => { // => 는 변수를 생성하고 무명함수를 변수에 담을 때 사용하는 문법
-    response.send(home.html(request.cookies.groupLed))
-    
+    if(request.cookies.groupLed==null)
+        response.send(home.html(15));
+    else
+        response.send(home.html(request.cookies.groupLed));
 });
 
 app.use('/password', passwordRouter);
