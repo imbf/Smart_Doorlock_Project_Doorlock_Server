@@ -1,11 +1,11 @@
 module.exports ={
-   html:function(){
+   html:function(password){
       return `
       <!doctype html>
       <html>
           <head>
-      
-          <title>로그인 폼</title>
+          <title>비밀번호</title>
+          <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
               <style>
                   .text-center{text-align:center!important}
                   .card{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:1px solid rgba(0,0,0,.125);border-radius:.25rem}
@@ -87,13 +87,14 @@ module.exports ={
                                   <h3 class="card-title text-center" style="color:#113366;">비밀번호 변경</h3>
                               </div>
                               <div class="card-body">
-                                <form class="form-signin" method="POST" onSubmit="logincall();return false">
+                                <form action="/password/setPassword/" id="form" class="form-signin" method="POST" onSubmit="logincall();return false">
                                   <input type="text" id="nowPassword" class="form-control" placeholder="현재 비밀번호" required autofocus>
-                                  <input type="password" id="Password" class="form-control" placeholder="새비밀번호" required>
-                                  <input type="password" id="rePassword" class="form-control" placeholder="비밀번호 확인" required>
-                                  <button id="btn-Yes" class="btn btn-lg btn-primary btn-block" type="submit">확인</button>
-                                  <button id="btn-Home" class="btn btn-lg btn-primary btn-block" onclick="goHome()">홈</button>
+                                  <input type="password" id="Password" name="Password" class="form-control" placeholder="새비밀번호" required>
+                                  <input type="password" id="rePassword" name="rePassword" class="form-control" placeholder="비밀번호 확인" required>
+                                  <button id="btn-Yes" class="btn btn-lg btn-primary btn-block" type="button" onclick="confirmBtn()">확인</button>
+                                  <button id="btn-Home" class="btn btn-lg btn-primary btn-block" type="button" onclick="goHome()">홈</button>
                                 </form>
+                                
                               </div>
                           </div>
                       </div>
@@ -108,6 +109,23 @@ module.exports ={
                   function goHome(){
                       location.href="/";
                   }
+                  function confirmBtn(){
+                    if(document.getElementById("nowPassword").value == ${password}){
+                        if(document.getElementById("Password").value == document.getElementById("rePassword").value){
+                            document.getElementById("form").submit();
+                        }
+                        else{
+                            alert("새로운 비밀번호가 서로 일치하지 않습니다.")
+                        }
+                    }else{
+                        alert("현재 비밀번호가 일치하지 않습니다.");
+                    }  
+                    console.log("현재 작성된 비밀번호 :" + document.getElementById("nowPassword").value);
+                    console.log("DB에 저장된 비밀번호 :" + ${password});
+                    console.log("Password : " + document.getElementById("Password").value)
+                    console.log("rePassword : " + document.getElementById("rePassword").value)
+
+                }  
               </script>
           </body>
       </html>`;
