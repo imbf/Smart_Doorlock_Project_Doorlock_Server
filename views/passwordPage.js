@@ -94,7 +94,6 @@ module.exports ={
                                   <button id="btn-Yes" class="btn btn-lg btn-primary btn-block" type="button" onclick="confirmBtn()">확인</button>
                                   <button id="btn-Home" class="btn btn-lg btn-primary btn-block" type="button" onclick="goHome()">홈</button>
                                 </form>
-                                
                               </div>
                           </div>
                       </div>
@@ -111,7 +110,9 @@ module.exports ={
                   }
                   function confirmBtn(){
                     if(document.getElementById("nowPassword").value == ${password}){
-                        if(document.getElementById("Password").value == document.getElementById("rePassword").value){
+                        if(document.getElementById("Password").value == ""){
+                            alert("새로운 비밀번호를 입력하세요.");
+                        } else if(document.getElementById("Password").value == document.getElementById("rePassword").value){
                             document.getElementById("form").submit();
                         }
                         else{
