@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { doorlockdb, mobiusdb} = require('../db.js');
-const SMSServiceHome = require('../views/SMSServiceHome');
+const accessControl = require('../views/accessControl');
 
 const AWS = require('aws-sdk');
 // require Amazon-Web-Service Software-Development-Kit
@@ -14,21 +14,20 @@ AWS.config.update({
 });
 
 router.get('/', (request, response) => {
-   doorlockdb.query(`SELECT * FROM smsservice ORDER BY createtime DESC LIMIT 10`, function(error, result, fields){
-      response.send(SMSServiceHome.html(result,'홈'));
-   })
-
+      response.send(accessControl.html());
 });
 
-router.get('/registerNumber', (request, response) => {
+router.get('/register', (request, response) => {
    var randompassword = Math.floor(Math.random()*90000 + 10000);
    doorlockdb.query(`INSERT INTO smsservice (SMSname, phonenumber, activetime, unactivetime, disposablepassword) 
-   VALUES('${request.query.SMSname}', '${request.query.phonenumber}', '${request.query.activetime}', '${request.query.unactivetime}', ${randompassword});`);
+   VALUES('${request.query.name}', '${request.query.phonenumber}', '${request.query.activetime}', '${request.query.unactivetime}', ${randompassword});`,function(error, result, fields){
+      console.log(result);
+   });
    response.redirect('/SMSService');
 });
 
-router.get('/send', (request, response) => {
 
+router.get('/send', (request, response) => {
    doorlockdb.query(`SELECT * FROM smsservice WHERE createtime='${request.query.createtime}'`, (error, result, fields) => {
     // AWS-SNS-SMS 사용을 위한 Parameters
     var params = {

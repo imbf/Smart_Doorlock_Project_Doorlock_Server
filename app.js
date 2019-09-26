@@ -9,7 +9,6 @@ const passwordRouter = require('./routes/password.js');
 const SMSServiceRouter = require('./routes/SMSService.js');
 const home = require('./views/home');
 
-
 app.use('/public', static(path.join(__dirname,'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());

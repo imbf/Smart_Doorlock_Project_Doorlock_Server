@@ -120,11 +120,6 @@ module.exports ={
                     }else{
                         alert("현재 비밀번호가 일치하지 않습니다.");
                     }  
-                    console.log("현재 작성된 비밀번호 :" + document.getElementById("nowPassword").value);
-                    console.log("DB에 저장된 비밀번호 :" + ${password});
-                    console.log("Password : " + document.getElementById("Password").value)
-                    console.log("rePassword : " + document.getElementById("rePassword").value)
-
                 }  
               </script>
           </body>
