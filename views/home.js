@@ -102,7 +102,7 @@ module.exports = {
                         padding-top:13%;
                     }
                     #pm{
-                    width:160px;
+                    width:162px;
                     height:185px;
                     box-sizing:border-box;
                     margin-left:1px;
@@ -125,7 +125,7 @@ module.exports = {
                     font-weight:bold;
                     }
                     #detailPm{
-                    width:160px;
+                    width:162px;
                     height:185px;
                     box-sizing:border-box;
                     }
