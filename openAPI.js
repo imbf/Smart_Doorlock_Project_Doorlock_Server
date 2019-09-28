@@ -2,7 +2,8 @@ const request = require('request');
 const xml2js = require('xml2js');
 const parser = new xml2js.Parser();
 const PMServiceKey = 'zaVctsSrXI%2Br%2F420F3emchkWQHkEv15G8h6plqD674I2f1ef35M39%2Fvum2EU9s5yV7%2Bl%2Fmj9QZntI20uOf9Tyg%3D%3D';
-const PMUrl = `http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnMesureSidoLIst?sidoName=%EC%84%9C%EC%9A%B8&searchCondition=HOUR&pageNo=2&numOfRows=10&ServiceKey=${PMServiceKey}`;
+const PMUrl= `http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnMesureSidoLIst?sidoName=%EC%A0%84%EB%82%A8&searchCondition=HOUR&pageNo=2&numOfRows=10&ServiceKey=${PMServiceKey}`
+//const PMUrl = `http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnMesureSidoLIst?sidoName=%EC%84%9C%EC%9A%B8&searchCondition=HOUR&pageNo=2&numOfRows=10&ServiceKey=${PMServiceKey}`;
 const weatherUrl ='http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1165065100'
 
 request(PMUrl,function(error,response,body){
