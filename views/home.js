@@ -118,7 +118,7 @@ module.exports = {
                     }
                     #pm #pmValue{
                     position:relative;
-                    right:30px;
+                    right:28px;
                     bottom:35px;
                     font-size:1.1rem;
                     color:antiquewhite;
@@ -139,7 +139,7 @@ module.exports = {
                     }
                     #detailPm #detailPmValue{
                     position:relative;
-                    right:50px;
+                    right:46px;
                     bottom:35px;
                     font-size:1.2rem;
                     color:antiquewhite;
