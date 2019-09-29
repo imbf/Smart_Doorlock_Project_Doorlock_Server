@@ -99,13 +99,13 @@ module.exports = {
                         display:flex;
                         flex-direction:row;
                         box-sizing:border-box;
-                        width:90px;
+                        width:88px;
                         height:185px;
                         text-align:center;
                         padding-top:13%;
                     }
                     #pm{
-                    width:157px;
+                    width:158px;
                     height:175px;
                     box-sizing:border-box;
                     margin-left:1px;
@@ -127,7 +127,7 @@ module.exports = {
                     font-weight:bold;
                     }
                     #detailPm{
-                    width:157px;
+                    width:158px;
                     height:175px;
                     box-sizing:border-box;
                     }
