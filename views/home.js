@@ -86,9 +86,14 @@ module.exports = {
                         color:black;
                     }
                     .pmContainer{
+                        width:417px;
+                        height:179px;
+                        background-color:snow;
                         margin-left:5px;
                         display:flex;
                         flex-direction:row;
+                        border-radius:20px;
+                        padding-top:4px;
                     }
                     #pmTextContent{
                         display:flex;
@@ -97,13 +102,11 @@ module.exports = {
                         width:90px;
                         height:185px;
                         text-align:center;
-                        background-color:snow;
-                        border-radius:30% 0 0 30%;
                         padding-top:13%;
                     }
                     #pm{
-                    width:163px;
-                    height:185px;
+                    width:153px;
+                    height:175px;
                     box-sizing:border-box;
                     margin-left:1px;
                     margin-right:1px;
@@ -120,13 +123,12 @@ module.exports = {
                     position:relative;
                     right:28px;
                     bottom:35px;
-                    font-size:1.1rem;
                     color:antiquewhite;
                     font-weight:bold;
                     }
                     #detailPm{
-                    width:163px;
-                    height:185px;
+                    width:153px;
+                    height:175px;
                     box-sizing:border-box;
                     }
                     #detailPm #detailPmName{
@@ -141,7 +143,6 @@ module.exports = {
                     position:relative;
                     right:46px;
                     bottom:35px;
-                    font-size:1.1rem;
                     color:antiquewhite;
                     font-weight:bold;
                     }
@@ -668,11 +669,11 @@ module.exports = {
     <div id="content-2-1-1">
         <div id="content-2-1-1-1"> <!-- 160 X 105 -->
             <img id="bulb-1" src=${bulbImage1} width=100% height=100% onclick="imageChange(this.id)">
-            <span id="bulb-1-text">안방</span>
+            <span id="bulb-1-text">거실</span>
         </div>
         <div id="content-2-1-1-2"> <!-- 160 X 105 -->                      
             <img id="bulb-4" src=${bulbImage4} width=100% height=100% onclick="imageChange(this.id)">
-            <span id="bulb-4-text">서재</span>
+            <span id="bulb-4-text">안방</span>
         </div>
     </div>
     <div id="content-2-1-2">
@@ -690,11 +691,11 @@ module.exports = {
     <div id="content-2-1-3">
         <div id="content-2-1-3-1"> <!-- 160 X 105 -->
             <img id="bulb-2" src=${bulbImage2} width=100% height=100% onclick="imageChange(this.id)">
-            <span id="bulb-2-text">옷방</span>
+            <span id="bulb-2-text">서재</span>
         </div>
         <div id="content-2-1-3-2"> <!-- 160 X 105 -->
             <img id="bulb-3" src=${bulbImage3} width=100% height=100% onclick="imageChange(this.id)">
-            <span id="bulb-3-text">거실</span>
+            <span id="bulb-3-text">창고</span>
         </div>
     </div>
     `;

@@ -4,8 +4,8 @@ const { doorlockdb, mobiusdb} = require('../db.js');
 const accessControl = require('../views/accessControl');
 
 const AWS = require('aws-sdk');
-// require Amazon-Web-Service Software-Development-Kit
 
+// require Amazon-Web-Service Software-Development-Kit
 
 AWS.config.region = "us-east-1"; // Region which use SMS-Service for AWS 
 AWS.config.update({
@@ -19,10 +19,13 @@ router.get('/', (request, response) => {
 
 router.get('/register', (request, response) => {
    var randompassword = Math.floor(Math.random()*90000 + 10000);
+   console.log(request.query.name)
+   /*
    doorlockdb.query(`INSERT INTO smsservice (SMSname, phonenumber, activetime, unactivetime, disposablepassword) 
    VALUES('${request.query.name}', '${request.query.phonenumber}', '${request.query.activetime}', '${request.query.unactivetime}', ${randompassword});`,function(error, result, fields){
       console.log(result);
    });
+   */
    response.redirect('/SMSService');
 });
 
