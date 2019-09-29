@@ -9,8 +9,8 @@ const AWS = require('aws-sdk');
 
 AWS.config.region = "us-east-1"; // Region which use SMS-Service for AWS 
 AWS.config.update({
-   accessKeyId: "AKIA3FQV6I4BN5BS2DUA",   //Access Key for AWS user
-   secretAccessKey: "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",   //Secret Access Key for AWS User
+   accessKeyId: "",   //Access Key for AWS user
+   secretAccessKey: "",   //Secret Access Key for AWS User
 });
 
 router.get('/', (request, response) => {
@@ -18,14 +18,16 @@ router.get('/', (request, response) => {
 });
 
 router.get('/register', (request, response) => {
-   var randompassword = Math.floor(Math.random()*90000 + 10000);
-   console.log(request.query.name)
-   /*
+   var randomPassword = Math.floor(Math.random()*90000 + 10000);
+   var parsePhoneNumber = ``;
+   for(var i=0;i<request.query.phoneNumber.length;i++){
+      if(request.query.phoneNumber.charAt(i) != '-')
+         parsePhoneNumber += request.query.phoneNumber.charAt(i);
+   }
    doorlockdb.query(`INSERT INTO smsservice (SMSname, phonenumber, activetime, unactivetime, disposablepassword) 
-   VALUES('${request.query.name}', '${request.query.phonenumber}', '${request.query.activetime}', '${request.query.unactivetime}', ${randompassword});`,function(error, result, fields){
+   VALUES('${request.query.name}', '${parsePhoneNumber}', '${request.query.activeTime}', '${request.query.unactiveTime}', ${randomPassword});`,function(error, result, fields){
       console.log(result);
    });
-   */
    response.redirect('/SMSService');
 });
 
@@ -39,15 +41,14 @@ router.get('/send', (request, response) => {
 스마트 도어락이 설치된 장소의 일회용 비밀번호입니다.
 비밀번호 유효 시간은
 ${result[0].activetime} ~ ${result[0].unactivetime} 이며
-도어락이 열리고 난 후 비밀번호로써의 효력은 사라집니다.
+전송된 비밀번호는 도어락이 열리고 난 후 비밀번호로써의 효력은 사라집니다.
          `,
-         PhoneNumber: `820${result[0].phonenumber}`,
+         PhoneNumber: `82${result[0].phonenumber}`,
          MessageStructure: 'String',
          Subject: 'SmartDoorLock',
       }
       console.log(params.Message);
       doorlockdb.query(`UPDATE smsservice SET sendnumber='1' WHERE createtime='${request.query.createtime}'`);
-      /*
       // SMS 전송을 위한 Code
       var publishTextPromise = new AWS.SNS({apiVersion: '2010-03-31'}).publish(params).promise();
       publishTextPromise.then(
@@ -58,7 +59,6 @@ ${result[0].activetime} ~ ${result[0].unactivetime} 이며
             console.error(err, err.stack);
             response.redirect('/');
          });
-      */
    });
    response.redirect('/SMSService');
 });

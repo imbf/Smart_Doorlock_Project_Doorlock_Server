@@ -157,9 +157,9 @@ module.exports={
                                 </div>
                                 <form action="/SMSService/register" id="inOutForm">
                                     <label for="guest" id="guestText" style="margin-right:12px;margin-left:5px;">출입자 </label><input type="text" id="name" name="name" class="form-control" placeholder=" 홈서비스 기사" style="width:61%">
-                                    <label for="guest" id="guestText">전화번호 </label><input type="text" id="phonenumber" class="form-control" placeholder=" 010-0000-0000" style="width:61%">
-                                    <label for="guest" id="guestText">출입시간 </label><input type="text" id="activetime" class="form-control" placeholder=" 2019-09-24 18:00" style="width:61%;margin-bottom:2px;">
-                                    <label for="guest" id="guestText">~ </label><input type="text" id="unactivetime" class="form-control" placeholder=" 2019-09-24 20:00" style="width:78%;margin-top:2px;margin-left:12px">
+                                    <label for="guest" id="guestText">전화번호 </label><input type="text" id="phoneNumber" name="phoneNumber" class="form-control" placeholder=" 010-0000-0000" style="width:61%">
+                                    <label for="guest" id="guestText">출입시간 </label><input type="text" id="activeTime" name="activeTime" class="form-control" placeholder=" 2019-09-24 18:00" style="width:61%;margin-bottom:2px;">
+                                    <label for="guest" id="guestText">~ </label><input type="text" id="unactiveTime" name="unactiveTime" class="form-control" placeholder=" 2019-09-24 20:00" style="width:78%;margin-top:2px;margin-left:12px">
                                     <button id="btn-register" class="btn btn-lg btn-primary btn-block" style="margin-left:65px;margin-top:10px" onclick="register()">등록</button>
                                     <button id="btn-Home" class="btn btn-lg btn-primary btn-block" onclick="goHome()" style="border-color:orange;background-color:orange;font-weight:bold;">홈</button>
                                 </form>
