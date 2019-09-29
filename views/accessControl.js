@@ -161,7 +161,7 @@ module.exports={
                                     <label for="guest" id="guestText">출입시간 </label><input type="text" id="activeTime" name="activeTime" class="form-control" placeholder=" 2019-09-24 18:00" style="width:61%;margin-bottom:2px;">
                                     <label for="guest" id="guestText">~ </label><input type="text" id="unactiveTime" name="unactiveTime" class="form-control" placeholder=" 2019-09-24 20:00" style="width:78%;margin-top:2px;margin-left:12px">
                                     <button id="btn-register" class="btn btn-lg btn-primary btn-block" style="margin-left:65px;margin-top:10px" onclick="register()">등록</button>
-                                    <button id="btn-Home" class="btn btn-lg btn-primary btn-block" onclick="goHome()" style="border-color:orange;background-color:orange;font-weight:bold;">홈</button>
+                                    <button id="btn-Home" type="button" class="btn btn-lg btn-primary btn-block" onclick="goHome()" style="border-color:orange;background-color:orange;font-weight:bold;">홈</button>
                                 </form>
                             </div>
                             <div id="content-1-1-3"> <!-- 300 x 60 -->
@@ -198,7 +198,6 @@ module.exports={
                     function register(){
                         document.getElementById("inOutForm").submit();  
                     }
-                    function
                 </script>
             </html>`;
    }
