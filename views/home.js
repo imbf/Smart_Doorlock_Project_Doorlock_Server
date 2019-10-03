@@ -392,12 +392,12 @@ module.exports = {
                     },
                     data:JSON.stringify({
                         'm2m:cin':{
-                            'con':'open'
+                            'con':'doorLock open'
                         }
                     })
                 });
                 document.getElementById("openButton").style.backgroundColor="red";
-                setTimeout(callBack, 5000);
+                setTimeout(callBack, 3000);
             }
             function colorChange(){
                 document.getElementById("openButton").style.backgroundColor="snow";
