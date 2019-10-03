@@ -232,7 +232,7 @@ module.exports={
    },
    inOutTable:function(queryResult){
         var table=``;
-    for(var i=0;i<5;i++){
+    for(var i=0;i<queryResult.length;i++){
         table+=`<tr>`
             table+=`<td>${queryResult[i].SMSname}</td>`
             table+=`<td>${queryResult[i].phonenumber}</td>`
