@@ -6,15 +6,19 @@ const accessControl = require('../views/accessControl');
 const AWS = require('aws-sdk');
 
 // require Amazon-Web-Service Software-Development-Kit
-
 AWS.config.region = "us-east-1"; // Region which use SMS-Service for AWS 
 AWS.config.update({
-   accessKeyId: "",   //Access Key for AWS user
-   secretAccessKey: "",   //Secret Access Key for AWS User
+   accessKeyId: "AKIA3FQV6I4BGIF72FMV",   //Access Key for AWS user
+   secretAccessKey: "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",   //Secret Access Key for AWS User
 });
 
 router.get('/', (request, response) => {
-      response.send(accessControl.html());
+   var queryResult=``;
+   doorlockdb.query(`SELECT * FROM smsservice ORDER BY createtime DESC LIMIT 5`, function(error,result,fields){
+      queryResult = result;
+      response.send(accessControl.html(queryResult));
+   });
+      
 });
 
 router.get('/register', (request, response) => {
@@ -70,7 +74,7 @@ router.get('/delete', (request, response) => {
    });
 });
 
-router.get('/test', (request, response) => {
-
+router.get('/list', (request, response) => {
+   response.send("hi");
 }); 
 module.exports = router;

@@ -1,7 +1,5 @@
-//SELECT * FROM smsservice ORDER BY createtime DESC LIMIT 10
-
 module.exports={
-   html:function(){
+   html:function(queryResult){
       return`<!doctype html>
             <html>
             <head>
@@ -76,6 +74,16 @@ module.exports={
                         font-size:2.4rem;
                         font-weight: bold;
                         padding-top:15px;
+                        padding-left:150px;
+                    }
+                    #inOutTableTitle>button{
+                        display:inline-block;
+                        background-color:#007bff;
+                        color:white;
+                        width:130px;
+                        height:35px;
+                        border-radius:2rem;
+                        font-weight:bold;
                     }
                     #inOutForm{
                         padding:10px;
@@ -117,7 +125,7 @@ module.exports={
                         font-size:1.1rem;
                         text-align:center;
                     }
-                    table>thead>tr>td{
+                    table>thead>tr>th{
                         border:1px solid black;
                         border-radius:2rem;
                         background-color:floralwhite;
@@ -141,6 +149,23 @@ module.exports={
                     }#td-4{
                         width:84px;
                         height:23px;
+                    }
+                    #sendForm{
+                        display:block;
+                        width:100%;
+                        height:100%;
+                    }
+                    #sendButton{
+                        display:inline-block;
+                        width:84.477px;
+                        height:43.903px;
+                        background-color:#007bff;
+                        color:white;
+                        font-size:1rem;
+                        font-weight:650;
+                    }
+                    input::placeholder{
+                        font-size:90%;
                     }
                 </style>
             </head>
@@ -171,20 +196,21 @@ module.exports={
                         <div id="content-1-2"> <!-- 460 x 440 -->
                             <div id="inOutTableTitle">
                                 출입관리
+                                <button onclick="goInOutList()">출입목록</button>
                             </div>
                             <div id="inOutTable"> <!-- 460 x 290 -->
                                 <table> <!-- 450 x 290 -->
                                     <thead>
                                         <tr>
-                                            <td id="td-1">출입자</td>
-                                            <td id="td-2">전화번호</td>
-                                            <td id="td-3">출입시간</td>
-                                            <td id="td-4">문자전송</td>
+                                            <th id="td-1">출입자</th>
+                                            <th id="td-2">전화번호</th>
+                                            <th id="td-3">출입시간</th>
+                                            <th id="td-4">문자전송</th>
+                                        </tr>
                                     </thead>
-                                    <tr>
-                                        <td>하이</td>
-                                        <td>바이</td>
-                                    </tr>
+                                    <tbody>
+                                        ${this.inOutTable(queryResult)}
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
@@ -198,7 +224,41 @@ module.exports={
                     function register(){
                         document.getElementById("inOutForm").submit();  
                     }
+                    function goInOutList(){
+                        location.href="/SMSService/list"
+                    }
                 </script>
             </html>`;
+   },
+   inOutTable:function(queryResult){
+        var table=``;
+    for(var i=0;i<5;i++){
+        table+=`<tr>`
+            table+=`<td>${queryResult[i].SMSname}</td>`
+            table+=`<td>${queryResult[i].phonenumber}</td>`
+            table+=`<td>${parseDate(queryResult[i].activetime)} ~ ${parseDate(queryResult[i].unactivetime)}</td>`
+            if(queryResult[i].sendnumber == 1)
+                table+=`<td style="background-color:;">전송완료</td>`
+            else
+                table+=`<td style="padding:0px;">
+                    <form action="/SMSService/send" id="sendForm">
+                        <button id="sendButton">전송</button>
+                        <input type="hidden" name="createtime" value="${queryResult[i].createtime}">
+                        <input type="hidden" name="registernumber" value="${queryResult[i].phonenumber}">
+                    </form>
+                </td>`;
+        table+=`</tr>`
+    }
+    return`
+        ${table}
+    `;
    }
+}
+
+var parseDate = (date) => {
+    var result =``;
+    for(var i=0;i<date.length-3;i++){
+        result+=date.charAt(i);
+    }
+    return result;
 }

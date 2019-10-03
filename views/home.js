@@ -392,7 +392,7 @@ module.exports = {
                     },
                     data:JSON.stringify({
                         'm2m:cin':{
-                            'con':'123'
+                            'con':'open'
                         }
                     })
                 });
