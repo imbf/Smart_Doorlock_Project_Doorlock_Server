@@ -21,6 +21,7 @@ router.get('/', (request, response) => {
       
 });
 
+
 router.get('/register', (request, response) => {
    var randomPassword = Math.floor(Math.random()*90000 + 10000);
    var parsePhoneNumber = ``;
