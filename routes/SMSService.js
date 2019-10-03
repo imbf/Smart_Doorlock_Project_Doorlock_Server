@@ -8,7 +8,7 @@ const AWS = require('aws-sdk');
 // require Amazon-Web-Service Software-Development-Kit
 AWS.config.region = "us-east-1"; // Region which use SMS-Service for AWS 
 AWS.config.update({
-   accessKeyId: "AKIA3FQV6I4BGIF72FMV",   //Access Key for AWS user
+   accessKeyId: "",   //Access Key for AWS user
    secretAccessKey: "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",   //Secret Access Key for AWS User
 });
 
