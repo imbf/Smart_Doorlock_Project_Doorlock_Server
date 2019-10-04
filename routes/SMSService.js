@@ -18,9 +18,7 @@ router.get('/', (request, response) => {
       queryResult = result;
       response.send(accessControl.html(queryResult));
    });
-      
 });
-
 
 router.get('/register', (request, response) => {
    var randomPassword = Math.floor(Math.random()*90000 + 10000);
@@ -42,7 +40,7 @@ router.get('/send', (request, response) => {
     // AWS-SNS-SMS 사용을 위한 Parameters
     var params = {
          Message: `
-         일회용 비밀번호 : ${result[0].disposablepassword}
+일회용 비밀번호 : ${result[0].disposablepassword}
 스마트 도어락이 설치된 장소의 일회용 비밀번호입니다.
 비밀번호 유효 시간은
 ${result[0].activetime} ~ ${result[0].unactivetime} 이며
