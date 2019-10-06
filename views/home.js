@@ -364,7 +364,6 @@ module.exports = {
                         groupLed += 4;
                     if(imageSrcParser('bulb-4')=="onBulb.svg")
                         groupLed += 8;
-                    updateBulbGroup(groupLed);
                     $.ajax({
                         url:'http://168.131.35.103:7579/Mobius/LEDGroup/update',
                         method:'POST',
@@ -386,11 +385,12 @@ module.exports = {
                     document.getElementById('admitButton').style.backgroundColor="#00b9f1";
                     //cookie의 값으로써 저장해주어 페이지가 바뀌어도 상태를 저장하기 위한 함수
                     //document.cookie="groupLed="+groupLed;
-                    timerID = setTimeout("updateData()",500);
+                    timerID = setTimeout("updateData('abc')",0);
+                    updateBulbGroup(groupLed);
                 });
-                updateData();
+                updateData('number');
             });
-            function updateData(){
+            function updateData(number){
                 ajaxResult = $.ajax({
                     url:'http://168.131.35.103:7579/Mobius/LEDGroup/LEDGroup/la',
                     method :'GET',
@@ -404,8 +404,9 @@ module.exports = {
                 });
                 console.log(ajaxResult.responseJSON['m2m:cin'].con);
                 document.cookie="groupLed="+(ajaxResult.responseJSON['m2m:cin'].con);
-                updateBulbGroup(ajaxResult.responseJSON['m2m:cin'].con);
-                timerID = setTimeout("updateData()",500);
+                if(number!='abc')
+                    updateBulbGroup(ajaxResult.responseJSON['m2m:cin'].con);
+                timerID = setTimeout("updateData('number')",500);
             }
             function updateBulbGroup(cookie){
                 var number4 =parseInt(cookie/8);
