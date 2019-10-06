@@ -6,6 +6,7 @@ module.exports = {
         <!doctype html>
         <html>
             <head>
+            <meta charset="utf-8">
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
                 <style>
                     body{
@@ -343,47 +344,144 @@ module.exports = {
                     </div>
                 </div>
             <script>
-            var groupLed = 15;
-            if(document.cookie.length==0)
-               document.cookie="groupLed="+groupLed;
+            var groupLed;
+            //시험하는 jquery문
+            var timerID;
+            var ajaxResult;
+            $(document).ready(function (){
+                $("#bulb-1,#bulb-4,#bulb-2,#bulb-3").on('click',function(e){
+                    e.preventDefault();
+                    clearTimeout(timerID);
+                });
+                $("#admitButton").on('click',function(e){
+                    e.preventDefault();
+                    groupLed =0;
+                    if(imageSrcParser('bulb-1')=="onBulb.svg")
+                        groupLed += 1;
+                    if(imageSrcParser('bulb-2')=="onBulb.svg")
+                        groupLed += 2;
+                    if(imageSrcParser('bulb-3')=="onBulb.svg")
+                        groupLed += 4;
+                    if(imageSrcParser('bulb-4')=="onBulb.svg")
+                        groupLed += 8;
+                    updateBulbGroup(groupLed);
+                    $.ajax({
+                        url:'http://168.131.35.103:7579/Mobius/LEDGroup/update',
+                        method:'POST',
+                        dataType:"json",
+                        async:false,
+                        headers:{
+                            'Accept': 'application/json',
+                            'X-M2M-RI': 12345,
+                            'X-M2M-Origin': 'JongJin',
+                            'Content-Type': 'application/vnd.onem2m-res+json;ty=4'
+                        },
+                        data:JSON.stringify({
+                            'm2m:cin':{
+                                    'con':groupLed
+                            }
+                        })
+                    });
+                    //전등 그룹관리의 적용 버튼이 눌러지면 다시 원래의 색깔로 돌아온다.
+                    document.getElementById('admitButton').style.backgroundColor="#00b9f1";
+                    //cookie의 값으로써 저장해주어 페이지가 바뀌어도 상태를 저장하기 위한 함수
+                    //document.cookie="groupLed="+groupLed;
+                    timerID = setTimeout("updateData()",500);
+                });
+                updateData();
+            });
+            function updateData(){
+                ajaxResult = $.ajax({
+                    url:'http://168.131.35.103:7579/Mobius/LEDGroup/LEDGroup/la',
+                    method :'GET',
+                    dataType:"json",
+                    async:false,
+                    headers:{
+                        'Accept':'application/json',
+                        'X-M2M-RI':12345,
+                        'X-M2M-Origin':'JongJin',
+                    }
+                });
+                console.log(ajaxResult.responseJSON['m2m:cin'].con);
+                document.cookie="groupLed="+(ajaxResult.responseJSON['m2m:cin'].con);
+                updateBulbGroup(ajaxResult.responseJSON['m2m:cin'].con);
+                timerID = setTimeout("updateData()",500);
+            }
+            function updateBulbGroup(cookie){
+                var number4 =parseInt(cookie/8);
+                cookie = cookie%8;
+                var number3 =parseInt(cookie/4);
+                cookie = cookie%4;
+                var number2 =parseInt(cookie/2);
+                cookie = cookie%2;
+                var number1 =parseInt(cookie);
+                console.log("4번전등",number4)
+                console.log("3번전등",number3)
+                console.log("2번전등",number2)
+                console.log("1번전등",number1)
+                if(number4 == 1){
+                    $("#bulb-4").attr("src",'./public/onBulb.svg');
+                }
+                else{
+                    $("#bulb-4").attr("src",'./public/offBulb.svg');
+                }
+                if(number3 == 1){
+                    $("#bulb-3").attr("src",'./public/onBulb.svg');
+                }
+                else{
+                    $("#bulb-3").attr("src",'./public/offBulb.svg');
+                }
+                if(number2 == 1){
+                    $("#bulb-2").attr("src",'./public/onBulb.svg');
+                }
+                else{
+                    $("#bulb-2").attr("src",'./public/offBulb.svg');
+                }
+                if(number1 == 1){
+                    $("#bulb-1").attr("src",'./public/onBulb.svg');
+                }
+                else{
+                    $("#bulb-1").attr("src",'./public/offBulb.svg');
+                }
+            }
+            function cookieParser(cookie){
+                var result = '';
+                for(var i=9;i<cookie.length;i++){
+                    result += cookie.charAt(i);
+                }
+                return result;
+            }
+            //시험하는 jquery문
+
+
+            // cookie가 없을 때 Client의 documnet전역 객체에 cookie의 key, value값을 심어주는 역할
+
+
+            // 절대주소의 image의 경로를 서버가 사용할 수 있게 끔 상대주소로 바꾸어주는 함수   
             function imageSrcParser(id){
                 strArray = document.getElementById(id).src.split("/");
                 return strArray[strArray.length-1];
             }
+
+
+            // image가 on.svg이면 off.svg로 off.svg이면 on.svg로 바꾸어주는 함수.
+            // 그리고 만약 이 함수가 실행이 된다면 적용 버튼의 background가 red로 바뀐다.
             function imageChange(id){
                 var imageSrc = imageSrcParser(id);
-                if(id == "bulb-1"){
                     if(imageSrc == 'onBulb.svg'){
                         document.getElementById(id).src="/public/offBulb.svg";
                     }else if(imageSrc == 'offBulb.svg'){
                         document.getElementById(id).src="/public/onBulb.svg";                 
                     }
-                }else if(id =="bulb-2"){
-                    if(imageSrc == 'onBulb.svg'){
-                        document.getElementById(id).src="/public/offBulb.svg";
-                    }else if(imageSrc == 'offBulb.svg'){
-                        document.getElementById(id).src="/public/onBulb.svg";               
-                    }
-                }else if(id =="bulb-3"){
-                    if(imageSrc == 'onBulb.svg'){
-                        document.getElementById(id).src="/public/offBulb.svg";
-                    }else if(imageSrc == 'offBulb.svg'){
-                        document.getElementById(id).src="/public/onBulb.svg";               
-                    }
-                }else{
-                    if(imageSrc == 'onBulb.svg'){
-                        document.getElementById(id).src="/public/offBulb.svg";
-                    }else if(imageSrc == 'offBulb.svg'){
-                        document.getElementById(id).src="/public/onBulb.svg";                
-                    }
-                }
                 document.getElementById('admitButton').style.backgroundColor="red";
             }
+            // 문열기 버튼이 눌러졌을 때 ajax통신으로써 Mobius API서버에 HTTP프로토콜 기반의 통신을 보내는 함수
             function openButton_click(callBack){
                 $.ajax({
                     url: 'http://168.131.35.103:7579/Mobius/lock/update',
                     type: 'POST',
                     dataType:"json",
+                    async:false,
                     headers:{
                         'Accept':'application/json',
                         'X-M2M-RI':12345,
@@ -396,18 +494,32 @@ module.exports = {
                         }
                     })
                 });
+                //태그는 red로 3초간 바뀐다.
                 document.getElementById("openButton").style.backgroundColor="red";
                 setTimeout(callBack, 3000);
             }
+
+
+            // 문열기 버튼의 색깔을 snow로 바꾸어주는 함수
             function colorChange(){
                 document.getElementById("openButton").style.backgroundColor="snow";
             }
+
+
+            //출입관리 페이지로 넘어가기 위한 버튼에 적용되는 함수
             function inOutAdminButton_click(){
                 location.href="/SMSService";
             }
+
+            
+            // password 페이지로 넘어가기 위한 버튼ㅇ ㅔ적용되는 함수.
             function passwordButton_click(){
                 location.href="/password";
             }
+
+
+            // mobius API Server와 통신하기 위해 어떠한 cin을 줄것인지 추출해서 AJAX통신을 하는 함수.
+            /*
             function admitButton_click(){
                 groupLed =0;
                 if(imageSrcParser('bulb-1')=="onBulb.svg")
@@ -422,6 +534,7 @@ module.exports = {
                     url:'http://168.131.35.103:7579/Mobius/LEDGroup/update',
                     type:'POST',
                     dataType:"json",
+                    async:false,
                     headers:{
                         'Accept': 'application/json',
                         'X-M2M-RI': 12345,
@@ -434,9 +547,14 @@ module.exports = {
                        }
                     })
                 });
+                //전등 그룹관리의 적용 버튼이 눌러지면 다시 원래의 색깔로 돌아온다.
                 document.getElementById('admitButton').style.backgroundColor="#00b9f1";
-                document.cookie="groupLed="+groupLed
+                //cookie의 값으로써 저장해주어 페이지가 바뀌어도 상태를 저장하기 위한 함수
+                //굳이 저장을 안해도 될것 같다. 왜냐하면 이미 탐색하는 ajax가 돌고 있기 떄문이다.
+                //document.cookie="groupLed="+groupLed;
+
             }
+            */
           </script>
           </body>
       </html>
@@ -681,7 +799,7 @@ module.exports = {
         
         </div>
         <div id="content-2-1-2-2"> <!-- 120 X 59 -->
-            <button type="button" id="admitButton" onclick="admitButton_click()">
+            <button type="button" id="admitButton">
                 적용
             </button>
         </div>
