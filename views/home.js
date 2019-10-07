@@ -381,14 +381,15 @@ module.exports = {
                             }
                         })
                     });
-                    //전등 그룹관리의 적용 버튼이 눌러지면 다시 원래의 색깔로 돌아온다.
+                    
+                    //전등 그룹관리의 적용 버튼이 눌러지면 다시 원래의 색깔(#00b9f1)로 돌아온다.
                     document.getElementById('admitButton').style.backgroundColor="#00b9f1";
                     //cookie의 값으로써 저장해주어 페이지가 바뀌어도 상태를 저장하기 위한 함수
                     //document.cookie="groupLed="+groupLed;
-                    timerID = setTimeout("updateData('abc')",0);
+                    timerID = setTimeout("updateData('admitButtonCallBack')",500);
                     updateBulbGroup(groupLed);
                 });
-                updateData('number');
+                updateData('callBack');
             });
             function updateData(number){
                 ajaxResult = $.ajax({
@@ -405,6 +406,23 @@ module.exports = {
                 console.log(ajaxResult.responseJSON['m2m:cin'].con);
                 document.cookie="groupLed="+(ajaxResult.responseJSON['m2m:cin'].con);
                 if(number!='abc')
+                    updateBulbGroup(ajaxResult.responseJSON['m2m:cin'].con);
+                timerID = setTimeout("updateData('number')",500);
+            }
+            function updateData(number){
+                ajaxResult = $.ajax({
+                    url:'http://168.131.35.103:7579/Mobius/LEDGroup/LEDGroup/la',
+                    method :'GET',
+                    dataType:"json",
+                    async:false,
+                    headers:{
+                        'Accept':'application/json',
+                        'X-M2M-RI':12345,
+                        'X-M2M-Origin':'JongJin',
+                    }
+                });
+                document.cookie="groupLed="+(ajaxResult.responseJSON['m2m:cin'].con);
+                if(number!='admitButtonCallBack')
                     updateBulbGroup(ajaxResult.responseJSON['m2m:cin'].con);
                 timerID = setTimeout("updateData('number')",500);
             }
@@ -513,7 +531,7 @@ module.exports = {
             }
 
             
-            // password 페이지로 넘어가기 위한 버튼ㅇ ㅔ적용되는 함수.
+            // password 페이지로 넘어가기 위한 버튼에 적용되는 함수.
             function passwordButton_click(){
                 location.href="/password";
             }
