@@ -691,6 +691,10 @@ module.exports = {
          pm25Image = "/public/vertical_prettybad.jpg";
       else
          pm10Image = "/public/vertical_good.jpg";
+      if(openAPI.PM.pm25Value[0]=='-')
+         openAPI.PM.pm25Value[0]=0;
+      if(openAPI.PM.pm10Value[0]=='-')
+         openAPI.PM.pm10Value[0]=0;
       return`
       <div class="pmContainer">
       <div id="pmTextContent">
