@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { doorlockdb, mobiusdb} = require('../db.js');
 const accessControl = require('../views/accessControl');
-
+const accessList = require('../views/accessList');
 const AWS = require('aws-sdk');
 
 // require Amazon-Web-Service Software-Development-Kit
@@ -74,6 +74,6 @@ router.get('/delete', (request, response) => {
 });
 
 router.get('/list', (request, response) => {
-   response.send("hi");
+   response.send(accessList.html());
 }); 
 module.exports = router;
