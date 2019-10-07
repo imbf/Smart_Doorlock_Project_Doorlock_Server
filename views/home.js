@@ -677,16 +677,20 @@ module.exports = {
          pm10Image = "/public/vertical_normal.jpg";
       else if(openAPI.PM.pm10Value[0]<=150)
          pm10Image = "/public/vertical_bad.jpg";
-      else
+      else if(openAPI.PM.pm10Value[0]<=1000)
          pm10Image = "/public/vertical_prettybad.jpg";
+      else
+         pm10Image = "/public/vertical_good.jpg";
       if(openAPI.PM.pm25Value[0]<=15)
          pm25Image = "/public/vertical_good.jpg";
       else if(openAPI.PM.pm25Value[0]<=35)
          pm25Image = "/public/vertical_normal.jpg";
       else if(openAPI.PM.pm25Value[0]<=75)
          pm25Image = "/public/vertical_bad.jpg";
-      else
+      else if(openAPI.PM.pm25Value[0]<=1000)
          pm25Image = "/public/vertical_prettybad.jpg";
+      else
+         pm10Image = "/public/vertical_good.jpg";
       return`
       <div class="pmContainer">
       <div id="pmTextContent">
