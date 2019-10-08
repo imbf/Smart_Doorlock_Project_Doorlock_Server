@@ -140,7 +140,6 @@ module.exports={
                     #td-1{
                         width:70px;
                         height:23px;
-                        font-weight:bold;
                     }
                     #td-2{
                         width:98px;
@@ -236,7 +235,7 @@ module.exports={
         var table=``;
     for(var i=0;i<5;i++){
         table+=`<tr>`
-            table+=`<td>${queryResult[i].SMSname}</td>`
+            table+=`<td style="font-weight:bold">${queryResult[i].SMSname}</td>`
             table+=`<td>${queryResult[i].phonenumber}</td>`
             table+=`<td>${parseDate(queryResult[i].activetime)} ~ ${parseDate(queryResult[i].unactivetime)}</td>`
             if(queryResult[i].sendnumber == 1)
