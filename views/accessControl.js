@@ -239,7 +239,7 @@ module.exports={
             table+=`<td>${queryResult[i].phonenumber}</td>`
             table+=`<td>${parseDate(queryResult[i].activetime)} ~ ${parseDate(queryResult[i].unactivetime)}</td>`
             if(queryResult[i].sendnumber == 1)
-                table+=`<td style="font-weight:bold;">전송완료</td>`
+                table+=`<td>전송완료</td>`
             else
                 table+=`<td style="padding:0px;">
                     <form action="/SMSService/send" id="sendForm">
