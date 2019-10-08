@@ -55,6 +55,5 @@ module.exports = {
             </body>
          </html>
       `;
-
    }
 }

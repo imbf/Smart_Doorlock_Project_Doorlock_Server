@@ -204,7 +204,7 @@ module.exports={
                                         <tr>
                                             <th id="td-1">출입자</th>
                                             <th id="td-2">전화번호</th>
-                                            <th id="td-3">출입시간</th>
+                                            <th id="td-3">출입예정시각</th>
                                             <th id="td-4">문자전송</th>
                                         </tr>
                                     </thead>
