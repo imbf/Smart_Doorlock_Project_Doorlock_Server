@@ -140,6 +140,7 @@ module.exports={
                     #td-1{
                         width:70px;
                         height:23px;
+                        font-weight:bold;
                     }#td-2{
                         width:98px;
                         height:23px;
