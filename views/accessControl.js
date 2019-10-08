@@ -243,7 +243,7 @@ module.exports={
             else
                 table+=`<td style="padding:0px;">
                     <form action="/SMSService/send" id="sendForm">
-                        <button id="sendButton">전송</button>
+                        <button id="sendButton" style="font-weight:bold;">전송</button>
                         <input type="hidden" name="createtime" value="${queryResult[i].createtime}">
                         <input type="hidden" name="registernumber" value="${queryResult[i].phonenumber}">
                     </form>
