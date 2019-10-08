@@ -141,7 +141,8 @@ module.exports={
                         width:70px;
                         height:23px;
                         font-weight:bold;
-                    }#td-2{
+                    }
+                    #td-2{
                         width:98px;
                         height:23px;
                     }#td-3{
