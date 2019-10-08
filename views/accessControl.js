@@ -158,7 +158,7 @@ module.exports={
                     }
                     #sendButton{
                         display:inline-block;
-                        width:84.477px;
+                        width:100%;
                         height:43.903px;
                         background-color:#007bff;
                         color:white;
