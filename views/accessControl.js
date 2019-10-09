@@ -81,9 +81,11 @@ module.exports={
                         background-color:#007bff;
                         color:white;
                         width:130px;
-                        height:35px;
+                        height:40px;
                         border-radius:2rem;
-                        font-weight:bold;
+                        font-family:"Noto Sans CJK KR";
+                        font-weight:600;
+                        font-size:1.1rem;
                     }
                     #inOutForm{
                         padding:10px;
