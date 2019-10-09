@@ -128,7 +128,7 @@ module.exports = {
                     font-weight:bold;
                     }
                     #detailPm{
-                    width:158px;
+                    width:159px;
                     height:175px;
                     box-sizing:border-box;
                     }
