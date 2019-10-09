@@ -127,7 +127,7 @@ module.exports = {
       var result=``;
       for(var i=0;i<queryResult.length-3;i++){
          result+=`<tr><td style="font-weight:bold;font-size:1.1rem">${queryResult[i].SMSname}</td>`
-         result+=`<td>${queryResult[i].phonenumber}</td>`
+         result+=`<td>${this.phonenumberParse(queryResult[i].phonenumber)}</td>`
          result+=`<td style="font-size:1rem">${this.activeTimeParse(queryResult[i].activetime)} ~ ${this.activeTimeParse(queryResult[i].unactivetime)}</td>`
          if(queryResult[i].opentime == null)
             result+= `<td style="font-weight:bold;color:red;">Not Entered</td>`
@@ -150,5 +150,15 @@ module.exports = {
       for(var i=11;i<time.length-3;i++)
          result+=time.charAt(i);
       return result;
+   },
+   phonenumberParse:function(number){
+      var result=``;
+      for(var i=0;i<number.length;i++){
+         result+=number.charAt(i);
+         if(i==2 || i==6)
+            result+='-'
+      }
+      return result;
    }
+   
 }
