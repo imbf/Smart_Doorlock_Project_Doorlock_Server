@@ -4,7 +4,9 @@ const { doorlockdb, mobiusdb} = require('../db.js');
 const accessControl = require('../views/accessControl');
 const accessList = require('../views/accessList');
 const AWS = require('aws-sdk');
-
+var moment = require('moment');
+require('moment-timezone');
+moment.tz.setDefault("Asia/Seoul");
 // require Amazon-Web-Service Software-Development-Kit
 AWS.config.region = "us-east-1"; // Region which use SMS-Service for AWS 
 AWS.config.update({
@@ -21,6 +23,7 @@ router.get('/', (request, response) => {
 });
 
 router.get('/register', (request, response) => {
+   var date = moment().format('YYYY-MM-DD HH:mm:ss');
    var randomPassword = Math.floor(Math.random()*90000 + 10000);
    var parsePhoneNumber = ``;
    for(var i=0;i<request.query.phoneNumber.length;i++){
@@ -28,7 +31,7 @@ router.get('/register', (request, response) => {
          parsePhoneNumber += request.query.phoneNumber.charAt(i);
    }
    doorlockdb.query(`INSERT INTO smsservice (SMSname, phonenumber, activetime, unactivetime, disposablepassword) 
-   VALUES('${request.query.name}', '${parsePhoneNumber}', '${request.query.activeTime}', '${request.query.unactiveTime}', ${randomPassword});`,function(error, result, fields){
+   VALUES('${request.query.name}', '${parsePhoneNumber}', '${request.query.activeTime}', '${request.query.unactiveTime}', ${randomPassword},,'${date}');`,function(error, result, fields){
       console.log(result);
    });
    response.redirect('/SMSService');

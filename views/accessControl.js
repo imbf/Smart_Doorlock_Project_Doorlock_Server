@@ -137,7 +137,6 @@ module.exports={
                     }
                     table>tbody>tr>td{
                         border:1px solid black;
-                        border-collapse:collapse;
                     }
                     #td-1{
                         width:70px;
