@@ -69,14 +69,10 @@ ${result[0].activetime} ~ ${result[0].unactivetime} 이며
    response.redirect('/SMSService');
 });
 
-router.get('/delete', (request, response) => {
-   doorlockdb.query(`DELETE FROM smsservice WHERE createtime="${request.query.createtime}"`)
-   doorlockdb.query(`SELECT * FROM smsservice ORDER BY createtime DESC LIMIT 10`, function(error, result, fields){
-      response.send(SMSServiceHome.html(result,'삭제'));
-   });
-});
 
 router.get('/list', (request, response) => {
-   response.send(accessList.html());
+   doorlockdb.query(`SELECT * FROM smsservice WHERE sendnumber=1 ORDER BY createtime DESC LIMIT 10`,function(error,result,fields){
+      response.send(accessList.html(result));
+   });
 }); 
 module.exports = router;
