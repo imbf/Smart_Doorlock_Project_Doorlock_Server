@@ -9,15 +9,14 @@ module.exports = {
                <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
                <style>
                .btn,.input-group-lg>.input-group-append>.form-control-plaintext.input-group-text,.input-group-lg>.input-group-prepend>.form-control-plaintext.btn,.input-group-lg>.input-group-prepend>.form-control-plaintext.input-group-text,.input-group-sm>.form-control-plaintext.form-control,.input-group-sm>.input-group-append>.form-control-plaintext.btn,.input-group-sm>.input-group-append>.form-control-plaintext.input-group-text,.input-group-sm>.input-group-prepend>.form-control-plaintext.btn,.input-group-sm>.input-group-prepend>.form-control-plaintext.input-group-text{padding-right:0;padding-left:0}.form-control-sm,.input-group-sm>.form-control,.input-group-sm>.input-group-append>.btn,.input-group-sm>.input-group-append>.input-group-text,.input-group-sm>.input-group-prepend>.btn,.input-group-sm>.input-group-prepend>.input-group-text{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.input-group-sm>.input-group-append>select.btn:not([size]):not([multiple]),.input-group-sm>.input-group-append>select.input-group-text:not([size]):not([multiple]),.input-group-sm>.input-group-prepend>select.btn:not([size]):not([multiple]),.input-group-sm>.input-group-prepend>select.input-group-text:not([size]):not([multiple]),.input-group-sm>select.form-control:not([size]):not([multiple]),select.form-control-sm:not([size]):not([multiple]){height:calc(1.8125rem + 2px)}.form-control-lg,.input-group-lg>.form-control,.input-group-lg>.input-group-append>.btn,.input-group-lg>.input-group-append>.input-group-text,.input-group-lg>.input-group-prepend>.btn,.input-group-lg>.input-group-prepend>.input-group-text{padding:.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:.3rem}.input-group-lg>.input-group-append>select.btn:not([size]):not([multiple]),.input-group-lg>.input-group-append>select.input-group-text:not([size]):not([multiple]),.input-group-lg>.input-group-prepend>select.btn:not([size]):not([multiple]),.input-group-lg>.input-group-prepend>select.input-group-text:not([size]):not([multiple]),.input-group-lg>select.form-control:not([size]):not([multiple]),select.form-control-lg:not([size]):not([multiple]){height:calc(2.875rem + 2px)}.btn-lg{padding:.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:.3rem}.btn-primary{color:#fff;background-color:#007bff;border-color:#007bff}.btn-primary:hover{color:#fff;background-color:#0069d9;border-color:#0062cc}.btn-primary.focus,.btn-primary:focus{box-shadow:0 0 0 .2rem rgba(0,123,255,.5)}.btn-primary.disabled,.btn-primary:disabled{color:#fff;background-color:#007bff;border-color:#007bff}.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{color:#fff;background-color:#0062cc;border-color:#005cbf}.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(0,123,255,.5)}
-                  body{
-                     background-image:url('/public/background.jpg');
-                     background-size:1300px;
-                  }
                   .container{
+                     display:inline-block;
+                     margin:0px;
+                     background-image:url('/public/background.jpg');
+                     background-size:1300px;                  
                      box-sizing:border-box;  
                      width:800px;
                      height:480px;
-                     margin:0px; /*본래는 0px이다.*/
                   }
                   #content-1{
                      display:flex;
@@ -98,20 +97,21 @@ module.exports = {
                      <button id="btn-Home" class="btn btn-lg btn-primary btn-block" style="border-color:cornflowerblue;background-color:cornflowerblue;font-weight:bold;position:relative;left:170px;margin-top:5px;">Home</button>
                   </div>
                   <div id="content-1-2">
-                     <div id="inOutTable"> <!-- 460 x 290 -->
-                           <table> <!-- 450 x 290 -->
+                     <div id="inOutTable"> 
+                           <table> 
                               <thead>
                                     <tr>
                                        <td id="td-1">출입자</td>
                                        <td id="td-2">전화번호</td>
                                        <td id="td-3">출입예정시각</td>
                                        <td id="td-4">출입시간</td>
+                                    </tr>
                               </thead>
                               <tbody>
                                  ${this.list(result)}
                               </tbody>
                            </table>
-                        </div>
+                     </div>
                   </div>
                </div>
             </body>

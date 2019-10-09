@@ -22,6 +22,7 @@ module.exports={
                     }
                     #content-1{
                         display:flex;
+                        box-sizing:border-dox;
                         margin:20px;
                         width:760px;
                         height:440px;
