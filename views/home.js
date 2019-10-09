@@ -386,7 +386,7 @@ module.exports = {
                     document.getElementById('admitButton').style.backgroundColor="#00b9f1";
                     //cookie의 값으로써 저장해주어 페이지가 바뀌어도 상태를 저장하기 위한 함수
                     //document.cookie="groupLed="+groupLed;
-                    timerID = setTimeout("updateData('admitButtonCallBack')",1000);
+                    timerID = setTimeout("updateData('admitButtonCallBack')",500);
                     updateBulbGroup(groupLed);
                 });
                 updateData('callBack');
@@ -409,22 +409,6 @@ module.exports = {
                     updateBulbGroup(ajaxResult.responseJSON['m2m:cin'].con);
                 timerID = setTimeout("updateData('number')",500);
             }
-            function updateData(number){
-                ajaxResult = $.ajax({
-                    url:'http://168.131.35.103:7579/Mobius/LEDGroup/LEDGroup/la',
-                    method :'GET',
-                    dataType:"json",
-                    async:false,
-                    headers:{
-                        'Accept':'application/json',
-                        'X-M2M-RI':12345,
-                        'X-M2M-Origin':'JongJin',
-                    }
-                });
-                document.cookie="groupLed="+(ajaxResult.responseJSON['m2m:cin'].con);
-                if(number!='admitButtonCallBack')
-                    updateBulbGroup(ajaxResult.responseJSON['m2m:cin'].con);
-                timerID = setTimeout("updateData('number')",1000);
             }
             function updateBulbGroup(cookie){
                 var number4 =parseInt(cookie/8);
