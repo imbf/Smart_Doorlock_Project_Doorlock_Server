@@ -31,7 +31,7 @@ router.get('/register', (request, response) => {
          parsePhoneNumber += request.query.phoneNumber.charAt(i);
    }
    doorlockdb.query(`INSERT INTO smsservice (SMSname, phonenumber, activetime, unactivetime, disposablepassword) 
-   VALUES('${request.query.name}', '${parsePhoneNumber}', '${request.query.activeTime}', '${request.query.unactiveTime}', ${randomPassword},0,0,'${date}');`,function(error, result, fields){
+   VALUES('${request.query.name}', '${parsePhoneNumber}', '${request.query.activeTime}', '${request.query.unactiveTime}', ${randomPassword},'0','0','${date}');`,function(error, result, fields){
       console.log(result);
    });
    response.redirect('/SMSService');
