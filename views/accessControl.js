@@ -112,7 +112,7 @@ module.exports={
                         padding-right:5px;
                         box-sizing:border-box;
                         width:460px;
-                        height:290px
+                        height:290px;
                     }
                     #inOutTable>table{
                         width:450px;
@@ -133,9 +133,11 @@ module.exports={
                     }
                     table>tbody>tr{
                         height:23px;
+                        
                     }
                     table>tbody>tr>td{
                         border:1px solid black;
+                        border-collapse:collapse;
                     }
                     #td-1{
                         width:70px;
