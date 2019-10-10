@@ -497,7 +497,7 @@ module.exports = {
                 });
                 //태그는 red로 3초간 바뀐다.
                 document.getElementById("openButton").style.backgroundColor="red";
-                setTimeout(callBack, 3000);
+                setTimeout(callBack, 5000);
             }
 
 
