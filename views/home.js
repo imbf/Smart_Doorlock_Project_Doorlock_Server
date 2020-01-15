@@ -497,7 +497,7 @@ module.exports = {
                 });
                 //태그는 red로 3초간 바뀐다.
                 document.getElementById("openButton").style.backgroundColor="red";
-                setTimeout(callBack, 3000);
+                setTimeout(callBack, 5000);
             }
 
 
@@ -565,8 +565,8 @@ module.exports = {
       return`
       <span id="memo">
          <ol>
-            <li><a href="www.naver.com">주민등록등본 가져가기</a></li>
-            <li><a href="www.naver.com">컴퓨터 네트워크 과제 가져가기</a></li>
+            <li>주민등록등본 가져가기</li>
+            <li>컴퓨터 네트워크 과제 가져가기</li>
          </ol>
       </span>
       `;

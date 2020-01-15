@@ -10,8 +10,8 @@ moment.tz.setDefault("Asia/Seoul");
 // require Amazon-Web-Service Software-Development-Kit
 AWS.config.region = "us-east-1"; // Region which use SMS-Service for AWS 
 AWS.config.update({
-   accessKeyId: "",   //Access Key for AWS user
-   secretAccessKey: "",   //Secret Access Key for AWS User
+   accessKeyId: "AKIA3FQV6I4BPDPY52HY",   //Access Key for AWS user
+   secretAccessKey: "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",   //Secret Access Key for AWS User
 });
 
 router.get('/', (request, response) => {
