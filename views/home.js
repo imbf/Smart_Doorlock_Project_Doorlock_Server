@@ -386,7 +386,7 @@ module.exports = {
                     document.getElementById('admitButton').style.backgroundColor="#00b9f1";
                     //cookie의 값으로써 저장해주어 페이지가 바뀌어도 상태를 저장하기 위한 함수
                     //document.cookie="groupLed="+groupLed;
-                    timerID = setTimeout("updateData('admitButtonCallBack')",1000);
+                    timerID = setTimeout("updateData('admitButtonCallBack')",2000);
                     updateBulbGroup(groupLed);
                 });
                 updateData('callBack');
@@ -406,7 +406,7 @@ module.exports = {
                 document.cookie="groupLed="+(ajaxResult.responseJSON['m2m:cin'].con);
                 if(number!='admitButtonCallBack')
                     updateBulbGroup(ajaxResult.responseJSON['m2m:cin'].con);
-                timerID = setTimeout("updateData('number')",1000);
+                timerID = setTimeout("updateData('number')",2000);
             }
             function updateBulbGroup(cookie){
                 var number4 =parseInt(cookie/8);
