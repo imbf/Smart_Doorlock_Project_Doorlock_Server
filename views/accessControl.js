@@ -240,7 +240,7 @@ module.exports={
     for(var i=0;i<5;i++){
         table+=`<tr>`
             table+=`<td style="font-weight:bold">${queryResult[i].SMSname}</td>`
-            table+=`<td>${queryResult[i].phonenumber}</td>`
+            table+=`<td>0${queryResult[i].phonenumber}</td>`
             table+=`<td>${parseDate(queryResult[i].activetime)} ~ ${parseDate(queryResult[i].unactivetime)}</td>`
             if(queryResult[i].sendnumber == 1)
                 table+=`<td style="color:#007bff;font-weight:bold">전송완료</td>`

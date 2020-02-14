@@ -125,9 +125,9 @@ module.exports = {
    },
    list:function(queryResult){
       var result=``;
-      for(var i=0;i<queryResult.length-3;i++){
+      for(var i=0;i<queryResult.length-4;i++){
          result+=`<tr><td style="font-weight:bold;font-size:1.1rem">${queryResult[i].SMSname}</td>`
-         result+=`<td>${this.phonenumberParse(queryResult[i].phonenumber)}</td>`
+         result+=`<td>0${this.phonenumberParse(queryResult[i].phonenumber)}</td>`
          result+=`<td style="font-size:1rem">${this.activeTimeParse(queryResult[i].activetime)} ~ ${this.activeTimeParse(queryResult[i].unactivetime)}</td>`
          if(queryResult[i].opentime == null)
             result+= `<td style="font-weight:bold;color:red;">Not Entered</td>`
@@ -152,13 +152,13 @@ module.exports = {
       return result;
    },
    phonenumberParse:function(number){
-      var result=``;
-      for(var i=0;i<number.length;i++){
+      let result=``;
+	number = number.toString(); 
+      for(let i=0;i<number.length;i++){
          result+=number.charAt(i);
-         if(i==2 || i==6)
-            result+='-'
+         if(i==1 || i==5)
+            result+='-';
       }
       return result;
    }
-   
 }
