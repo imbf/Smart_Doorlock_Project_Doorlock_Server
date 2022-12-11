@@ -19,7 +19,7 @@
     "cookie-parser": "^1.4.4",
     "ejs": "^2.6.2",
     "experss": "0.0.1-security",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "forever": "^1.0.0",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26",
